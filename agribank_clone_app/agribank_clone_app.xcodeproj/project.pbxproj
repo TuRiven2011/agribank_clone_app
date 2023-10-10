@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A5DF72AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m */; };
+		473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A5DFA2AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m */; };
+		473A5E012AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A5DFC2AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m */; };
+		473A5E022AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A5DFD2AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		473A5E072AD50FB800A34CE5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A5E042AD50FB800A34CE5 /* UIColorExtension.swift */; };
+		473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */; };
+		473A5E092AD50FB800A34CE5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */; };
+		473A5E0C2AD50FF100A34CE5 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A5E0B2AD50FF100A34CE5 /* AppNavigator.swift */; };
 		4741B7632AD4FA49006B6264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741B7622AD4FA49006B6264 /* AppDelegate.swift */; };
 		4741B7672AD4FA49006B6264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741B7662AD4FA49006B6264 /* ViewController.swift */; };
 		4741B76A2AD4FA49006B6264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4741B7682AD4FA49006B6264 /* Main.storyboard */; };
@@ -29,6 +37,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		473A5DF52AD50F9300A34CE5 /* agribank_clone_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "agribank_clone_app-Bridging-Header.h"; sourceTree = "<group>"; };
+		473A5DF62AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		473A5DF72AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		473A5DF82AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		473A5DF92AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		473A5DFA2AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		473A5DFB2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		473A5DFC2AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		473A5DFD2AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		473A5DFE2AD50F9400A34CE5 /* vssid_app_clone-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vssid_app_clone-Bridging-Header.h"; sourceTree = "<group>"; };
+		473A5E042AD50FB800A34CE5 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		473A5E0B2AD50FF100A34CE5 /* AppNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
 		4741B75F2AD4FA49006B6264 /* agribank_clone_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = agribank_clone_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4741B7622AD4FA49006B6264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4741B7662AD4FA49006B6264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +126,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		473A5DF42AD50F6500A34CE5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				473A5DF92AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.h */,
+				473A5DFC2AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m */,
+				473A5DF62AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.h */,
+				473A5DFA2AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m */,
+				473A5DFB2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.h */,
+				473A5DF72AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m */,
+				473A5DF82AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				473A5DFD2AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				473A5DFE2AD50F9400A34CE5 /* vssid_app_clone-Bridging-Header.h */,
+				473A5DF52AD50F9300A34CE5 /* agribank_clone_app-Bridging-Header.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		473A5E032AD50FB800A34CE5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				473A5E042AD50FB800A34CE5 /* UIColorExtension.swift */,
+				473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */,
+				473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		473A5E0A2AD50FE100A34CE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		4741B7562AD4FA49006B6264 = {
 			isa = PBXGroup;
 			children = (
@@ -125,15 +188,16 @@
 		4741B7612AD4FA49006B6264 /* agribank_clone_app */ = {
 			isa = PBXGroup;
 			children = (
-				47BD89C22AD509EA0004D093 /* SupportingFile */,
+				473A5E032AD50FB800A34CE5 /* Extension */,
+				473A5DF42AD50F6500A34CE5 /* Library */,
 				47BD89BB2AD5096A0004D093 /* Animation */,
+				473A5E0A2AD50FE100A34CE5 /* View */,
 				47BD89942AD4FFA40004D093 /* Font */,
-				4741B7622AD4FA49006B6264 /* AppDelegate.swift */,
-				4741B7662AD4FA49006B6264 /* ViewController.swift */,
-				4741B7682AD4FA49006B6264 /* Main.storyboard */,
+				473A5E0D2AD5103600A34CE5 /* ViewController */,
 				4741B76B2AD4FA4B006B6264 /* Assets.xcassets */,
 				4741B76D2AD4FA4B006B6264 /* LaunchScreen.storyboard */,
 				4741B7702AD4FA4B006B6264 /* Info.plist */,
+				47BD89C22AD509EA0004D093 /* SupportingFile */,
 			);
 			path = agribank_clone_app;
 			sourceTree = "<group>";
@@ -205,6 +269,10 @@
 		47BD89C22AD509EA0004D093 /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
+				4741B7622AD4FA49006B6264 /* AppDelegate.swift */,
+				473A5E0B2AD50FF100A34CE5 /* AppNavigator.swift */,
+				4741B7662AD4FA49006B6264 /* ViewController.swift */,
+				4741B7682AD4FA49006B6264 /* Main.storyboard */,
 				47BD89C32AD509F50004D093 /* notify.mp3 */,
 			);
 			path = SupportingFile;
@@ -260,6 +328,7 @@
 				TargetAttributes = {
 					4741B75E2AD4FA49006B6264 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -337,6 +406,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473A5E012AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				473A5E072AD50FB800A34CE5 /* UIColorExtension.swift in Sources */,
+				473A5E022AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				473A5E0C2AD50FF100A34CE5 /* AppNavigator.swift in Sources */,
+				473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */,
+				473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */,
+				473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				473A5E092AD50FB800A34CE5 /* UIViewExtension.swift in Sources */,
 				4741B7672AD4FA49006B6264 /* ViewController.swift in Sources */,
 				4741B7632AD4FA49006B6264 /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -501,6 +579,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "curtistu.agribank-clone-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "agribank_clone_app/Library/agribank_clone_app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -512,6 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -529,6 +610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "curtistu.agribank-clone-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "agribank_clone_app/Library/agribank_clone_app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
