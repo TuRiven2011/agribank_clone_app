@@ -33,6 +33,19 @@
 		47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CB2AD50AAD0004D093 /* golf_animation.json */; };
 		47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CC2AD50AAD0004D093 /* taxi_animation.json */; };
 		47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CD2AD50AAD0004D093 /* TaxiAnimation.json */; };
+		821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C890C2AD6C144006DE8F2 /* HomeViewController.swift */; };
+		821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C890D2AD6C144006DE8F2 /* HomeViewController.xib */; };
+		821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89142AD6C5E6006DE8F2 /* LoginTableViewCell.swift */; };
+		821C89172AD6C5E6006DE8F2 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C89152AD6C5E6006DE8F2 /* LoginTableViewCell.xib */; };
+		821C891A2AD6C5FC006DE8F2 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89182AD6C5FC006DE8F2 /* OptionsTableViewCell.swift */; };
+		821C891B2AD6C5FC006DE8F2 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C89192AD6C5FC006DE8F2 /* OptionsTableViewCell.xib */; };
+		821C891E2AD6C60A006DE8F2 /* PageVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C891C2AD6C60A006DE8F2 /* PageVCTableViewCell.swift */; };
+		821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C891D2AD6C60A006DE8F2 /* PageVCTableViewCell.xib */; };
+		821C89232AD6D37C006DE8F2 /* AccountInforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89212AD6D37C006DE8F2 /* AccountInforTableViewCell.swift */; };
+		821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C89222AD6D37C006DE8F2 /* AccountInforTableViewCell.xib */; };
+		821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89262AD6EC80006DE8F2 /* HomeEntity.swift */; };
+		821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */; };
+		821C892C2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */; };
 		E2D43FF08D67C6F4829077AC /* Pods_agribank_clone_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +122,19 @@
 		47BD89CB2AD50AAD0004D093 /* golf_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = golf_animation.json; sourceTree = "<group>"; };
 		47BD89CC2AD50AAD0004D093 /* taxi_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = taxi_animation.json; sourceTree = "<group>"; };
 		47BD89CD2AD50AAD0004D093 /* TaxiAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TaxiAnimation.json; sourceTree = "<group>"; };
+		821C890C2AD6C144006DE8F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		821C890D2AD6C144006DE8F2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		821C89142AD6C5E6006DE8F2 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		821C89152AD6C5E6006DE8F2 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
+		821C89182AD6C5FC006DE8F2 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		821C89192AD6C5FC006DE8F2 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
+		821C891C2AD6C60A006DE8F2 /* PageVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVCTableViewCell.swift; sourceTree = "<group>"; };
+		821C891D2AD6C60A006DE8F2 /* PageVCTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageVCTableViewCell.xib; sourceTree = "<group>"; };
+		821C89212AD6D37C006DE8F2 /* AccountInforTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInforTableViewCell.swift; sourceTree = "<group>"; };
+		821C89222AD6D37C006DE8F2 /* AccountInforTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountInforTableViewCell.xib; sourceTree = "<group>"; };
+		821C89262AD6EC80006DE8F2 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.debug.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.debug.xcconfig"; sourceTree = "<group>"; };
 		EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.release.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.release.xcconfig"; sourceTree = "<group>"; };
 		EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_agribank_clone_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +189,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				821C890B2AD6C095006DE8F2 /* Home */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -188,6 +215,7 @@
 		4741B7612AD4FA49006B6264 /* agribank_clone_app */ = {
 			isa = PBXGroup;
 			children = (
+				821C89252AD6EC6C006DE8F2 /* Model */,
 				473A5E032AD50FB800A34CE5 /* Extension */,
 				473A5DF42AD50F6500A34CE5 /* Library */,
 				47BD89BB2AD5096A0004D093 /* Animation */,
@@ -278,6 +306,81 @@
 			path = SupportingFile;
 			sourceTree = "<group>";
 		};
+		821C890B2AD6C095006DE8F2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				821C890C2AD6C144006DE8F2 /* HomeViewController.swift */,
+				821C890D2AD6C144006DE8F2 /* HomeViewController.xib */,
+				821C89102AD6C2C9006DE8F2 /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		821C89102AD6C2C9006DE8F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				821C89202AD6D33C006DE8F2 /* AccountInforCell */,
+				821C89112AD6C454006DE8F2 /* LoginCell */,
+				821C89132AD6C5BB006DE8F2 /* PageVCCell */,
+				821C89122AD6C473006DE8F2 /* OptionsCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		821C89112AD6C454006DE8F2 /* LoginCell */ = {
+			isa = PBXGroup;
+			children = (
+				821C89142AD6C5E6006DE8F2 /* LoginTableViewCell.swift */,
+				821C89152AD6C5E6006DE8F2 /* LoginTableViewCell.xib */,
+			);
+			path = LoginCell;
+			sourceTree = "<group>";
+		};
+		821C89122AD6C473006DE8F2 /* OptionsCell */ = {
+			isa = PBXGroup;
+			children = (
+				821C89282AD6EDEF006DE8F2 /* CustomCollectionView */,
+				821C89182AD6C5FC006DE8F2 /* OptionsTableViewCell.swift */,
+				821C89192AD6C5FC006DE8F2 /* OptionsTableViewCell.xib */,
+			);
+			path = OptionsCell;
+			sourceTree = "<group>";
+		};
+		821C89132AD6C5BB006DE8F2 /* PageVCCell */ = {
+			isa = PBXGroup;
+			children = (
+				821C891C2AD6C60A006DE8F2 /* PageVCTableViewCell.swift */,
+				821C891D2AD6C60A006DE8F2 /* PageVCTableViewCell.xib */,
+			);
+			path = PageVCCell;
+			sourceTree = "<group>";
+		};
+		821C89202AD6D33C006DE8F2 /* AccountInforCell */ = {
+			isa = PBXGroup;
+			children = (
+				821C89212AD6D37C006DE8F2 /* AccountInforTableViewCell.swift */,
+				821C89222AD6D37C006DE8F2 /* AccountInforTableViewCell.xib */,
+			);
+			path = AccountInforCell;
+			sourceTree = "<group>";
+		};
+		821C89252AD6EC6C006DE8F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				821C89262AD6EC80006DE8F2 /* HomeEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		821C89282AD6EDEF006DE8F2 /* CustomCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */,
+				821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */,
+			);
+			path = CustomCollectionView;
+			sourceTree = "<group>";
+		};
 		85B47B5DEC69CEB4C762CF34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +461,8 @@
 				47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */,
 				47BD89C12AD509850004D093 /* delivery_animation.json in Resources */,
 				47BD89D12AD50AAD0004D093 /* flower_animation.json in Resources */,
+				821C89172AD6C5E6006DE8F2 /* LoginTableViewCell.xib in Resources */,
+				821C892C2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib in Resources */,
 				47BD89CE2AD50AAD0004D093 /* train_animation.json in Resources */,
 				47BD89D22AD50AAD0004D093 /* hotel_animation.json in Resources */,
 				47BD89D02AD50AAD0004D093 /* icon_vnshop.json in Resources */,
@@ -365,9 +470,13 @@
 				47BD89D32AD50AAD0004D093 /* loading.json in Resources */,
 				4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */,
 				47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */,
+				821C891B2AD6C5FC006DE8F2 /* OptionsTableViewCell.xib in Resources */,
 				4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */,
+				821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */,
 				47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */,
 				47BD89BF2AD5097E0004D093 /* dataNewYear6.json in Resources */,
+				821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */,
+				821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */,
 				4741B76A2AD4FA49006B6264 /* Main.storyboard in Resources */,
 				47BD89BD2AD509730004D093 /* bus_animation.json in Resources */,
 				47BD89C42AD509F50004D093 /* notify.mp3 in Resources */,
@@ -406,16 +515,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821C891A2AD6C5FC006DE8F2 /* OptionsTableViewCell.swift in Sources */,
+				821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */,
+				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
 				473A5E012AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				473A5E072AD50FB800A34CE5 /* UIColorExtension.swift in Sources */,
 				473A5E022AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				821C89232AD6D37C006DE8F2 /* AccountInforTableViewCell.swift in Sources */,
 				473A5E0C2AD50FF100A34CE5 /* AppNavigator.swift in Sources */,
 				473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */,
 				473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */,
+				821C891E2AD6C60A006DE8F2 /* PageVCTableViewCell.swift in Sources */,
 				473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */,
 				473A5E092AD50FB800A34CE5 /* UIViewExtension.swift in Sources */,
 				4741B7672AD4FA49006B6264 /* ViewController.swift in Sources */,
 				4741B7632AD4FA49006B6264 /* AppDelegate.swift in Sources */,
+				821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +680,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5WKZDX6SMV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = agribank_clone_app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -571,12 +688,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "curtistu.agribank-clone-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhung";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "agribank_clone_app/Library/agribank_clone_app-Bridging-Header.h";
@@ -595,6 +713,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5WKZDX6SMV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = agribank_clone_app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -602,12 +721,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "curtistu.agribank-clone-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhung";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "agribank_clone_app/Library/agribank_clone_app-Bridging-Header.h";

@@ -18,6 +18,8 @@ final class AppNavigator: AppNavigatorType {
     }
     
     func start() {
+        let vc = HomeViewController()
+        window?.rootViewController = vc
 //        if AppData.isLogin {
 //            switchToMain()
 //        } else {
