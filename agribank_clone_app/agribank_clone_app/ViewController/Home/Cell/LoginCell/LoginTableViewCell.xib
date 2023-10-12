@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CF7-vv-4xv">
-                        <rect key="frame" x="0.0" y="0.0" width="416" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="416" height="305"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPu-m0-lnc">
                                 <rect key="frame" x="128" y="250" width="160" height="40"/>
@@ -52,7 +52,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF2-jO-W4u">
-                                <rect key="frame" x="15" y="299" width="386" height="1"/>
+                                <rect key="frame" x="15" y="304" width="386" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="qQB-qs-z8c"/>
@@ -61,7 +61,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="300" id="9SB-hC-w4O"/>
+                            <constraint firstAttribute="height" constant="305" id="9SB-hC-w4O"/>
                             <constraint firstItem="MWz-k9-PQb" firstAttribute="leading" secondItem="CF7-vv-4xv" secondAttribute="leading" id="DTb-mX-ktd"/>
                             <constraint firstItem="fPu-m0-lnc" firstAttribute="centerX" secondItem="CF7-vv-4xv" secondAttribute="centerX" id="EMD-t9-HH0"/>
                             <constraint firstItem="fF2-jO-W4u" firstAttribute="leading" secondItem="CF7-vv-4xv" secondAttribute="leading" constant="15" id="Gm9-I1-SdS"/>
