@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="316" height="1602"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-sD-5H7">
-                                <rect key="frame" x="8" y="8" width="300" height="1580"/>
+                                <rect key="frame" x="8" y="8" width="300" height="1585"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juu-jW-gKc">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -102,11 +102,11 @@
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AmH-Lx-BWB">
-                                        <rect key="frame" x="0.0" y="550" width="300" height="420"/>
+                                        <rect key="frame" x="0.0" y="550" width="300" height="425"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="420" id="Xuz-5o-kta"/>
+                                            <constraint firstAttribute="height" constant="425" id="Xuz-5o-kta"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0c1-u5-caG">
                                             <size key="itemSize" width="128" height="128"/>
@@ -116,7 +116,7 @@
                                         </collectionViewFlowLayout>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otA-VN-mD5">
-                                        <rect key="frame" x="0.0" y="970" width="300" height="110"/>
+                                        <rect key="frame" x="0.0" y="975" width="300" height="110"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-fZ-7sN">
                                                 <rect key="frame" x="10" y="5" width="280" height="90"/>
@@ -140,7 +140,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atf-Yk-CVz">
-                                        <rect key="frame" x="0.0" y="1080" width="300" height="50"/>
+                                        <rect key="frame" x="0.0" y="1085" width="300" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiện ích" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLx-aE-Gbl">
                                                 <rect key="frame" x="25" y="14.333333333333259" width="67" height="21.666666666666671"/>
@@ -157,7 +157,7 @@
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="iVe-Zt-wGp">
-                                        <rect key="frame" x="0.0" y="1130" width="300" height="450"/>
+                                        <rect key="frame" x="0.0" y="1135" width="300" height="450"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -176,7 +176,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wBp-sD-5H7" firstAttribute="top" secondItem="Y5p-3x-ApT" secondAttribute="topMargin" id="2dF-8s-Tft"/>
-                            <constraint firstAttribute="height" secondItem="wBp-sD-5H7" secondAttribute="height" multiplier="1.01392" id="4AX-QG-yTN"/>
+                            <constraint firstAttribute="height" secondItem="wBp-sD-5H7" secondAttribute="height" multiplier="1.01073" id="AOl-e6-1tl"/>
                             <constraint firstItem="wBp-sD-5H7" firstAttribute="leading" secondItem="Y5p-3x-ApT" secondAttribute="leadingMargin" id="oPl-Co-Tbr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wBp-sD-5H7" secondAttribute="trailing" id="zuP-hh-vLo"/>
                         </constraints>

@@ -37,6 +37,9 @@
                                         <integer key="value" value="19"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Erv-5Q-cPJ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HienDai4_Normal" translatesAutoresizingMaskIntoConstraints="NO" id="MWz-k9-PQb">
                                 <rect key="frame" x="0.0" y="0.0" width="416" height="210"/>

@@ -46,6 +46,10 @@
 		821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89262AD6EC80006DE8F2 /* HomeEntity.swift */; };
 		821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */; };
 		821C892C2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */; };
+		82EAA0D72AD8D5E10076C059 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0D52AD8D5E10076C059 /* SettingsViewController.swift */; };
+		82EAA0D82AD8D5E10076C059 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0D62AD8D5E10076C059 /* SettingsViewController.xib */; };
+		82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0DA2AD8E9E60076C059 /* SettingsCollectionViewCell.swift */; };
+		82EAA0DD2AD8E9E60076C059 /* SettingsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0DB2AD8E9E60076C059 /* SettingsCollectionViewCell.xib */; };
 		E2D43FF08D67C6F4829077AC /* Pods_agribank_clone_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +139,10 @@
 		821C89262AD6EC80006DE8F2 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		82EAA0D52AD8D5E10076C059 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		82EAA0D62AD8D5E10076C059 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		82EAA0DA2AD8E9E60076C059 /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		82EAA0DB2AD8E9E60076C059 /* SettingsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCollectionViewCell.xib; sourceTree = "<group>"; };
 		B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.debug.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.debug.xcconfig"; sourceTree = "<group>"; };
 		EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.release.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.release.xcconfig"; sourceTree = "<group>"; };
 		EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_agribank_clone_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +197,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82EAA0D42AD8D5330076C059 /* Settings */,
 				821C890B2AD6C095006DE8F2 /* Home */,
 			);
 			path = ViewController;
@@ -381,6 +390,25 @@
 			path = CustomCollectionView;
 			sourceTree = "<group>";
 		};
+		82EAA0D42AD8D5330076C059 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				82EAA0D92AD8E9750076C059 /* Cell */,
+				82EAA0D52AD8D5E10076C059 /* SettingsViewController.swift */,
+				82EAA0D62AD8D5E10076C059 /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		82EAA0D92AD8E9750076C059 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82EAA0DA2AD8E9E60076C059 /* SettingsCollectionViewCell.swift */,
+				82EAA0DB2AD8E9E60076C059 /* SettingsCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		85B47B5DEC69CEB4C762CF34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +499,7 @@
 				4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */,
 				47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */,
 				821C891B2AD6C5FC006DE8F2 /* OptionsTableViewCell.xib in Resources */,
+				82EAA0D82AD8D5E10076C059 /* SettingsViewController.xib in Resources */,
 				4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */,
 				821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */,
 				47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */,
@@ -480,6 +509,7 @@
 				4741B76A2AD4FA49006B6264 /* Main.storyboard in Resources */,
 				47BD89BD2AD509730004D093 /* bus_animation.json in Resources */,
 				47BD89C42AD509F50004D093 /* notify.mp3 in Resources */,
+				82EAA0DD2AD8E9E60076C059 /* SettingsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */,
 				821C891A2AD6C5FC006DE8F2 /* OptionsTableViewCell.swift in Sources */,
 				821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
@@ -532,6 +563,7 @@
 				4741B7672AD4FA49006B6264 /* ViewController.swift in Sources */,
 				4741B7632AD4FA49006B6264 /* AppDelegate.swift in Sources */,
 				821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */,
+				82EAA0D72AD8D5E10076C059 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

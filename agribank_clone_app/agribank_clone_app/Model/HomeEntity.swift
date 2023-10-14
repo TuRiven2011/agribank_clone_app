@@ -7,7 +7,12 @@
 
 import UIKit
 
-struct FinanceEntity{
+struct FinanceEntity {
+    var title: String
+    var image: String
+}
+
+struct SettingsEntity {
     var title: String
     var image: String
 }

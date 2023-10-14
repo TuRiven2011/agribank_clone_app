@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         configTbl()
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(pushSettings), name: Notification.Name("Open Settings"), object: nil)
     }
     
     func configTbl() {
@@ -27,6 +27,12 @@ class HomeViewController: UIViewController {
         tableview.dataSource = self
         tableview.rowHeight = UITableView.automaticDimension
         tableview.estimatedRowHeight = 200
+    }
+    
+    @objc func pushSettings(_ noti: Notification) {
+        let vc = SettingsViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 
 }

@@ -20,4 +20,21 @@ class LoginTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func loginBtn(_ sender: Any) {
+        NotificationCenter.default.post(name: Notification.Name("Open Settings"), object: nil)
+    }
+    
+    
+}
+
+extension UIView {
+    func findViewController() -> UIViewController? {
+        if let nextResponder = self.next as? UIViewController {
+            return nextResponder
+        } else if let nextResponder = self.next as? UIView {
+            return nextResponder.findViewController()
+        } else {
+            return nil
+        }
+    }
 }
