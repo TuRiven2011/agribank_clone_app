@@ -18,7 +18,7 @@ final class AppNavigator: AppNavigatorType {
     }
     
     func start() {
-        let vc = SettingsViewController()
+        let vc = TabbarController()
         window?.rootViewController = vc
 //        if AppData.isLogin {
 //            switchToMain()
