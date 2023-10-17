@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="TransferTableViewCell" customModule="agribank_clone_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="etx-Uw-G02">
+                        <rect key="frame" x="10" y="30" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="MAi-wB-evC"/>
+                            <constraint firstAttribute="height" constant="40" id="Wht-6G-DGL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ity-P9-QLk">
+                        <rect key="frame" x="60" y="30" width="37.333333333333343" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m86-Yb-uCT">
+                        <rect key="frame" x="60" y="52" width="37.333333333333343" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.38823529410000002" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53H-q0-1Jx">
+                        <rect key="frame" x="15" y="79" width="384" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mBI-l3-VkU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="etx-Uw-G02" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="31j-cN-uwG"/>
+                    <constraint firstItem="m86-Yb-uCT" firstAttribute="leading" secondItem="etx-Uw-G02" secondAttribute="trailing" constant="10" id="4Vc-lU-8L8"/>
+                    <constraint firstItem="m86-Yb-uCT" firstAttribute="bottom" secondItem="etx-Uw-G02" secondAttribute="bottom" id="AuR-SP-6Od"/>
+                    <constraint firstItem="Ity-P9-QLk" firstAttribute="leading" secondItem="etx-Uw-G02" secondAttribute="trailing" constant="10" id="G1n-Gh-FKF"/>
+                    <constraint firstItem="Ity-P9-QLk" firstAttribute="top" secondItem="etx-Uw-G02" secondAttribute="top" id="T8S-LA-egR"/>
+                    <constraint firstAttribute="trailing" secondItem="53H-q0-1Jx" secondAttribute="trailing" constant="15" id="aUX-hh-JqT"/>
+                    <constraint firstAttribute="bottom" secondItem="53H-q0-1Jx" secondAttribute="bottom" id="dcS-Xv-J6f"/>
+                    <constraint firstAttribute="bottom" secondItem="etx-Uw-G02" secondAttribute="bottom" constant="10" id="oVh-ku-p8t"/>
+                    <constraint firstItem="53H-q0-1Jx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zKb-HD-6OQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accountNumberLbl" destination="m86-Yb-uCT" id="d0J-Xq-ZZr"/>
+                <outlet property="banklogoImage" destination="etx-Uw-G02" id="k1O-rS-PYo"/>
+                <outlet property="nameLbl" destination="Ity-P9-QLk" id="aKW-en-TWz"/>
+            </connections>
+            <point key="canvasLocation" x="94.656488549618317" y="0.0"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
