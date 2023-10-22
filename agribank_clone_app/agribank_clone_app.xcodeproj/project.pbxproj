@@ -33,6 +33,11 @@
 		47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CB2AD50AAD0004D093 /* golf_animation.json */; };
 		47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CC2AD50AAD0004D093 /* taxi_animation.json */; };
 		47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CD2AD50AAD0004D093 /* TaxiAnimation.json */; };
+		820DB4352AE212FE00CB1138 /* AppInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB4332AE212FE00CB1138 /* AppInforViewController.swift */; };
+		820DB4362AE212FE00CB1138 /* AppInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 820DB4342AE212FE00CB1138 /* AppInforViewController.xib */; };
+		820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */; };
+		820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 820DB4392AE2191700CB1138 /* AppInforTableViewCell.xib */; };
+		820DB43D2AE21B1700CB1138 /* AppInforEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */; };
 		821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C890C2AD6C144006DE8F2 /* HomeViewController.swift */; };
 		821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C890D2AD6C144006DE8F2 /* HomeViewController.xib */; };
 		821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89142AD6C5E6006DE8F2 /* LoginTableViewCell.swift */; };
@@ -56,6 +61,8 @@
 		82EAA0E72ADD7D040076C059 /* TransferCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0E52ADD7D040076C059 /* TransferCollectionViewCell.xib */; };
 		82EAA0EA2ADD8AA30076C059 /* TransferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0E82ADD8AA30076C059 /* TransferTableViewCell.swift */; };
 		82EAA0EB2ADD8AA30076C059 /* TransferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0E92ADD8AA30076C059 /* TransferTableViewCell.xib */; };
+		82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0F22AE172260076C059 /* CardServiceViewController.swift */; };
+		82EAA0F52AE172260076C059 /* CardServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0F32AE172260076C059 /* CardServiceViewController.xib */; };
 		E2D43FF08D67C6F4829077AC /* Pods_agribank_clone_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +139,11 @@
 		47BD89CB2AD50AAD0004D093 /* golf_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = golf_animation.json; sourceTree = "<group>"; };
 		47BD89CC2AD50AAD0004D093 /* taxi_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = taxi_animation.json; sourceTree = "<group>"; };
 		47BD89CD2AD50AAD0004D093 /* TaxiAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TaxiAnimation.json; sourceTree = "<group>"; };
+		820DB4332AE212FE00CB1138 /* AppInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforViewController.swift; sourceTree = "<group>"; };
+		820DB4342AE212FE00CB1138 /* AppInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInforViewController.xib; sourceTree = "<group>"; };
+		820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforTableViewCell.swift; sourceTree = "<group>"; };
+		820DB4392AE2191700CB1138 /* AppInforTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInforTableViewCell.xib; sourceTree = "<group>"; };
+		820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforEntity.swift; sourceTree = "<group>"; };
 		821C890C2AD6C144006DE8F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		821C890D2AD6C144006DE8F2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		821C89142AD6C5E6006DE8F2 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
@@ -155,6 +167,8 @@
 		82EAA0E52ADD7D040076C059 /* TransferCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferCollectionViewCell.xib; sourceTree = "<group>"; };
 		82EAA0E82ADD8AA30076C059 /* TransferTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTableViewCell.swift; sourceTree = "<group>"; };
 		82EAA0E92ADD8AA30076C059 /* TransferTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferTableViewCell.xib; sourceTree = "<group>"; };
+		82EAA0F22AE172260076C059 /* CardServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardServiceViewController.swift; sourceTree = "<group>"; };
+		82EAA0F32AE172260076C059 /* CardServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardServiceViewController.xib; sourceTree = "<group>"; };
 		B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.debug.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.debug.xcconfig"; sourceTree = "<group>"; };
 		EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.release.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.release.xcconfig"; sourceTree = "<group>"; };
 		EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_agribank_clone_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +223,8 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				820DB4322AE212B500CB1138 /* AppInfor */,
+				82EAA0F02AE171D60076C059 /* CardService */,
 				82EAA0DE2ADD79B70076C059 /* Transfer */,
 				82EAA0D42AD8D5330076C059 /* Settings */,
 				821C890B2AD6C095006DE8F2 /* Home */,
@@ -328,6 +344,25 @@
 			path = SupportingFile;
 			sourceTree = "<group>";
 		};
+		820DB4322AE212B500CB1138 /* AppInfor */ = {
+			isa = PBXGroup;
+			children = (
+				820DB4372AE218FC00CB1138 /* Cell */,
+				820DB4332AE212FE00CB1138 /* AppInforViewController.swift */,
+				820DB4342AE212FE00CB1138 /* AppInforViewController.xib */,
+			);
+			path = AppInfor;
+			sourceTree = "<group>";
+		};
+		820DB4372AE218FC00CB1138 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */,
+				820DB4392AE2191700CB1138 /* AppInforTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		821C890B2AD6C095006DE8F2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				821C89262AD6EC80006DE8F2 /* HomeEntity.swift */,
+				820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -441,6 +477,15 @@
 				82EAA0E92ADD8AA30076C059 /* TransferTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		82EAA0F02AE171D60076C059 /* CardService */ = {
+			isa = PBXGroup;
+			children = (
+				82EAA0F22AE172260076C059 /* CardServiceViewController.swift */,
+				82EAA0F32AE172260076C059 /* CardServiceViewController.xib */,
+			);
+			path = CardService;
 			sourceTree = "<group>";
 		};
 		85B47B5DEC69CEB4C762CF34 /* Frameworks */ = {
@@ -536,6 +581,8 @@
 				47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */,
 				821C891B2AD6C5FC006DE8F2 /* OptionsTableViewCell.xib in Resources */,
 				82EAA0D82AD8D5E10076C059 /* SettingsViewController.xib in Resources */,
+				820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */,
+				82EAA0F52AE172260076C059 /* CardServiceViewController.xib in Resources */,
 				4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */,
 				821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */,
 				47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */,
@@ -543,6 +590,7 @@
 				821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */,
 				821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */,
 				4741B76A2AD4FA49006B6264 /* Main.storyboard in Resources */,
+				820DB4362AE212FE00CB1138 /* AppInforViewController.xib in Resources */,
 				47BD89BD2AD509730004D093 /* bus_animation.json in Resources */,
 				47BD89C42AD509F50004D093 /* notify.mp3 in Resources */,
 				82EAA0E22ADD7A150076C059 /* TransferViewController.xib in Resources */,
@@ -585,8 +633,10 @@
 				82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */,
 				821C891A2AD6C5FC006DE8F2 /* OptionsTableViewCell.swift in Sources */,
 				821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */,
+				820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */,
 				82EAA0E62ADD7D040076C059 /* TransferCollectionViewCell.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
+				82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */,
 				473A5E012AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				473A5E072AD50FB800A34CE5 /* UIColorExtension.swift in Sources */,
 				473A5E022AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
@@ -602,6 +652,8 @@
 				4741B7672AD4FA49006B6264 /* ViewController.swift in Sources */,
 				82EAA0EA2ADD8AA30076C059 /* TransferTableViewCell.swift in Sources */,
 				4741B7632AD4FA49006B6264 /* AppDelegate.swift in Sources */,
+				820DB4352AE212FE00CB1138 /* AppInforViewController.swift in Sources */,
+				820DB43D2AE21B1700CB1138 /* AppInforEntity.swift in Sources */,
 				821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */,
 				82EAA0D72AD8D5E10076C059 /* SettingsViewController.swift in Sources */,
 			);

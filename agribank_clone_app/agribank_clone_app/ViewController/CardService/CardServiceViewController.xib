@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardServiceViewController" customModule="agribank_clone_app" customModuleProvider="target">
+            <connections>
+                <outlet property="cardServiceCollectionView" destination="4TV-aJ-d27" id="NSn-qC-9Yg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dịch vụ áp dụng cho khách hàng có sử dụng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvV-qN-dm7">
+                    <rect key="frame" x="27.666666666666657" y="89" width="338" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thẻ Agribank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfI-DW-x2R">
+                    <rect key="frame" x="143.66666666666666" y="110" width="106" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4TV-aJ-d27">
+                    <rect key="frame" x="20" y="151" width="353" height="701"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="SqT-O6-Gbq">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="4TV-aJ-d27" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="80X-2d-O8f"/>
+                <constraint firstItem="tfI-DW-x2R" firstAttribute="top" secondItem="gvV-qN-dm7" secondAttribute="bottom" id="JJr-dc-JSd"/>
+                <constraint firstAttribute="bottom" secondItem="4TV-aJ-d27" secondAttribute="bottom" id="MZV-6z-1SQ"/>
+                <constraint firstItem="gvV-qN-dm7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Q6D-Dl-mLN"/>
+                <constraint firstItem="gvV-qN-dm7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Uho-R9-Tys"/>
+                <constraint firstItem="tfI-DW-x2R" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="e81-xM-ba0"/>
+                <constraint firstItem="4TV-aJ-d27" firstAttribute="top" secondItem="tfI-DW-x2R" secondAttribute="bottom" constant="20" id="q6f-xD-iB3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4TV-aJ-d27" secondAttribute="trailing" constant="20" id="xxf-dH-baG"/>
+            </constraints>
+            <point key="canvasLocation" x="112" y="-12"/>
+        </view>
+    </objects>
+</document>
