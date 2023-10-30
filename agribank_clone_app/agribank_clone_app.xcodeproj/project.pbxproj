@@ -20,6 +20,7 @@
 		4741B76A2AD4FA49006B6264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4741B7682AD4FA49006B6264 /* Main.storyboard */; };
 		4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4741B76B2AD4FA4B006B6264 /* Assets.xcassets */; };
 		4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4741B76D2AD4FA4B006B6264 /* LaunchScreen.storyboard */; };
+		4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E9A82AF010D000EFE78A /* TabbarViewController.swift */; };
 		47BD89BD2AD509730004D093 /* bus_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89BC2AD509730004D093 /* bus_animation.json */; };
 		47BD89BF2AD5097E0004D093 /* dataNewYear6.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89BE2AD5097E0004D093 /* dataNewYear6.json */; };
 		47BD89C12AD509850004D093 /* delivery_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89C02AD509850004D093 /* delivery_animation.json */; };
@@ -88,6 +89,7 @@
 		4741B76B2AD4FA4B006B6264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4741B76E2AD4FA4B006B6264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4741B7702AD4FA4B006B6264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4795E9A82AF010D000EFE78A /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		47BD89952AD4FFFC0004D093 /* SFProDisplay-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-BoldItalic.otf"; sourceTree = "<group>"; };
 		47BD89962AD4FFFC0004D093 /* SFCompactDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Heavy.otf"; sourceTree = "<group>"; };
 		47BD89972AD4FFFC0004D093 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4795E9A72AF010B400EFE78A /* Tabbar */,
 				820DB4322AE212B500CB1138 /* AppInfor */,
 				82EAA0F02AE171D60076C059 /* CardService */,
 				82EAA0DE2ADD79B70076C059 /* Transfer */,
@@ -266,6 +269,14 @@
 				47BD89C22AD509EA0004D093 /* SupportingFile */,
 			);
 			path = agribank_clone_app;
+			sourceTree = "<group>";
+		};
+		4795E9A72AF010B400EFE78A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4795E9A82AF010D000EFE78A /* TabbarViewController.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		47BD89942AD4FFA40004D093 /* Font */ = {
@@ -635,6 +646,7 @@
 				821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */,
 				820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */,
 				82EAA0E62ADD7D040076C059 /* TransferCollectionViewCell.swift in Sources */,
+				4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
 				82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */,
 				473A5E012AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m in Sources */,

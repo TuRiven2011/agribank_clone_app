@@ -18,8 +18,9 @@ final class AppNavigator: AppNavigatorType {
     }
     
     func start() {
-        let vc = AppInforViewController()
-        window?.rootViewController = vc
+        
+        switchToMain()
+        
 //        if AppData.isLogin {
 //            switchToMain()
 //        } else {
@@ -33,8 +34,8 @@ final class AppNavigator: AppNavigatorType {
     }
     
     func switchToMain() {
-//        let vc = TabbarViewController()
-//        switchTo(viewController: vc)
+        let vc = TabbarViewController()
+        switchTo(viewController: vc)
     }
     
     func switchTo(viewController: UIViewController) {
