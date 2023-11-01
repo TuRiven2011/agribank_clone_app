@@ -21,7 +21,7 @@ class LoginTableViewCell: UITableViewCell {
     }
     
     @IBAction func loginBtn(_ sender: Any) {
-        NotificationCenter.default.post(name: Notification.Name("Open Settings"), object: nil)
+
     }
     
     

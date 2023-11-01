@@ -17,7 +17,6 @@ class HomeViewController: UIViewController {
         
         setupNavigationBar()
         configTbl()
-        NotificationCenter.default.addObserver(self, selector: #selector(pushSettings), name: Notification.Name("Open Settings"), object: nil)
     }
     
     private func setupNavigationBar() {
@@ -69,6 +68,8 @@ class HomeViewController: UIViewController {
             ].forEach({$0.isActive = true})
         }
         
+        menu.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openSettings(_:))))
+        
         let logo = UIImageView(image: .init(named: "QR_Agri_Normal"))
         logo.translatesAutoresizingMaskIntoConstraints = false
         navigationController?.navigationBar.addSubview(logo)
@@ -82,7 +83,6 @@ class HomeViewController: UIViewController {
             ].forEach({$0.isActive = true})
         }
         navigationController?.additionalSafeAreaInsets.top = 6
-
     }
     
     func configTbl() {
@@ -95,9 +95,10 @@ class HomeViewController: UIViewController {
         tableview.estimatedRowHeight = 200
     }
     
-    @objc func pushSettings(_ noti: Notification) {
-        let vc = SettingsViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+    @objc func openSettings(_ g: UITapGestureRecognizer) {
+        let vc = SettingsView()
+        vc.frame = UIScreen.main.bounds
+        UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.addSubview(vc)
         
     }
     

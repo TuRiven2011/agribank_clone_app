@@ -39,6 +39,8 @@
 		820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */; };
 		820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 820DB4392AE2191700CB1138 /* AppInforTableViewCell.xib */; };
 		820DB43D2AE21B1700CB1138 /* AppInforEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */; };
+		82162E112AF28CA000C3EACC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82162E102AF28CA000C3EACC /* SettingsView.swift */; };
+		82162E152AF28D6B00C3EACC /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82162E142AF28D6B00C3EACC /* SettingsView.xib */; };
 		821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C890C2AD6C144006DE8F2 /* HomeViewController.swift */; };
 		821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C890D2AD6C144006DE8F2 /* HomeViewController.xib */; };
 		821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89142AD6C5E6006DE8F2 /* LoginTableViewCell.swift */; };
@@ -52,8 +54,6 @@
 		821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89262AD6EC80006DE8F2 /* HomeEntity.swift */; };
 		821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */; };
 		821C892C2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */; };
-		82EAA0D72AD8D5E10076C059 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0D52AD8D5E10076C059 /* SettingsViewController.swift */; };
-		82EAA0D82AD8D5E10076C059 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0D62AD8D5E10076C059 /* SettingsViewController.xib */; };
 		82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0DA2AD8E9E60076C059 /* SettingsCollectionViewCell.swift */; };
 		82EAA0DD2AD8E9E60076C059 /* SettingsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0DB2AD8E9E60076C059 /* SettingsCollectionViewCell.xib */; };
 		82EAA0E12ADD7A150076C059 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0DF2ADD7A150076C059 /* TransferViewController.swift */; };
@@ -146,6 +146,8 @@
 		820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforTableViewCell.swift; sourceTree = "<group>"; };
 		820DB4392AE2191700CB1138 /* AppInforTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInforTableViewCell.xib; sourceTree = "<group>"; };
 		820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforEntity.swift; sourceTree = "<group>"; };
+		82162E102AF28CA000C3EACC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		82162E142AF28D6B00C3EACC /* SettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
 		821C890C2AD6C144006DE8F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		821C890D2AD6C144006DE8F2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		821C89142AD6C5E6006DE8F2 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
@@ -159,8 +161,6 @@
 		821C89262AD6EC80006DE8F2 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCustomCollectionViewCell.xib; sourceTree = "<group>"; };
-		82EAA0D52AD8D5E10076C059 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		82EAA0D62AD8D5E10076C059 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		82EAA0DA2AD8E9E60076C059 /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		82EAA0DB2AD8E9E60076C059 /* SettingsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCollectionViewCell.xib; sourceTree = "<group>"; };
 		82EAA0DF2ADD7A150076C059 /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
@@ -454,8 +454,8 @@
 			isa = PBXGroup;
 			children = (
 				82EAA0D92AD8E9750076C059 /* Cell */,
-				82EAA0D52AD8D5E10076C059 /* SettingsViewController.swift */,
-				82EAA0D62AD8D5E10076C059 /* SettingsViewController.xib */,
+				82162E102AF28CA000C3EACC /* SettingsView.swift */,
+				82162E142AF28D6B00C3EACC /* SettingsView.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -578,6 +578,7 @@
 			files = (
 				47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */,
 				47BD89C12AD509850004D093 /* delivery_animation.json in Resources */,
+				82162E152AF28D6B00C3EACC /* SettingsView.xib in Resources */,
 				47BD89D12AD50AAD0004D093 /* flower_animation.json in Resources */,
 				821C89172AD6C5E6006DE8F2 /* LoginTableViewCell.xib in Resources */,
 				82EAA0EB2ADD8AA30076C059 /* TransferTableViewCell.xib in Resources */,
@@ -591,7 +592,6 @@
 				4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */,
 				47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */,
 				821C891B2AD6C5FC006DE8F2 /* OptionsTableViewCell.xib in Resources */,
-				82EAA0D82AD8D5E10076C059 /* SettingsViewController.xib in Resources */,
 				820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */,
 				82EAA0F52AE172260076C059 /* CardServiceViewController.xib in Resources */,
 				4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */,
@@ -662,12 +662,12 @@
 				821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */,
 				473A5E092AD50FB800A34CE5 /* UIViewExtension.swift in Sources */,
 				4741B7672AD4FA49006B6264 /* ViewController.swift in Sources */,
+				82162E112AF28CA000C3EACC /* SettingsView.swift in Sources */,
 				82EAA0EA2ADD8AA30076C059 /* TransferTableViewCell.swift in Sources */,
 				4741B7632AD4FA49006B6264 /* AppDelegate.swift in Sources */,
 				820DB4352AE212FE00CB1138 /* AppInforViewController.swift in Sources */,
 				820DB43D2AE21B1700CB1138 /* AppInforEntity.swift in Sources */,
 				821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */,
-				82EAA0D72AD8D5E10076C059 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
