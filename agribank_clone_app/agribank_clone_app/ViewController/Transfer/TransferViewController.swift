@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TransferViewController: UIViewController {
+class TransferViewController: BaseViewController {
 
     @IBOutlet weak var transferCollectionView: UICollectionView!
     
@@ -21,6 +21,14 @@ class TransferViewController: UIViewController {
         super.viewDidLoad()
 
         config()
+        setupNavigationBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.isNavigationBarHidden = false
+        navigationController?.navigationBar.isHidden = false
     }
 
     func config() {
