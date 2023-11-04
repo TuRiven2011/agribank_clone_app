@@ -14,6 +14,8 @@ class OptionsTableViewCell: UITableViewCell {
     let shoppingData : [FinanceEntity] = [.init(title: "Vé máy bay", image: "ic48PxVemaybay_Normal"), .init(title: "Mua sắm VnShop", image: "ic48PxMuasamtructuyen_Normal"), .init(title: "Gọi Taxi", image: "ic48PxTaxi_Normal"), .init(title: "Vé tàu hoả", image: "ic48Datvetau_Normal"), .init(title: "Vé xe", image: "ic48PxDatvexe_Normal"), .init(title: "Vé xem phim", image: "ic48PxVexemphim_Normal"), .init(title: "Đặt hoa", image: "ic48PxDathoa_Normal"), .init(title: "Đặt phòng khách sạn", image: "ic48PxDatphongkhachsan_Normal"), .init(title: "Đặt sân Golf", image: "ic48PxGolf_Normal"), .init(title: "Giao hàng", image: "ic48PxGiaohang_Normal")]
     
     let utilitiesData : [FinanceEntity] = [.init(title: "Cài đặt Soft OTP", image: "ic48PxSoftotp_Normal"), .init(title: "Cài đặt Face ID", image: "ic24PxFaceid_Normal"), .init(title: "Cài đặt hạn mức", image: "ic48PxCaidathanmuc_Normal"), .init(title: "Nhận tin biến động số dư", image: "ic48PxBdsd_Normal"), .init(title: "Cài đặt tài khoản", image: "ic48PxCaidattaikhoan_Normal"), .init(title: "Cài đặt mật khẩu", image: "ic48PxDoimatkhau_Normal"), .init(title: "Quản lý danh bạ", image: "ic48PxQuanlydanhba_Normal"), .init(title: "Thông tin ứng dụng", image: "ic48PxThongtinungdung_Normal"), .init(title: "Tra cứu thông tin", image: "ic48PxThongtinungdung_Normal"), .init(title: "Tìm kiếm địa điểm", image: "ic48PxSes_Normal")]
+    
+    var tapTransferCompletion: (() -> Void)?
 
     @IBOutlet weak var financeCollectionView: UICollectionView!
     
@@ -75,6 +77,14 @@ extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = collectionView.frame.width/3
         return CGSize(width: size, height: size - 20)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == financeCollectionView {
+            if indexPath.row == 0 {
+                tapTransferCompletion?()
+            }
+        }
     }
     
     

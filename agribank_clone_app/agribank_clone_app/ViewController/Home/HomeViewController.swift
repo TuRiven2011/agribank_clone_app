@@ -18,6 +18,20 @@ class HomeViewController: UIViewController {
         setupNavigationBar()
         configTbl()
     }
+//
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//
+//        navigationController?.isNavigationBarHidden = false
+//        navigationController?.navigationBar.isHidden = false
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//
+//        navigationController?.isNavigationBarHidden = true
+//        navigationController?.navigationBar.isHidden = true
+//    }
     
     private func setupNavigationBar() {
 
@@ -120,6 +134,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             
         }
         guard let cell3 = tableView.dequeueReusableCell(withIdentifier: "OptionsTableViewCell") as? OptionsTableViewCell else {return UITableViewCell()}
+        
+        cell3.tapTransferCompletion = {[weak self] in
+            guard let self = self else {return}
+            let vc = TransferViewController()
+            let navi = UINavigationController(rootViewController: vc)
+            self.navigationController?.pushViewController(navi, animated: true)
+        }
         
         if indexPath.row == 0 {
             return cell
