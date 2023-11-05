@@ -22,6 +22,7 @@
 		4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4741B76D2AD4FA4B006B6264 /* LaunchScreen.storyboard */; };
 		475F06D82AF231350055D405 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475F06D72AF231350055D405 /* BaseViewController.swift */; };
 		4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E9A82AF010D000EFE78A /* TabbarViewController.swift */; };
+		479DDABE2AF634D300BF3416 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479DDABD2AF634D300BF3416 /* CommonEnum.swift */; };
 		47BD89BD2AD509730004D093 /* bus_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89BC2AD509730004D093 /* bus_animation.json */; };
 		47BD89BF2AD5097E0004D093 /* dataNewYear6.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89BE2AD5097E0004D093 /* dataNewYear6.json */; };
 		47BD89C12AD509850004D093 /* delivery_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89C02AD509850004D093 /* delivery_animation.json */; };
@@ -92,6 +93,7 @@
 		4741B7702AD4FA4B006B6264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475F06D72AF231350055D405 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4795E9A82AF010D000EFE78A /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		479DDABD2AF634D300BF3416 /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		47BD89952AD4FFFC0004D093 /* SFProDisplay-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-BoldItalic.otf"; sourceTree = "<group>"; };
 		47BD89962AD4FFFC0004D093 /* SFCompactDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Heavy.otf"; sourceTree = "<group>"; };
 		47BD89972AD4FFFC0004D093 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		4741B7612AD4FA49006B6264 /* agribank_clone_app */ = {
 			isa = PBXGroup;
 			children = (
+				479DDABC2AF634BE00BF3416 /* Common */,
 				475F06D62AF231220055D405 /* Base */,
 				821C89252AD6EC6C006DE8F2 /* Model */,
 				473A5E032AD50FB800A34CE5 /* Extension */,
@@ -288,6 +291,14 @@
 				4795E9A82AF010D000EFE78A /* TabbarViewController.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		479DDABC2AF634BE00BF3416 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				479DDABD2AF634D300BF3416 /* CommonEnum.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		47BD89942AD4FFA40004D093 /* Font */ = {
@@ -660,6 +671,7 @@
 				475F06D82AF231350055D405 /* BaseViewController.swift in Sources */,
 				4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
+				479DDABE2AF634D300BF3416 /* CommonEnum.swift in Sources */,
 				82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */,
 				473A5E012AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				473A5E072AD50FB800A34CE5 /* UIColorExtension.swift in Sources */,
