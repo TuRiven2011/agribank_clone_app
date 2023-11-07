@@ -139,8 +139,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell3.tapTransferCompletion = {[weak self] in
             guard let self = self else {return}
             let vc = TransferViewController()
-            let navi = UINavigationController(rootViewController: vc)
-            self.navigationController?.pushViewController(navi, animated: true)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
         if indexPath.row == 0 {
