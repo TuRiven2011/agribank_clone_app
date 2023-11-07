@@ -111,6 +111,7 @@ class HomeViewController: UIViewController {
     
     @objc func openSettings(_ g: UITapGestureRecognizer) {
         let vc = SettingsView()
+        vc.delegate = self
         vc.frame = UIScreen.main.bounds
         UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.addSubview(vc)
         
@@ -155,6 +156,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    
+    
+}
+
+extension HomeViewController: SettingsViewDelegate {
+    func didSelectAtIndex(_ index: Int) {
+        if index == 8 {
+            let vc = AppInforViewController()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
     
     
 }

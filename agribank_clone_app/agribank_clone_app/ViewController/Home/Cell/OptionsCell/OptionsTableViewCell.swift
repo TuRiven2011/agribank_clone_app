@@ -15,6 +15,8 @@ class OptionsTableViewCell: UITableViewCell {
     
     let utilitiesData : [FinanceEntity] = [.init(title: "Cài đặt Soft OTP", image: "ic48PxSoftotp_Normal"), .init(title: "Cài đặt Face ID", image: "ic24PxFaceid_Normal"), .init(title: "Cài đặt hạn mức", image: "ic48PxCaidathanmuc_Normal"), .init(title: "Nhận tin biến động số dư", image: "ic48PxBdsd_Normal"), .init(title: "Cài đặt tài khoản", image: "ic48PxCaidattaikhoan_Normal"), .init(title: "Cài đặt mật khẩu", image: "ic48PxDoimatkhau_Normal"), .init(title: "Quản lý danh bạ", image: "ic48PxQuanlydanhba_Normal"), .init(title: "Thông tin ứng dụng", image: "ic48PxThongtinungdung_Normal"), .init(title: "Tra cứu thông tin", image: "ic48PxThongtinungdung_Normal"), .init(title: "Tìm kiếm địa điểm", image: "ic48PxSes_Normal")]
     
+    let imageData: [String] = ["group6243_Normal", "group17878_Normal", "HienDai2_Normal", "HienDai3_Normal", "HienDai4_Normal"]
+    
     var tapTransferCompletion: (() -> Void)?
 
     @IBOutlet weak var financeCollectionView: UICollectionView!
@@ -23,9 +25,16 @@ class OptionsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var utilitiesCollectionView: UICollectionView!
     
+    @IBOutlet weak var imageCollectionView: UICollectionView!
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configCollectionView()
+        configCollectionView2()
+        configPageControl()
     }
     
     func configCollectionView() {
@@ -44,8 +53,19 @@ class OptionsTableViewCell: UITableViewCell {
         utilitiesCollectionView.delegate = self
         utilitiesCollectionView.dataSource = self
     }
-
     
+    func configCollectionView2() {
+        imageCollectionView.delegate = self
+        imageCollectionView.dataSource = self
+        imageCollectionView.register(.init(nibName: "PageControlCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PageControlCollectionViewCell")
+    }
+    
+    func configPageControl() {
+        pageControl.currentPage = 0
+        pageControl.numberOfPages = imageData.count
+    }
+
+
 }
 
 extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -57,11 +77,21 @@ extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
         if collectionView == shoppingCollectionView {
             return shoppingData.count
         }
-        
-        return utilitiesData.count
+        if collectionView == utilitiesCollectionView {
+            return utilitiesData.count
+        }
+        return imageData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == imageCollectionView {
+            guard let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "PageControlCollectionViewCell", for: indexPath) as? PageControlCollectionViewCell else {return UICollectionViewCell()}
+            if let image = UIImage(named: imageData[indexPath.row]) {
+                cell2.binding(image)
+            }
+            return cell2
+        }
+        
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCustomCollectionViewCell", for: indexPath) as? HomeCustomCollectionViewCell else {return UICollectionViewCell()}
         if collectionView == financeCollectionView {
             cell.binding(financeData[indexPath.row].title, image: financeData[indexPath.row].image)
@@ -70,11 +100,16 @@ extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
         } else {
             cell.binding(utilitiesData[indexPath.row].title, image: utilitiesData[indexPath.row].image)
         }
-    
+        
+        
+
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == imageCollectionView {
+            return collectionView.frame.size
+        }
         let size = collectionView.frame.width/3
         return CGSize(width: size, height: size - 20)
     }
@@ -87,6 +122,10 @@ extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if collectionView != imageCollectionView {return}
+        pageControl.currentPage = indexPath.row
+    }
     
     
 }

@@ -27,3 +27,8 @@ struct beneficiaryListEntity {
     var accountnumber: String
     var bankImage: String
 }
+
+struct AccountInfor {
+    var number: String
+    var surplus: String
+}
