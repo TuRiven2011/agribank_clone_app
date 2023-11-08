@@ -9,6 +9,8 @@ import UIKit
 
 class LoginTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var splashLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     
     var loginCompletion: (() -> Void)?
@@ -27,8 +29,12 @@ class LoginTableViewCell: UITableViewCell {
     func binding() {
         if AppData.isLogin == true {
             loginButton.isHidden = true
+            userNameLabel.isHidden = false
+            splashLabel.isHidden = false
         } else {
             loginButton.isHidden = false
+            userNameLabel.isHidden = true
+            splashLabel.isHidden = true
         }
     }
     

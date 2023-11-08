@@ -21,7 +21,6 @@ class TransferViewController: BaseViewController {
         super.viewDidLoad()
 
         config()
-        setupNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +28,8 @@ class TransferViewController: BaseViewController {
         
         navigationController?.isNavigationBarHidden = false
         navigationController?.navigationBar.isHidden = false
+        
+        setupNavigationBar(title: "Chuyển khoản")
     }
 
     func config() {

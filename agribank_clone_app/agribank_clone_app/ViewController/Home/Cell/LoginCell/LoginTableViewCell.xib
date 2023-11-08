@@ -105,6 +105,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="loginButton" destination="fPu-m0-lnc" id="gSf-z2-KA9"/>
+                <outlet property="splashLabel" destination="YRO-c0-UXD" id="XOh-gQ-Fut"/>
+                <outlet property="userNameLabel" destination="fPA-UK-04h" id="FUd-MO-cks"/>
             </connections>
             <point key="canvasLocation" x="240.45801526717557" y="11.619718309859156"/>
         </tableViewCell>

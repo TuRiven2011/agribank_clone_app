@@ -15,7 +15,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavigationBar()
         configTbl()
     }
 //
@@ -32,6 +31,12 @@ class HomeViewController: UIViewController {
 //        navigationController?.isNavigationBarHidden = true
 //        navigationController?.navigationBar.isHidden = true
 //    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupNavigationBar()
+    }
     
     private func setupNavigationBar() {
 
@@ -52,6 +57,8 @@ class HomeViewController: UIViewController {
             self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         }
+        
+        navigationController?.navigationBar.subviews.forEach({$0.removeFromSuperview()})
         
         let search = UIImageView(image: .init(named: "ic32PxSearch_Normal"))
         search.isUserInteractionEnabled = true
@@ -148,6 +155,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell3.tapTransferCompletion = {[weak self] in
             guard let self = self else {return}
             let vc = TransferViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        cell3.settingAccountCompletion = {[weak self] in
+            guard let self = self else {return}
+            let vc = CreateAccountViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
         

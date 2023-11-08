@@ -14,11 +14,10 @@ class BaseViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        setupNavigationBar()
         
     }
     
-    func setupNavigationBar() {
+    func setupNavigationBar(title: String) {
         
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
@@ -37,11 +36,15 @@ class BaseViewController: UIViewController {
             self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         }
+        
+        navigationController?.navigationBar.subviews.forEach({$0.removeFromSuperview()})
+        self.navigationItem.setHidesBackButton(true, animated: true)
                 
         let back = UIImageView(image: .init(named: "ic_24px_back_Normal"))
         back.isUserInteractionEnabled = true
         back.translatesAutoresizingMaskIntoConstraints = false
         back.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleBack)))
+
         navigationController?.navigationBar.addSubview(back)
         
         if let navigationBar = navigationController?.navigationBar {
@@ -52,6 +55,11 @@ class BaseViewController: UIViewController {
                 back.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -10),
             ].forEach({$0.isActive = true})
         }
+        
+        let backButtonItem = UIBarButtonItem(customView: back)
+        
+        navigationController?.navigationItem.leftBarButtonItem = backButtonItem
+        navigationItem.title = title
         
         
     }

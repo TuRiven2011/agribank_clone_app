@@ -18,6 +18,7 @@ class OptionsTableViewCell: UITableViewCell {
     let imageData: [String] = ["group6243_Normal", "group17878_Normal", "HienDai2_Normal", "HienDai3_Normal", "HienDai4_Normal"]
     
     var tapTransferCompletion: (() -> Void)?
+    var settingAccountCompletion: (() -> Void)?
 
     @IBOutlet weak var financeCollectionView: UICollectionView!
     
@@ -118,6 +119,10 @@ extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
         if collectionView == financeCollectionView {
             if indexPath.row == 0 {
                 tapTransferCompletion?()
+            }
+        } else if collectionView == utilitiesCollectionView {
+            if indexPath.row == 4 {
+                settingAccountCompletion?()
             }
         }
     }
