@@ -1,10 +1,3 @@
-//
-//  BaseViewController.swift
-//  agribank_clone_app
-//
-//  Created by Phạm Bá Tú on 01/11/2023.
-//
-
 import UIKit
 
 class BaseViewController: UIViewController {

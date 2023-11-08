@@ -1,10 +1,3 @@
-//
-//  MainTabbarController.swift
-//  agribank_clone_app
-//
-//  Created by Phạm Bá Tú on 30/10/2023.
-//
-
 import UIKit
 
 class TabbarViewController: UITabBarController {
