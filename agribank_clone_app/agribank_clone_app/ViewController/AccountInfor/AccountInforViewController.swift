@@ -9,15 +9,14 @@ import UIKit
 
 class AccountInforViewController: BaseViewController {
     
+    @IBOutlet weak var nickNameManagerButton: UIButton!
     @IBOutlet weak var accoutNumberLbl: UILabel!
     @IBOutlet weak var accountSurplusLbl: UILabel!
-    
-    let dataAccount = AccountInfor.init(number: "12004240240404", surplus: "304,900 VND")
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setTextForLbl()
+        configUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,9 +25,20 @@ class AccountInforViewController: BaseViewController {
         setupNavigationBar(title: "Thông tin tài khoản")
     }
     
-    func setTextForLbl() {
-        accoutNumberLbl.text = dataAccount.number
-        accountSurplusLbl.text = dataAccount.surplus
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        nickNameManagerButton.applyGradient(colours: [.init(rgb: 0xffDF8B31), .init(rgb: 0xffC46826)],
+                                            start: .init(x: 0, y: 0),
+                                            end: .init(x: 1, y: 0))
+    }
+    
+    func configUI() {
+        accoutNumberLbl.text = AppData.account?.numberAccount ?? ""
+        if let balance = AppData.account?.balance {
+            accountSurplusLbl.text = "\(String(describing: balance.addComma()) ) VND"
+        }
+        nickNameManagerButton.layer.cornerRadius = 25
+        nickNameManagerButton.layer.masksToBounds = true
     }
 
 

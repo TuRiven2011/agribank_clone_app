@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="balanceLabel" destination="QKm-IT-YGQ" id="6KC-vG-hDi"/>
                 <outlet property="numberAccount" destination="vFb-mu-xMr" id="Vpf-Kd-IkX"/>
+                <outlet property="openBranchTextField" destination="Upe-8y-849" id="aCU-r8-7Md"/>
                 <outlet property="userNameLabel" destination="VWx-ys-5Jf" id="Htc-SG-1Jx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,7 +27,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17O-bY-383">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="348.33333333333331"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="398.33333333333331"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tạo tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CP-xO-aDP">
                                     <rect key="frame" x="146" y="60.000000000000007" width="101" height="20.333333333333336"/>
@@ -35,7 +36,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="qBM-rg-p3g">
-                                    <rect key="frame" x="10" y="100.33333333333331" width="373" height="144"/>
+                                    <rect key="frame" x="10" y="100.33333333333331" width="373" height="194"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên Đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWx-ys-5Jf">
                                             <rect key="frame" x="0.0" y="0.0" width="373" height="44"/>
@@ -61,10 +62,18 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chi nhánh mở" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-8y-849">
+                                            <rect key="frame" x="0.0" y="150" width="373" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="sXu-xT-kS0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                     </subviews>
                                 </stackView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J17-gw-eCB">
-                                    <rect key="frame" x="20" y="274.33333333333331" width="353" height="44"/>
+                                    <rect key="frame" x="20" y="324.33333333333331" width="353" height="44"/>
                                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="fdu-Jc-Kl5"/>

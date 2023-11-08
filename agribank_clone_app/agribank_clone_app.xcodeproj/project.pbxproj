@@ -42,6 +42,9 @@
 		47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CB2AD50AAD0004D093 /* golf_animation.json */; };
 		47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CC2AD50AAD0004D093 /* taxi_animation.json */; };
 		47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89CD2AD50AAD0004D093 /* TaxiAnimation.json */; };
+		47DA8E242AFB6B4200498E91 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA8E232AFB6B4200498E91 /* IntExtension.swift */; };
+		47DA8E282AFB6FCE00498E91 /* DetailAccountInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA8E262AFB6FCE00498E91 /* DetailAccountInforViewController.swift */; };
+		47DA8E292AFB6FCE00498E91 /* DetailAccountInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */; };
 		820DB4352AE212FE00CB1138 /* AppInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB4332AE212FE00CB1138 /* AppInforViewController.swift */; };
 		820DB4362AE212FE00CB1138 /* AppInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 820DB4342AE212FE00CB1138 /* AppInforViewController.xib */; };
 		820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */; };
@@ -161,6 +164,9 @@
 		47BD89CB2AD50AAD0004D093 /* golf_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = golf_animation.json; sourceTree = "<group>"; };
 		47BD89CC2AD50AAD0004D093 /* taxi_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = taxi_animation.json; sourceTree = "<group>"; };
 		47BD89CD2AD50AAD0004D093 /* TaxiAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TaxiAnimation.json; sourceTree = "<group>"; };
+		47DA8E232AFB6B4200498E91 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		47DA8E262AFB6FCE00498E91 /* DetailAccountInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountInforViewController.swift; sourceTree = "<group>"; };
+		47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAccountInforViewController.xib; sourceTree = "<group>"; };
 		820DB4332AE212FE00CB1138 /* AppInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforViewController.swift; sourceTree = "<group>"; };
 		820DB4342AE212FE00CB1138 /* AppInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInforViewController.xib; sourceTree = "<group>"; };
 		820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforTableViewCell.swift; sourceTree = "<group>"; };
@@ -244,6 +250,7 @@
 				473A5E042AD50FB800A34CE5 /* UIColorExtension.swift */,
 				473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */,
 				473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */,
+				47DA8E232AFB6B4200498E91 /* IntExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -258,6 +265,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				47DA8E252AFB6FC100498E91 /* DetailAccountInfor */,
 				471E5ED52AFB1C8D00BB0278 /* CreateAccount */,
 				82C4BB172AFA780F003D4F3B /* AccountInfor */,
 				4795E9A72AF010B400EFE78A /* Tabbar */,
@@ -409,6 +417,15 @@
 				47BD89C32AD509F50004D093 /* notify.mp3 */,
 			);
 			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		47DA8E252AFB6FC100498E91 /* DetailAccountInfor */ = {
+			isa = PBXGroup;
+			children = (
+				47DA8E262AFB6FCE00498E91 /* DetailAccountInforViewController.swift */,
+				47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */,
+			);
+			path = DetailAccountInfor;
 			sourceTree = "<group>";
 		};
 		820DB4322AE212B500CB1138 /* AppInfor */ = {
@@ -668,6 +685,7 @@
 				47BD89D32AD50AAD0004D093 /* loading.json in Resources */,
 				4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */,
 				82162E1A2AF93A7300C3EACC /* PageControlCollectionViewCell.xib in Resources */,
+				47DA8E292AFB6FCE00498E91 /* DetailAccountInforViewController.xib in Resources */,
 				47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */,
 				821C891B2AD6C5FC006DE8F2 /* OptionsTableViewCell.xib in Resources */,
 				820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */,
@@ -753,6 +771,8 @@
 				471E5EDF2AFB1ECE00BB0278 /* Storage.swift in Sources */,
 				4741B7632AD4FA49006B6264 /* AppDelegate.swift in Sources */,
 				820DB4352AE212FE00CB1138 /* AppInforViewController.swift in Sources */,
+				47DA8E242AFB6B4200498E91 /* IntExtension.swift in Sources */,
+				47DA8E282AFB6FCE00498E91 /* DetailAccountInforViewController.swift in Sources */,
 				820DB43D2AE21B1700CB1138 /* AppInforEntity.swift in Sources */,
 				82C4BB1B2AFA7838003D4F3B /* AccountInforViewController.swift in Sources */,
 				821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */,
