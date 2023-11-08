@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -177,7 +177,7 @@
                 <constraint firstItem="TSh-5Z-Bd1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="b4w-gd-QXa"/>
                 <constraint firstItem="TSh-5Z-Bd1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="hBQ-3N-KAN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bEb-MT-6lG" secondAttribute="trailing" constant="15" id="jfq-bw-njz"/>
-                <constraint firstAttribute="bottom" secondItem="ftw-45-391" secondAttribute="bottom" constant="50" id="rD4-Pe-0FQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ftw-45-391" secondAttribute="bottom" constant="16" id="rD4-Pe-0FQ"/>
             </constraints>
             <point key="canvasLocation" x="125.95419847328243" y="-12.67605633802817"/>
         </view>

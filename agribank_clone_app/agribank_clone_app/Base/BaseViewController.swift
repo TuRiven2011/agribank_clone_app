@@ -15,7 +15,7 @@ class BaseViewController: UIViewController {
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithDefaultBackground()
-            appearance.backgroundColor = .yellow
+            appearance.backgroundColor = .init(rgb: 0xffDC8630)
             appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             
@@ -24,6 +24,7 @@ class BaseViewController: UIViewController {
             navigationController?.navigationBar.compactAppearance = appearance
             
         } else {
+            self.navigationController?.navigationBar.backgroundColor = .init(rgb: 0xffDC8630)
             self.navigationController?.navigationBar.tintColor = .white
             self.navigationController?.navigationBar.barTintColor = .white
             self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]

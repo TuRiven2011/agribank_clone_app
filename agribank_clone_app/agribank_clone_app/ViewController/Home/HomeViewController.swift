@@ -150,6 +150,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
             
         }
+        
+        cell2.accountInforCompletion = {[weak self] in
+            
+            guard let self = self else {return}
+            let vc = AccountInforViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        
         guard let cell3 = tableView.dequeueReusableCell(withIdentifier: "OptionsTableViewCell") as? OptionsTableViewCell else {return UITableViewCell()}
         
         cell3.tapTransferCompletion = {[weak self] in

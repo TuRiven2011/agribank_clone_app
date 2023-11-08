@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CardServiceViewController: UIViewController {
+class CardServiceViewController: BaseViewController {
     
     @IBOutlet weak var cardServiceCollectionView: UICollectionView!
     
@@ -17,6 +17,12 @@ class CardServiceViewController: UIViewController {
         super.viewDidLoad()
         
         configCollectionView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupNavigationBar(title: "Dịch vụ thẻ")
     }
     
     func configCollectionView() {

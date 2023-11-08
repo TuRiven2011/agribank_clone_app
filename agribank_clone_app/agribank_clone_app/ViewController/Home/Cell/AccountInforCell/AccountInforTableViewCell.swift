@@ -2,13 +2,13 @@ import UIKit
 
 class AccountInforTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var accountInforView: UIView!
     @IBOutlet weak var cardServiceView: UIView!
-    
     @IBOutlet weak var imageCollectionView: UICollectionView!
-    
     @IBOutlet weak var pageControl: UIPageControl!
     
     var tapCardServiceCompletion: (() -> Void)?
+    var accountInforCompletion: (() -> Void)?
     
     let data: [String] = ["group6243_Normal", "group17878_Normal", "HienDai2_Normal", "HienDai3_Normal", "HienDai4_Normal"]
     
@@ -29,6 +29,7 @@ class AccountInforTableViewCell: UITableViewCell {
     
     func configGesture() {
         cardServiceView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleCardService)))
+        accountInforView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleAccountInfor)))
     }
     
     func configCollectionView() {
@@ -47,6 +48,10 @@ class AccountInforTableViewCell: UITableViewCell {
 extension AccountInforTableViewCell {
     @objc func handleCardService() {
         tapCardServiceCompletion?()
+    }
+    
+    @objc func handleAccountInfor() {
+        accountInforCompletion?()
     }
 }
 

@@ -7,10 +7,9 @@
 
 import UIKit
 
-class AccountInforViewController: UIViewController {
+class AccountInforViewController: BaseViewController {
     
     @IBOutlet weak var accoutNumberLbl: UILabel!
-    
     @IBOutlet weak var accountSurplusLbl: UILabel!
     
     let dataAccount = AccountInfor.init(number: "12004240240404", surplus: "304,900 VND")
@@ -19,6 +18,12 @@ class AccountInforViewController: UIViewController {
         super.viewDidLoad()
 
         setTextForLbl()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupNavigationBar(title: "Thông tin tài khoản")
     }
     
     func setTextForLbl() {
