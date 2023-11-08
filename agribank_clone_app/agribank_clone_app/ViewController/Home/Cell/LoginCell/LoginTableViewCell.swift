@@ -8,20 +8,33 @@
 import UIKit
 
 class LoginTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    var loginCompletion: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
+    func binding() {
+        if AppData.isLogin == true {
+            loginButton.isHidden = true
+        } else {
+            loginButton.isHidden = false
+        }
+    }
+    
     @IBAction func loginBtn(_ sender: Any) {
-
+        AppData.isLogin = true
+        loginCompletion?()
     }
     
     

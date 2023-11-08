@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountViewController" customModule="agribank_clone_app" customModuleProvider="target">
+            <connections>
+                <outlet property="balanceLabel" destination="QKm-IT-YGQ" id="6KC-vG-hDi"/>
+                <outlet property="numberAccount" destination="vFb-mu-xMr" id="Vpf-Kd-IkX"/>
+                <outlet property="userNameLabel" destination="VWx-ys-5Jf" id="Htc-SG-1Jx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlC-qy-5oi">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17O-bY-383">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="348.33333333333331"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tạo tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CP-xO-aDP">
+                                    <rect key="frame" x="146" y="60.000000000000007" width="101" height="20.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="qBM-rg-p3g">
+                                    <rect key="frame" x="10" y="100.33333333333331" width="373" height="144"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên Đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWx-ys-5Jf">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="AAd-bh-IAx"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số tài khoản" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vFb-mu-xMr">
+                                            <rect key="frame" x="0.0" y="50.000000000000014" width="373" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="OLU-pq-8ur"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số dư" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKm-IT-YGQ">
+                                            <rect key="frame" x="0.0" y="100.00000000000001" width="373" height="43.999999999999986"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="29Q-Ns-nG4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J17-gw-eCB">
+                                    <rect key="frame" x="20" y="274.33333333333331" width="353" height="44"/>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="fdu-Jc-Kl5"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Xong">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doneTap:" destination="-1" eventType="touchUpInside" id="ZtY-Vw-Klj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="qBM-rg-p3g" firstAttribute="top" secondItem="3CP-xO-aDP" secondAttribute="bottom" constant="20" id="3TE-2U-GSv"/>
+                                <constraint firstItem="3CP-xO-aDP" firstAttribute="top" secondItem="17O-bY-383" secondAttribute="top" constant="60" id="COB-hZ-DB9"/>
+                                <constraint firstItem="3CP-xO-aDP" firstAttribute="centerX" secondItem="17O-bY-383" secondAttribute="centerX" id="Mcn-jZ-P6f"/>
+                                <constraint firstItem="qBM-rg-p3g" firstAttribute="leading" secondItem="17O-bY-383" secondAttribute="leading" constant="10" id="Pu6-KA-Jnf"/>
+                                <constraint firstAttribute="bottom" secondItem="J17-gw-eCB" secondAttribute="bottom" constant="30" id="Tov-sj-2v2"/>
+                                <constraint firstAttribute="trailing" secondItem="qBM-rg-p3g" secondAttribute="trailing" constant="10" id="cQy-4V-aaH"/>
+                                <constraint firstItem="J17-gw-eCB" firstAttribute="leading" secondItem="17O-bY-383" secondAttribute="leading" constant="20" id="ce8-e5-iSj"/>
+                                <constraint firstItem="3CP-xO-aDP" firstAttribute="centerX" secondItem="17O-bY-383" secondAttribute="centerX" id="ekO-sZ-ADy"/>
+                                <constraint firstItem="J17-gw-eCB" firstAttribute="top" secondItem="qBM-rg-p3g" secondAttribute="bottom" constant="30" id="f9V-N0-kAQ"/>
+                                <constraint firstAttribute="trailing" secondItem="J17-gw-eCB" secondAttribute="trailing" constant="20" id="fb8-Rl-XYU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="17O-bY-383" secondAttribute="bottom" id="cJm-mp-dlQ"/>
+                        <constraint firstAttribute="trailing" secondItem="17O-bY-383" secondAttribute="trailing" id="fC9-mZ-3mB"/>
+                        <constraint firstItem="17O-bY-383" firstAttribute="width" secondItem="JlC-qy-5oi" secondAttribute="width" id="oPd-nZ-YFL"/>
+                        <constraint firstItem="17O-bY-383" firstAttribute="leading" secondItem="JlC-qy-5oi" secondAttribute="leading" id="p4Y-CZ-Z8E"/>
+                        <constraint firstItem="17O-bY-383" firstAttribute="top" secondItem="JlC-qy-5oi" secondAttribute="top" id="yMm-lb-mkE"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JlC-qy-5oi" secondAttribute="bottom" id="BzR-Ph-L74"/>
+                <constraint firstItem="JlC-qy-5oi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aDy-F1-MNl"/>
+                <constraint firstAttribute="trailing" secondItem="JlC-qy-5oi" secondAttribute="trailing" id="koi-oJ-p0x"/>
+                <constraint firstItem="JlC-qy-5oi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tsk-YA-qta"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

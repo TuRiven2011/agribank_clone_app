@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471E5ED82AFB1CA600BB0278 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5ED62AFB1CA600BB0278 /* CreateAccountViewController.swift */; };
+		471E5ED92AFB1CA600BB0278 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471E5ED72AFB1CA600BB0278 /* CreateAccountViewController.xib */; };
+		471E5EDD2AFB1ECE00BB0278 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5EDA2AFB1ECE00BB0278 /* CommonUtils.swift */; };
+		471E5EDE2AFB1ECE00BB0278 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5EDB2AFB1ECE00BB0278 /* Constant.swift */; };
+		471E5EDF2AFB1ECE00BB0278 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5EDC2AFB1ECE00BB0278 /* Storage.swift */; };
+		471E5EE12AFB1F4600BB0278 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5EE02AFB1F4600BB0278 /* AccountModel.swift */; };
 		473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A5DF72AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m */; };
 		473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A5DFA2AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m */; };
 		473A5E012AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 473A5DFC2AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m */; };
@@ -74,6 +80,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471E5ED62AFB1CA600BB0278 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		471E5ED72AFB1CA600BB0278 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		471E5EDA2AFB1ECE00BB0278 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		471E5EDB2AFB1ECE00BB0278 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		471E5EDC2AFB1ECE00BB0278 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		471E5EE02AFB1F4600BB0278 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		473A5DF52AD50F9300A34CE5 /* agribank_clone_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "agribank_clone_app-Bridging-Header.h"; sourceTree = "<group>"; };
 		473A5DF62AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		473A5DF72AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
@@ -200,6 +212,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		471E5ED52AFB1C8D00BB0278 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				471E5ED62AFB1CA600BB0278 /* CreateAccountViewController.swift */,
+				471E5ED72AFB1CA600BB0278 /* CreateAccountViewController.xib */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
 		473A5DF42AD50F6500A34CE5 /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +258,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				471E5ED52AFB1C8D00BB0278 /* CreateAccount */,
 				82C4BB172AFA780F003D4F3B /* AccountInfor */,
 				4795E9A72AF010B400EFE78A /* Tabbar */,
 				820DB4322AE212B500CB1138 /* AppInfor */,
@@ -306,6 +328,9 @@
 			isa = PBXGroup;
 			children = (
 				479DDABD2AF634D300BF3416 /* CommonEnum.swift */,
+				471E5EDA2AFB1ECE00BB0278 /* CommonUtils.swift */,
+				471E5EDB2AFB1ECE00BB0278 /* Constant.swift */,
+				471E5EDC2AFB1ECE00BB0278 /* Storage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -478,6 +503,7 @@
 			children = (
 				821C89262AD6EC80006DE8F2 /* HomeEntity.swift */,
 				820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */,
+				471E5EE02AFB1F4600BB0278 /* AccountModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -628,6 +654,7 @@
 			files = (
 				47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */,
 				47BD89C12AD509850004D093 /* delivery_animation.json in Resources */,
+				471E5ED92AFB1CA600BB0278 /* CreateAccountViewController.xib in Resources */,
 				82162E152AF28D6B00C3EACC /* SettingsView.xib in Resources */,
 				47BD89D12AD50AAD0004D093 /* flower_animation.json in Resources */,
 				821C89172AD6C5E6006DE8F2 /* LoginTableViewCell.xib in Resources */,
@@ -694,6 +721,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */,
+				471E5EDE2AFB1ECE00BB0278 /* Constant.swift in Sources */,
 				821C891A2AD6C5FC006DE8F2 /* OptionsTableViewCell.swift in Sources */,
 				821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */,
 				820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */,
@@ -711,14 +739,18 @@
 				473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */,
 				473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */,
 				82EAA0E12ADD7A150076C059 /* TransferViewController.swift in Sources */,
+				471E5EE12AFB1F4600BB0278 /* AccountModel.swift in Sources */,
 				821C891E2AD6C60A006DE8F2 /* PageVCTableViewCell.swift in Sources */,
 				473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				471E5ED82AFB1CA600BB0278 /* CreateAccountViewController.swift in Sources */,
 				821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */,
 				82162E192AF93A7300C3EACC /* PageControlCollectionViewCell.swift in Sources */,
 				473A5E092AD50FB800A34CE5 /* UIViewExtension.swift in Sources */,
 				4741B7672AD4FA49006B6264 /* ViewController.swift in Sources */,
+				471E5EDD2AFB1ECE00BB0278 /* CommonUtils.swift in Sources */,
 				82162E112AF28CA000C3EACC /* SettingsView.swift in Sources */,
 				82EAA0EA2ADD8AA30076C059 /* TransferTableViewCell.swift in Sources */,
+				471E5EDF2AFB1ECE00BB0278 /* Storage.swift in Sources */,
 				4741B7632AD4FA49006B6264 /* AppDelegate.swift in Sources */,
 				820DB4352AE212FE00CB1138 /* AppInforViewController.swift in Sources */,
 				820DB43D2AE21B1700CB1138 /* AppInforEntity.swift in Sources */,

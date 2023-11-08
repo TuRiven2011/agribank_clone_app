@@ -126,6 +126,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "LoginTableViewCell") as? LoginTableViewCell else {return UITableViewCell()}
+        
+        cell.binding()
+        
+        cell.loginCompletion = {[weak self] in
+            guard let self = self else {return}
+            
+            tableView.reloadData()
+        }
+        
         guard let cell2 = tableView.dequeueReusableCell(withIdentifier: "AccountInforTableViewCell") as? AccountInforTableViewCell else {return UITableViewCell()}
         cell2.tapCardServiceCompletion = {[weak self] in
             
