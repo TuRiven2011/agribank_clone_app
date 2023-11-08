@@ -1,9 +1,3 @@
-//
-//  CreateAccountViewController.swift
-//  agribank_clone_app
-//
-//  Created by Phạm Bá Tú on 08/11/2023.
-//
 
 import UIKit
 
