@@ -33,6 +33,10 @@ final class AppNavigator: AppNavigatorType {
 //        switchTo(viewController: UINavigationController(rootViewController: vc))
     }
     
+    func switchToTransferHistory() {
+        
+    }
+    
     func switchToMain() {
         let vc = TabbarViewController()
         switchTo(viewController: vc)

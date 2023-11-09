@@ -73,6 +73,7 @@ class HomeViewController: UIViewController {
                 search.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -10),
             ].forEach({$0.isActive = true})
         }
+        search.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openSearchFeatureVC)))
         
         let menu = UIImageView(image: .init(named: "ic32PxRightmenu_Normal"))
         menu.isUserInteractionEnabled = true
@@ -115,7 +116,9 @@ class HomeViewController: UIViewController {
         tableview.rowHeight = UITableView.automaticDimension
         tableview.estimatedRowHeight = 200
     }
-    
+}
+
+extension HomeViewController {
     @objc func openSettings(_ g: UITapGestureRecognizer) {
         let vc = SettingsView()
         vc.delegate = self
@@ -124,6 +127,10 @@ class HomeViewController: UIViewController {
         
     }
     
+    @objc func openSearchFeatureVC() {
+        let vc = SearchFeatureViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -137,7 +144,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.binding()
         
         cell.loginCompletion = {[weak self] in
-            guard let self = self else {return}
+            guard self != nil else {return}
             
             tableView.reloadData()
         }
