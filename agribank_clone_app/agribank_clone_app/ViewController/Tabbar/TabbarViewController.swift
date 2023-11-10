@@ -49,7 +49,7 @@ class TabbarViewController: UITabBarController {
     
     private func initItem() {
         let tab1NavigationController = UINavigationController(rootViewController: HomeViewController())
-        let tab2NavigationController = UINavigationController(rootViewController: ViewController())
+        let tab2NavigationController = UINavigationController(rootViewController: NotificationViewController())
         let tab3NavigationController = UINavigationController(rootViewController: ViewController())
         let tab4NavigationController = UINavigationController(rootViewController: ViewController())
         let tab5NavigationController = UINavigationController(rootViewController: ViewController())

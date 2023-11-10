@@ -38,7 +38,6 @@ class BaseViewController: UIViewController {
         back.isUserInteractionEnabled = true
         back.translatesAutoresizingMaskIntoConstraints = false
         back.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleBack)))
-
         navigationController?.navigationBar.addSubview(back)
         
         if let navigationBar = navigationController?.navigationBar {
