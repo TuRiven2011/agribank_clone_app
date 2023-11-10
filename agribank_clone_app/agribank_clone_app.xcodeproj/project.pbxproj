@@ -53,6 +53,8 @@
 		47DA8E242AFB6B4200498E91 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA8E232AFB6B4200498E91 /* IntExtension.swift */; };
 		47DA8E282AFB6FCE00498E91 /* DetailAccountInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA8E262AFB6FCE00498E91 /* DetailAccountInforViewController.swift */; };
 		47DA8E292AFB6FCE00498E91 /* DetailAccountInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */; };
+		769E7E542AFE3DDA00E44818 /* ContentNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */; };
+		769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */; };
 		76D1333A2AFDD0920056CC4A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D133382AFDD0920056CC4A /* NotificationViewController.swift */; };
 		76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D133392AFDD0920056CC4A /* NotificationViewController.xib */; };
 		76D1333E2AFDD2320056CC4A /* BalanceNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */; };
@@ -193,6 +195,8 @@
 		47DA8E232AFB6B4200498E91 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		47DA8E262AFB6FCE00498E91 /* DetailAccountInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountInforViewController.swift; sourceTree = "<group>"; };
 		47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAccountInforViewController.xib; sourceTree = "<group>"; };
+		769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNotificationViewController.swift; sourceTree = "<group>"; };
+		769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentNotificationViewController.xib; sourceTree = "<group>"; };
 		76D133382AFDD0920056CC4A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		76D133392AFDD0920056CC4A /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNotificationModel.swift; sourceTree = "<group>"; };
@@ -506,9 +510,19 @@
 			path = DetailAccountInfor;
 			sourceTree = "<group>";
 		};
+		769E7E512AFE3DC100E44818 /* ContentNotification */ = {
+			isa = PBXGroup;
+			children = (
+				769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */,
+				769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */,
+			);
+			path = ContentNotification;
+			sourceTree = "<group>";
+		};
 		76D133372AFDD0800056CC4A /* Notification */ = {
 			isa = PBXGroup;
 			children = (
+				769E7E512AFE3DC100E44818 /* ContentNotification */,
 				76D1333C2AFDD11A0056CC4A /* Cell */,
 				76D133382AFDD0920056CC4A /* NotificationViewController.swift */,
 				76D133392AFDD0920056CC4A /* NotificationViewController.xib */,
@@ -825,6 +839,7 @@
 				821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */,
 				47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */,
 				47854F812AFC952900472D88 /* SearchFeatureCollectionViewCell.xib in Resources */,
+				769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */,
 				47BD89BF2AD5097E0004D093 /* dataNewYear6.json in Resources */,
 				821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */,
 				821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */,
@@ -881,6 +896,7 @@
 				76D1333A2AFDD0920056CC4A /* NotificationViewController.swift in Sources */,
 				47854F862AFC9DDE00472D88 /* SuggestHeader.swift in Sources */,
 				820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */,
+				769E7E542AFE3DDA00E44818 /* ContentNotificationViewController.swift in Sources */,
 				82EAA0E62ADD7D040076C059 /* TransferCollectionViewCell.swift in Sources */,
 				475F06D82AF231350055D405 /* BaseViewController.swift in Sources */,
 				76D1334B2AFDDB920056CC4A /* UIImageExtension.swift in Sources */,

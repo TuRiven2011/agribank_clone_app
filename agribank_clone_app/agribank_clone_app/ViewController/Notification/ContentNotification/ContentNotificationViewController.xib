@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController" customModule="agribank_clone_app" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentNotificationViewController" customModule="agribank_clone_app" customModuleProvider="target">
             <connections>
-                <outlet property="searchNotificationTextField" destination="bwX-E7-yh7" id="U1V-2u-1Rj"/>
+                <outlet property="contentTableView" destination="fpW-os-c4w" id="Lzs-uJ-x71"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,23 +20,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwX-E7-yh7">
-                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="q0T-0z-O0m"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fpW-os-c4w">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="bwX-E7-yh7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="S0p-t9-I2D"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bwX-E7-yh7" secondAttribute="trailing" id="ZPk-EO-lHw"/>
-                <constraint firstItem="bwX-E7-yh7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="beB-C9-McG"/>
+                <constraint firstItem="fpW-os-c4w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="L9X-uL-LYM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fpW-os-c4w" secondAttribute="trailing" id="Mks-Y4-8dI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fpW-os-c4w" secondAttribute="bottom" id="MpI-sY-3Ih"/>
+                <constraint firstItem="fpW-os-c4w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vNl-sY-JlZ"/>
             </constraints>
-            <point key="canvasLocation" x="21" y="21"/>
+            <point key="canvasLocation" x="138" y="21"/>
         </view>
     </objects>
     <resources>

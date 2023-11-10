@@ -3,12 +3,25 @@ import UIKit
 class NotificationViewController: BaseViewController {
     
     @IBOutlet weak var searchNotificationTextField: UITextField!
-    @IBOutlet weak var notificationTableView: UITableView!
+    
+    var pageViewController: UIPageViewController?
+    var currentIndex = 0
+    let balanceVC = ContentNotificationViewController()
+    let dealVC = ContentNotificationViewController()
+    let otherVC = ContentNotificationViewController()
+    let segment = SegmentedControl(cornerRadius: 17)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupPageVC()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupNavigationBar(title: "Thông tin agribank".uppercased())
     }
     
     override func setupNavigationBar(title: String) {
@@ -42,11 +55,10 @@ class NotificationViewController: BaseViewController {
         navigationController?.navigationBar.addSubview(back)
         let backButtonItem = UIBarButtonItem(customView: back)
         navigationController?.navigationItem.leftBarButtonItem = backButtonItem
-
-        let segment = SegmentedControl(cornerRadius: 17)
-        segment.insertSegment(withTitle: "Biến động SD", at: 0, animated: true)
-        segment.insertSegment(withTitle: "Khuyến mãi", at: 1, animated: true)
-        segment.insertSegment(withTitle: "Tin khác", at: 2, animated: true)
+        
+        segment.insertSegment(withTitle: NotificationTypeEnum.balance.title, at: 0, animated: true)
+        segment.insertSegment(withTitle: NotificationTypeEnum.deal.title, at: 1, animated: true)
+        segment.insertSegment(withTitle: NotificationTypeEnum.other.title, at: 2, animated: true)
         segment.selectedSegmentIndex = 0
         segment.backgroundColor = .init(rgb: 0xffE9AE60)
         segment.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
@@ -56,6 +68,7 @@ class NotificationViewController: BaseViewController {
         segment.layer.cornerRadius = 20
         segment.layer.masksToBounds = true
         segment.translatesAutoresizingMaskIntoConstraints = false
+        segment.addTarget(self, action: #selector(segmentedControlValueChanged(_ :)), for: .valueChanged)
         navigationController?.navigationBar.addSubview(segment)
         
         let titleLabel = UILabel()
@@ -83,13 +96,108 @@ class NotificationViewController: BaseViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    private func setupLayout() {
         
-        setupNavigationBar(title: "Thông tin agribank".uppercased())
+    }
+    
+    private func setupPageVC() {
+        
+        pageViewController = .init(transitionStyle: .scroll,
+                                   navigationOrientation: .horizontal,
+                                   options: nil)
+        guard let pageViewController = pageViewController else {return}
+        
+        pageViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        pageViewController.dataSource = self
+        pageViewController.delegate = self
+        
+        let viewControllers = [balanceVC]
+        pageViewController.setViewControllers(viewControllers,
+                                              direction: .forward,
+                                              animated: true,
+                                              completion: nil)
+        self.view.addSubview(pageViewController.view)
+        self.addChild(pageViewController)
+        pageViewController.didMove(toParent: self)
+        
+        [
+            pageViewController.view.topAnchor.constraint(equalTo: searchNotificationTextField.bottomAnchor),
+            pageViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            pageViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            pageViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ].forEach({$0.isActive = true})
     }
     
     
+}
+
+extension NotificationViewController {
+    @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            pageViewController?.setViewControllers([balanceVC],
+                                                   direction: .reverse,
+                                                   animated: true)
+        } else if sender.selectedSegmentIndex == 1 {
+            if sender.selectedSegmentIndex < currentIndex {
+                pageViewController?.setViewControllers([dealVC],
+                                                       direction: .reverse,
+                                                       animated: true)
+            } else {
+                pageViewController?.setViewControllers([dealVC],
+                                                       direction: .forward,
+                                                       animated: true)
+            }
+        } else if sender.selectedSegmentIndex == 2 {
+            pageViewController?.setViewControllers([otherVC],
+                                                   direction: .forward,
+                                                   animated: true)
+        }
+        currentIndex = sender.selectedSegmentIndex
+    }
+}
+
+extension NotificationViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        if viewController == dealVC {
+            return balanceVC
+        } else if viewController == otherVC {
+            return dealVC
+        } else {
+            return nil
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?  {
+        if viewController == balanceVC {
+            return dealVC
+        } else if viewController == dealVC {
+            return otherVC
+        } else {
+            return nil
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        guard let vc = previousViewControllers.first else {return}
+        if completed {
+            switch vc {
+            case balanceVC:
+                segment.selectedSegmentIndex = 1
+            case dealVC:
+                if pageViewController.viewControllers?.first == otherVC {
+                    segment.selectedSegmentIndex = 2
+                } else {
+                    segment.selectedSegmentIndex = 0
+                }
+            case otherVC:
+                segment.selectedSegmentIndex = 1
+            default:
+                break
+            }
+            
+            currentIndex = segment.selectedSegmentIndex
+        }
+    }
 }
 
 final class SegmentedControl: UISegmentedControl {
