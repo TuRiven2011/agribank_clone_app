@@ -53,6 +53,18 @@
 		47DA8E242AFB6B4200498E91 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA8E232AFB6B4200498E91 /* IntExtension.swift */; };
 		47DA8E282AFB6FCE00498E91 /* DetailAccountInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA8E262AFB6FCE00498E91 /* DetailAccountInforViewController.swift */; };
 		47DA8E292AFB6FCE00498E91 /* DetailAccountInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */; };
+		769E7E542AFE3DDA00E44818 /* ContentNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */; };
+		769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */; };
+		76D1333A2AFDD0920056CC4A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D133382AFDD0920056CC4A /* NotificationViewController.swift */; };
+		76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D133392AFDD0920056CC4A /* NotificationViewController.xib */; };
+		76D1333E2AFDD2320056CC4A /* BalanceNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */; };
+		76D133422AFDD2970056CC4A /* BalanceNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D133402AFDD2970056CC4A /* BalanceNotificationTableViewCell.swift */; };
+		76D133432AFDD2970056CC4A /* BalanceNotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D133412AFDD2970056CC4A /* BalanceNotificationTableViewCell.xib */; };
+		76D133472AFDD2A80056CC4A /* DealNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D133452AFDD2A80056CC4A /* DealNotificationTableViewCell.swift */; };
+		76D133482AFDD2A80056CC4A /* DealNotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D133462AFDD2A80056CC4A /* DealNotificationTableViewCell.xib */; };
+		76D1334B2AFDDB920056CC4A /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1334A2AFDDB920056CC4A /* UIImageExtension.swift */; };
+		76D1334E2AFDE15C0056CC4A /* OtherNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1334C2AFDE15C0056CC4A /* OtherNotificationTableViewCell.swift */; };
+		76D1334F2AFDE15C0056CC4A /* OtherNotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D1334D2AFDE15C0056CC4A /* OtherNotificationTableViewCell.xib */; };
 		820DB4352AE212FE00CB1138 /* AppInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB4332AE212FE00CB1138 /* AppInforViewController.swift */; };
 		820DB4362AE212FE00CB1138 /* AppInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 820DB4342AE212FE00CB1138 /* AppInforViewController.xib */; };
 		820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */; };
@@ -187,6 +199,18 @@
 		47DA8E232AFB6B4200498E91 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		47DA8E262AFB6FCE00498E91 /* DetailAccountInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountInforViewController.swift; sourceTree = "<group>"; };
 		47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAccountInforViewController.xib; sourceTree = "<group>"; };
+		769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNotificationViewController.swift; sourceTree = "<group>"; };
+		769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentNotificationViewController.xib; sourceTree = "<group>"; };
+		76D133382AFDD0920056CC4A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		76D133392AFDD0920056CC4A /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNotificationModel.swift; sourceTree = "<group>"; };
+		76D133402AFDD2970056CC4A /* BalanceNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNotificationTableViewCell.swift; sourceTree = "<group>"; };
+		76D133412AFDD2970056CC4A /* BalanceNotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceNotificationTableViewCell.xib; sourceTree = "<group>"; };
+		76D133452AFDD2A80056CC4A /* DealNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealNotificationTableViewCell.swift; sourceTree = "<group>"; };
+		76D133462AFDD2A80056CC4A /* DealNotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealNotificationTableViewCell.xib; sourceTree = "<group>"; };
+		76D1334A2AFDDB920056CC4A /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		76D1334C2AFDE15C0056CC4A /* OtherNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNotificationTableViewCell.swift; sourceTree = "<group>"; };
+		76D1334D2AFDE15C0056CC4A /* OtherNotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherNotificationTableViewCell.xib; sourceTree = "<group>"; };
 		820DB4332AE212FE00CB1138 /* AppInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforViewController.swift; sourceTree = "<group>"; };
 		820DB4342AE212FE00CB1138 /* AppInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInforViewController.xib; sourceTree = "<group>"; };
 		820DB4382AE2191700CB1138 /* AppInforTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInforTableViewCell.swift; sourceTree = "<group>"; };
@@ -275,6 +299,7 @@
 				473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */,
 				473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */,
 				47DA8E232AFB6B4200498E91 /* IntExtension.swift */,
+				76D1334A2AFDDB920056CC4A /* UIImageExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -291,6 +316,7 @@
 			children = (
 				82C4BB222AFFBBE9003D4F3B /* PaymentAccount */,
 				82C4BB1D2AFDD4AF003D4F3B /* CopyAccountInfor */,
+				76D133372AFDD0800056CC4A /* Notification */,
 				47854F782AFC93B900472D88 /* SearchFeature */,
 				47DA8E252AFB6FC100498E91 /* DetailAccountInfor */,
 				471E5ED52AFB1C8D00BB0278 /* CreateAccount */,
@@ -494,6 +520,63 @@
 			path = DetailAccountInfor;
 			sourceTree = "<group>";
 		};
+		769E7E512AFE3DC100E44818 /* ContentNotification */ = {
+			isa = PBXGroup;
+			children = (
+				769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */,
+				769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */,
+			);
+			path = ContentNotification;
+			sourceTree = "<group>";
+		};
+		76D133372AFDD0800056CC4A /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				769E7E512AFE3DC100E44818 /* ContentNotification */,
+				76D1333C2AFDD11A0056CC4A /* Cell */,
+				76D133382AFDD0920056CC4A /* NotificationViewController.swift */,
+				76D133392AFDD0920056CC4A /* NotificationViewController.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		76D1333C2AFDD11A0056CC4A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				76D133492AFDD2B60056CC4A /* OtherNotification */,
+				76D133442AFDD29B0056CC4A /* DealNotification */,
+				76D1333F2AFDD2830056CC4A /* BalanceNotification */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		76D1333F2AFDD2830056CC4A /* BalanceNotification */ = {
+			isa = PBXGroup;
+			children = (
+				76D133402AFDD2970056CC4A /* BalanceNotificationTableViewCell.swift */,
+				76D133412AFDD2970056CC4A /* BalanceNotificationTableViewCell.xib */,
+			);
+			path = BalanceNotification;
+			sourceTree = "<group>";
+		};
+		76D133442AFDD29B0056CC4A /* DealNotification */ = {
+			isa = PBXGroup;
+			children = (
+				76D133452AFDD2A80056CC4A /* DealNotificationTableViewCell.swift */,
+				76D133462AFDD2A80056CC4A /* DealNotificationTableViewCell.xib */,
+			);
+			path = DealNotification;
+			sourceTree = "<group>";
+		};
+		76D133492AFDD2B60056CC4A /* OtherNotification */ = {
+			isa = PBXGroup;
+			children = (
+				76D1334C2AFDE15C0056CC4A /* OtherNotificationTableViewCell.swift */,
+				76D1334D2AFDE15C0056CC4A /* OtherNotificationTableViewCell.xib */,
+			);
+			path = OtherNotification;
+			sourceTree = "<group>";
+		};
 		820DB4322AE212B500CB1138 /* AppInfor */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +670,7 @@
 				821C89262AD6EC80006DE8F2 /* HomeEntity.swift */,
 				820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */,
 				471E5EE02AFB1F4600BB0278 /* AccountModel.swift */,
+				76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -765,14 +849,17 @@
 				82EAA0E72ADD7D040076C059 /* TransferCollectionViewCell.xib in Resources */,
 				47BD89CE2AD50AAD0004D093 /* train_animation.json in Resources */,
 				47BD89D22AD50AAD0004D093 /* hotel_animation.json in Resources */,
+				76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */,
 				47BD89D02AD50AAD0004D093 /* icon_vnshop.json in Resources */,
 				47BD89CF2AD50AAD0004D093 /* FlightAnimation.json in Resources */,
+				76D133482AFDD2A80056CC4A /* DealNotificationTableViewCell.xib in Resources */,
 				47BD89D32AD50AAD0004D093 /* loading.json in Resources */,
 				4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */,
 				82162E1A2AF93A7300C3EACC /* PageControlCollectionViewCell.xib in Resources */,
 				47DA8E292AFB6FCE00498E91 /* DetailAccountInforViewController.xib in Resources */,
 				47BD89D42AD50AAD0004D093 /* golf_animation.json in Resources */,
 				821C891B2AD6C5FC006DE8F2 /* OptionsTableViewCell.xib in Resources */,
+				76D133432AFDD2970056CC4A /* BalanceNotificationTableViewCell.xib in Resources */,
 				820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */,
 				47854F872AFC9DDE00472D88 /* SuggestHeader.xib in Resources */,
 				82C4BB262AFFBC04003D4F3B /* PaymentAccountViewController.xib in Resources */,
@@ -781,9 +868,11 @@
 				821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */,
 				47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */,
 				47854F812AFC952900472D88 /* SearchFeatureCollectionViewCell.xib in Resources */,
+				769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */,
 				47BD89BF2AD5097E0004D093 /* dataNewYear6.json in Resources */,
 				821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */,
 				821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */,
+				76D1334F2AFDE15C0056CC4A /* OtherNotificationTableViewCell.xib in Resources */,
 				82C4BB1C2AFA7838003D4F3B /* AccountInforViewController.xib in Resources */,
 				82C4BB212AFDD522003D4F3B /* CopyAccountInforView.xib in Resources */,
 				4741B76A2AD4FA49006B6264 /* Main.storyboard in Resources */,
@@ -829,14 +918,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */,
+				76D133422AFDD2970056CC4A /* BalanceNotificationTableViewCell.swift in Sources */,
 				47854F802AFC952900472D88 /* SearchFeatureCollectionViewCell.swift in Sources */,
 				471E5EDE2AFB1ECE00BB0278 /* Constant.swift in Sources */,
 				821C891A2AD6C5FC006DE8F2 /* OptionsTableViewCell.swift in Sources */,
 				821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */,
+				76D1333A2AFDD0920056CC4A /* NotificationViewController.swift in Sources */,
 				47854F862AFC9DDE00472D88 /* SuggestHeader.swift in Sources */,
 				820DB43A2AE2191700CB1138 /* AppInforTableViewCell.swift in Sources */,
+				769E7E542AFE3DDA00E44818 /* ContentNotificationViewController.swift in Sources */,
 				82EAA0E62ADD7D040076C059 /* TransferCollectionViewCell.swift in Sources */,
 				475F06D82AF231350055D405 /* BaseViewController.swift in Sources */,
+				76D1334B2AFDDB920056CC4A /* UIImageExtension.swift in Sources */,
 				4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */,
 				82C4BB1F2AFDD50C003D4F3B /* CopyAccountInforView.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
@@ -852,6 +945,7 @@
 				473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */,
 				473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */,
 				82EAA0E12ADD7A150076C059 /* TransferViewController.swift in Sources */,
+				76D1333E2AFDD2320056CC4A /* BalanceNotificationModel.swift in Sources */,
 				471E5EE12AFB1F4600BB0278 /* AccountModel.swift in Sources */,
 				821C891E2AD6C60A006DE8F2 /* PageVCTableViewCell.swift in Sources */,
 				473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */,
@@ -869,8 +963,10 @@
 				47DA8E242AFB6B4200498E91 /* IntExtension.swift in Sources */,
 				47854F7B2AFC93C600472D88 /* SearchFeatureViewController.swift in Sources */,
 				47DA8E282AFB6FCE00498E91 /* DetailAccountInforViewController.swift in Sources */,
+				76D1334E2AFDE15C0056CC4A /* OtherNotificationTableViewCell.swift in Sources */,
 				820DB43D2AE21B1700CB1138 /* AppInforEntity.swift in Sources */,
 				82C4BB1B2AFA7838003D4F3B /* AccountInforViewController.swift in Sources */,
+				76D133472AFDD2A80056CC4A /* DealNotificationTableViewCell.swift in Sources */,
 				821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
