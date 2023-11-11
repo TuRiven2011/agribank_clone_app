@@ -24,6 +24,7 @@ class LoginTableViewCell: UITableViewCell {
             loginButton.isHidden = true
             userNameLabel.isHidden = false
             splashLabel.isHidden = false
+            userNameLabel.text = AppData.account?.userName
         } else {
             loginButton.isHidden = false
             userNameLabel.isHidden = true

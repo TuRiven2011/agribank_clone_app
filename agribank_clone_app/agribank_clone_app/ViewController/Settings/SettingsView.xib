@@ -12,8 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsView" customModule="agribank_clone_app" customModuleProvider="target">
             <connections>
                 <outlet property="dismissBtnView" destination="vnN-zz-NOV" id="hPa-dL-ufo"/>
+                <outlet property="idLbl" destination="vBn-3x-pS3" id="yVQ-gZ-LCG"/>
+                <outlet property="loginBtn" destination="XCy-OU-uq5" id="mfF-Kb-Ira"/>
+                <outlet property="logoutBtn" destination="p8v-iS-e1y" id="Dlb-iA-9Vh"/>
                 <outlet property="mainView" destination="SMm-Rg-UaP" id="xUZ-g8-WO0"/>
                 <outlet property="settingsCollectionView" destination="meX-AP-ZBB" id="xIg-NB-pTQ"/>
+                <outlet property="userImageAfterLogin" destination="Lhr-i0-QVz" id="Aui-8M-8UC"/>
+                <outlet property="userImageBeforLogin" destination="QoB-Oa-Nxz" id="c7b-ip-35K"/>
+                <outlet property="usernameLbl" destination="hB1-ls-GDv" id="gRn-7T-i5S"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -44,6 +50,25 @@
                                         <constraint firstAttribute="height" constant="55" id="QJp-Ao-sku"/>
                                     </constraints>
                                 </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groupAvar_Normal" translatesAutoresizingMaskIntoConstraints="NO" id="Lhr-i0-QVz">
+                                    <rect key="frame" x="22" y="20" width="55" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="55" id="7kc-Zr-iro"/>
+                                        <constraint firstAttribute="height" constant="55" id="ceU-Bg-5RL"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyen Van Vinh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB1-ls-GDv">
+                                    <rect key="frame" x="22" y="85" width="146" height="21.666666666666671"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10739465366" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBn-3x-pS3">
+                                    <rect key="frame" x="21.999999999999993" y="111.66666666666666" width="109.33333333333331" height="20.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCy-OU-uq5">
                                     <rect key="frame" x="66.666666666666657" y="85" width="150" height="42"/>
                                     <color key="backgroundColor" red="0.78039215689999997" green="0.56470588239999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,17 +89,45 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8v-iS-e1y">
+                                    <rect key="frame" x="98" y="20" width="120" height="26"/>
+                                    <color key="backgroundColor" red="0.76470588240000004" green="0.5450980392" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="26" id="5uW-OZ-Y6f"/>
+                                        <constraint firstAttribute="width" constant="120" id="ikn-IV-BMz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Thoát ứng dụng"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="19"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="Lhr-i0-QVz" firstAttribute="top" secondItem="wnS-zL-Zre" secondAttribute="top" constant="20" id="35S-7d-JK5"/>
                                 <constraint firstAttribute="trailing" secondItem="vnN-zz-NOV" secondAttribute="trailing" constant="20" id="3sx-6K-X99"/>
                                 <constraint firstItem="Rvl-DN-9XK" firstAttribute="height" secondItem="wnS-zL-Zre" secondAttribute="height" multiplier="1.75" id="Ei8-qi-oPb"/>
                                 <constraint firstAttribute="height" constant="170" id="Fg1-Ls-E1L"/>
                                 <constraint firstItem="QoB-Oa-Nxz" firstAttribute="top" secondItem="wnS-zL-Zre" secondAttribute="top" constant="20" id="HGb-uk-XaA"/>
+                                <constraint firstItem="vBn-3x-pS3" firstAttribute="leading" secondItem="wnS-zL-Zre" secondAttribute="leading" constant="22" id="HpZ-ff-sCZ"/>
+                                <constraint firstItem="vBn-3x-pS3" firstAttribute="top" secondItem="hB1-ls-GDv" secondAttribute="bottom" constant="5" id="IXD-po-aAp"/>
+                                <constraint firstItem="p8v-iS-e1y" firstAttribute="top" secondItem="wnS-zL-Zre" secondAttribute="top" constant="20" id="Lq0-x2-Kfh"/>
                                 <constraint firstItem="vnN-zz-NOV" firstAttribute="top" secondItem="wnS-zL-Zre" secondAttribute="top" constant="20" id="OIj-Hg-HLc"/>
+                                <constraint firstItem="hB1-ls-GDv" firstAttribute="leading" secondItem="wnS-zL-Zre" secondAttribute="leading" constant="22" id="OqI-Q3-kD0"/>
                                 <constraint firstItem="Rvl-DN-9XK" firstAttribute="width" secondItem="wnS-zL-Zre" secondAttribute="width" id="VBz-yX-jSE"/>
                                 <constraint firstItem="Rvl-DN-9XK" firstAttribute="leading" secondItem="wnS-zL-Zre" secondAttribute="leading" id="WcQ-7u-4Hu"/>
+                                <constraint firstItem="vnN-zz-NOV" firstAttribute="leading" secondItem="p8v-iS-e1y" secondAttribute="trailing" constant="20" id="ZRS-XG-H5S"/>
                                 <constraint firstItem="Rvl-DN-9XK" firstAttribute="top" secondItem="wnS-zL-Zre" secondAttribute="top" constant="-70" id="b6A-NV-6Z2"/>
+                                <constraint firstItem="hB1-ls-GDv" firstAttribute="top" secondItem="Lhr-i0-QVz" secondAttribute="bottom" constant="10" id="bOK-lZ-ucz"/>
+                                <constraint firstItem="Lhr-i0-QVz" firstAttribute="leading" secondItem="wnS-zL-Zre" secondAttribute="leading" constant="22" id="kjB-dj-maV"/>
                                 <constraint firstItem="XCy-OU-uq5" firstAttribute="centerX" secondItem="wnS-zL-Zre" secondAttribute="centerX" id="lEh-ty-TEZ"/>
                                 <constraint firstItem="XCy-OU-uq5" firstAttribute="top" secondItem="QoB-Oa-Nxz" secondAttribute="bottom" constant="10" id="rhe-g0-wnD"/>
                                 <constraint firstItem="QoB-Oa-Nxz" firstAttribute="centerX" secondItem="wnS-zL-Zre" secondAttribute="centerX" id="tiL-Bq-1fW"/>

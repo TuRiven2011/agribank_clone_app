@@ -77,6 +77,10 @@
 		821C892C2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */; };
 		82C4BB1B2AFA7838003D4F3B /* AccountInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4BB192AFA7838003D4F3B /* AccountInforViewController.swift */; };
 		82C4BB1C2AFA7838003D4F3B /* AccountInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C4BB1A2AFA7838003D4F3B /* AccountInforViewController.xib */; };
+		82C4BB1F2AFDD50C003D4F3B /* CopyAccountInforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4BB1E2AFDD50C003D4F3B /* CopyAccountInforView.swift */; };
+		82C4BB212AFDD522003D4F3B /* CopyAccountInforView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C4BB202AFDD522003D4F3B /* CopyAccountInforView.xib */; };
+		82C4BB252AFFBC04003D4F3B /* PaymentAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4BB232AFFBC04003D4F3B /* PaymentAccountViewController.swift */; };
+		82C4BB262AFFBC04003D4F3B /* PaymentAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C4BB242AFFBC04003D4F3B /* PaymentAccountViewController.xib */; };
 		82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0DA2AD8E9E60076C059 /* SettingsCollectionViewCell.swift */; };
 		82EAA0DD2AD8E9E60076C059 /* SettingsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0DB2AD8E9E60076C059 /* SettingsCollectionViewCell.xib */; };
 		82EAA0E12ADD7A150076C059 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0DF2ADD7A150076C059 /* TransferViewController.swift */; };
@@ -207,6 +211,10 @@
 		821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		82C4BB192AFA7838003D4F3B /* AccountInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInforViewController.swift; sourceTree = "<group>"; };
 		82C4BB1A2AFA7838003D4F3B /* AccountInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountInforViewController.xib; sourceTree = "<group>"; };
+		82C4BB1E2AFDD50C003D4F3B /* CopyAccountInforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAccountInforView.swift; sourceTree = "<group>"; };
+		82C4BB202AFDD522003D4F3B /* CopyAccountInforView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CopyAccountInforView.xib; sourceTree = "<group>"; };
+		82C4BB232AFFBC04003D4F3B /* PaymentAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAccountViewController.swift; sourceTree = "<group>"; };
+		82C4BB242AFFBC04003D4F3B /* PaymentAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentAccountViewController.xib; sourceTree = "<group>"; };
 		82EAA0DA2AD8E9E60076C059 /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		82EAA0DB2AD8E9E60076C059 /* SettingsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCollectionViewCell.xib; sourceTree = "<group>"; };
 		82EAA0DF2ADD7A150076C059 /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +289,8 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82C4BB222AFFBBE9003D4F3B /* PaymentAccount */,
+				82C4BB1D2AFDD4AF003D4F3B /* CopyAccountInfor */,
 				47854F782AFC93B900472D88 /* SearchFeature */,
 				47DA8E252AFB6FC100498E91 /* DetailAccountInfor */,
 				471E5ED52AFB1C8D00BB0278 /* CreateAccount */,
@@ -599,6 +609,24 @@
 			path = AccountInfor;
 			sourceTree = "<group>";
 		};
+		82C4BB1D2AFDD4AF003D4F3B /* CopyAccountInfor */ = {
+			isa = PBXGroup;
+			children = (
+				82C4BB1E2AFDD50C003D4F3B /* CopyAccountInforView.swift */,
+				82C4BB202AFDD522003D4F3B /* CopyAccountInforView.xib */,
+			);
+			path = CopyAccountInfor;
+			sourceTree = "<group>";
+		};
+		82C4BB222AFFBBE9003D4F3B /* PaymentAccount */ = {
+			isa = PBXGroup;
+			children = (
+				82C4BB232AFFBC04003D4F3B /* PaymentAccountViewController.swift */,
+				82C4BB242AFFBC04003D4F3B /* PaymentAccountViewController.xib */,
+			);
+			path = PaymentAccount;
+			sourceTree = "<group>";
+		};
 		82EAA0D42AD8D5330076C059 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -747,6 +775,7 @@
 				821C891B2AD6C5FC006DE8F2 /* OptionsTableViewCell.xib in Resources */,
 				820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */,
 				47854F872AFC9DDE00472D88 /* SuggestHeader.xib in Resources */,
+				82C4BB262AFFBC04003D4F3B /* PaymentAccountViewController.xib in Resources */,
 				82EAA0F52AE172260076C059 /* CardServiceViewController.xib in Resources */,
 				4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */,
 				821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */,
@@ -756,6 +785,7 @@
 				821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */,
 				821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */,
 				82C4BB1C2AFA7838003D4F3B /* AccountInforViewController.xib in Resources */,
+				82C4BB212AFDD522003D4F3B /* CopyAccountInforView.xib in Resources */,
 				4741B76A2AD4FA49006B6264 /* Main.storyboard in Resources */,
 				820DB4362AE212FE00CB1138 /* AppInforViewController.xib in Resources */,
 				47BD89BD2AD509730004D093 /* bus_animation.json in Resources */,
@@ -808,6 +838,7 @@
 				82EAA0E62ADD7D040076C059 /* TransferCollectionViewCell.swift in Sources */,
 				475F06D82AF231350055D405 /* BaseViewController.swift in Sources */,
 				4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */,
+				82C4BB1F2AFDD50C003D4F3B /* CopyAccountInforView.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
 				479DDABE2AF634D300BF3416 /* CommonEnum.swift in Sources */,
 				82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */,
@@ -816,6 +847,7 @@
 				47854F8A2AFC9DF800472D88 /* SuggestFooter.swift in Sources */,
 				473A5E022AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				821C89232AD6D37C006DE8F2 /* AccountInforTableViewCell.swift in Sources */,
+				82C4BB252AFFBC04003D4F3B /* PaymentAccountViewController.swift in Sources */,
 				473A5E0C2AD50FF100A34CE5 /* AppNavigator.swift in Sources */,
 				473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */,
 				473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */,

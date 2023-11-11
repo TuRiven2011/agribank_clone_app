@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppInforViewController: UIViewController {
+class AppInforViewController: BaseViewController {
 
     @IBOutlet weak var appInforTableView: UITableView!
     
@@ -17,6 +17,11 @@ class AppInforViewController: UIViewController {
         super.viewDidLoad()
 
         configTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavigationBar(title: "Thông tin ứng dụng")
     }
 
     func configTableView() {

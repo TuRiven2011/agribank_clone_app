@@ -13,9 +13,12 @@ class AccountInforViewController: BaseViewController {
     @IBOutlet weak var accoutNumberLbl: UILabel!
     @IBOutlet weak var accountSurplusLbl: UILabel!
         
+    @IBOutlet weak var showCopyAlert: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        showCopyAlert.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showCopyAlert(_:))))
         configUI()
     }
     
@@ -41,7 +44,11 @@ class AccountInforViewController: BaseViewController {
         nickNameManagerButton.layer.masksToBounds = true
     }
 
-
+    @objc func showCopyAlert(_ g: UITapGestureRecognizer) {
+        let vc = CopyAccountInforView()
+        vc.frame = UIScreen.main.bounds
+        self.view.addSubview(vc)
+    }
 
 
 }

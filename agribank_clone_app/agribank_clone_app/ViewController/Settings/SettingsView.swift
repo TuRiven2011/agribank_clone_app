@@ -19,6 +19,20 @@ class SettingsView: UIView {
     
     @IBOutlet weak var dismissBtnView: UIImageView!
     
+    @IBOutlet weak var loginBtn: UIButton!
+    
+    @IBOutlet weak var userImageBeforLogin: UIImageView!
+    
+    @IBOutlet weak var logoutBtn: UIButton!
+    
+    @IBOutlet weak var userImageAfterLogin: UIImageView!
+    
+    @IBOutlet weak var usernameLbl: UILabel!
+    
+    @IBOutlet weak var idLbl: UILabel!
+    
+    
+    
     let data: [SettingsEntity] = [.init(title: "Cài đặt Soft OTP", image: "ic24PxSoftotp_Normal"), .init(title: "Nhận tin biến động số dư", image: "ic24PxCaidatbdsd_Normal"), .init(title: "Cài đặt Face ID", image: "ic24PxSoftotp_Normal"), .init(title: "Cài đặt hạn mức", image: "ic24PxHanmuc_Normal"), .init(title: "Cài đặt ngôn ngữ", image: "ic24PxLanguage_Normal"), .init(title: "Cài đặt mật khẩu", image: "ic24PxPassword_Normal"), .init(title: "Cấp/Đổi mã PIN", image: "ic24PxKey_Normal"), .init(title: "Quản lý danh bạ", image: "ic24PxContact_Normal"), .init(title: "Thông tin ứng dụng", image: "ic24PxInfo_Normal"), .init(title: "Đóng tài khoản", image: "ic24PxDongtaikhoan_Normal"), .init(title: "Hỏi và đáp", image: "ic24PxSoftotp_Normal"), .init(title: "Điều khoản riêng tư", image: "ic24PxsDkrt_Normal")]
     
     weak var delegate: SettingsViewDelegate?
@@ -46,6 +60,20 @@ class SettingsView: UIView {
         ])
         backgroundColor = .clear
         layoutSubviews()
+        
+        if AppData.isLogin == true {
+            loginBtn.alpha = 0
+            userImageBeforLogin.alpha = 0
+            usernameLbl.text = AppData.account?.userName
+            idLbl.text = AppData.account?.numberAccount
+        } else {
+            logoutBtn.alpha = 0
+            userImageAfterLogin.alpha = 0
+            usernameLbl.alpha = 0
+            idLbl.alpha = 0
+        }
+        
+        
         mainView.transform = .init(translationX: 350, y: 0)
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseInOut) {
             self.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
