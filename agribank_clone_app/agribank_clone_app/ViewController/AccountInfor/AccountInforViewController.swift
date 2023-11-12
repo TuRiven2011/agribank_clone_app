@@ -13,12 +13,17 @@ class AccountInforViewController: BaseViewController {
     @IBOutlet weak var accoutNumberLbl: UILabel!
     @IBOutlet weak var accountSurplusLbl: UILabel!
         
-    @IBOutlet weak var showCopyAlert: UIImageView!
+    @IBOutlet weak var showPaymentAccountView
+    : UIImageView!
+    
+    @IBOutlet weak var showCopyAlertView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showCopyAlert.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showCopyAlert(_:))))
+        showCopyAlertView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showCopyAlert(_:))))
+        showPaymentAccountView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showPaymentAccountView(_:))))
         configUI()
     }
     
@@ -48,6 +53,12 @@ class AccountInforViewController: BaseViewController {
         let vc = CopyAccountInforView()
         vc.frame = UIScreen.main.bounds
         self.view.addSubview(vc)
+    }
+    
+    @objc func showPaymentAccountView(_ g: UITapGestureRecognizer) {
+        let vc = PaymentAccountViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 
 
