@@ -61,6 +61,13 @@ extension TransferViewController: UICollectionViewDelegate, UICollectionViewData
         return CGSize(width: size, height: size)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            let vc = TransferByOtherBankViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
 }
 
 extension TransferViewController: UITableViewDelegate, UITableViewDataSource {
@@ -77,7 +84,7 @@ extension TransferViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+    
     }
     
     
