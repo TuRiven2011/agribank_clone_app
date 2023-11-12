@@ -35,6 +35,8 @@
 		47854F872AFC9DDE00472D88 /* SuggestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47854F852AFC9DDE00472D88 /* SuggestHeader.xib */; };
 		47854F8A2AFC9DF800472D88 /* SuggestFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47854F882AFC9DF800472D88 /* SuggestFooter.swift */; };
 		47854F8B2AFC9DF800472D88 /* SuggestFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47854F892AFC9DF800472D88 /* SuggestFooter.xib */; };
+		4787C5392B00DCBE0062DD3A /* TransferByOtherBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787C5372B00DCBE0062DD3A /* TransferByOtherBankViewController.swift */; };
+		4787C53A2B00DCBE0062DD3A /* TransferByOtherBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4787C5382B00DCBE0062DD3A /* TransferByOtherBankViewController.xib */; };
 		4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E9A82AF010D000EFE78A /* TabbarViewController.swift */; };
 		479DDABE2AF634D300BF3416 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479DDABD2AF634D300BF3416 /* CommonEnum.swift */; };
 		47BD89BD2AD509730004D093 /* bus_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89BC2AD509730004D093 /* bus_animation.json */; };
@@ -143,6 +145,8 @@
 		47854F852AFC9DDE00472D88 /* SuggestHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestHeader.xib; sourceTree = "<group>"; };
 		47854F882AFC9DF800472D88 /* SuggestFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFooter.swift; sourceTree = "<group>"; };
 		47854F892AFC9DF800472D88 /* SuggestFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestFooter.xib; sourceTree = "<group>"; };
+		4787C5372B00DCBE0062DD3A /* TransferByOtherBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferByOtherBankViewController.swift; sourceTree = "<group>"; };
+		4787C5382B00DCBE0062DD3A /* TransferByOtherBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferByOtherBankViewController.xib; sourceTree = "<group>"; };
 		4795E9A82AF010D000EFE78A /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		479DDABD2AF634D300BF3416 /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		47BD89952AD4FFFC0004D093 /* SFProDisplay-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4787C5362B00DCA40062DD3A /* TransferByOtherBank */,
 				82C4BB222AFFBBE9003D4F3B /* PaymentAccount */,
 				82C4BB1D2AFDD4AF003D4F3B /* CopyAccountInfor */,
 				76D133372AFDD0800056CC4A /* Notification */,
@@ -414,6 +419,15 @@
 				47854F892AFC9DF800472D88 /* SuggestFooter.xib */,
 			);
 			path = Footer;
+			sourceTree = "<group>";
+		};
+		4787C5362B00DCA40062DD3A /* TransferByOtherBank */ = {
+			isa = PBXGroup;
+			children = (
+				4787C5372B00DCBE0062DD3A /* TransferByOtherBankViewController.swift */,
+				4787C5382B00DCBE0062DD3A /* TransferByOtherBankViewController.xib */,
+			);
+			path = TransferByOtherBank;
 			sourceTree = "<group>";
 		};
 		4795E9A72AF010B400EFE78A /* Tabbar */ = {
@@ -838,6 +852,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */,
+				4787C53A2B00DCBE0062DD3A /* TransferByOtherBankViewController.xib in Resources */,
 				47BD89C12AD509850004D093 /* delivery_animation.json in Resources */,
 				471E5ED92AFB1CA600BB0278 /* CreateAccountViewController.xib in Resources */,
 				82162E152AF28D6B00C3EACC /* SettingsView.xib in Resources */,
@@ -944,6 +959,7 @@
 				473A5E0C2AD50FF100A34CE5 /* AppNavigator.swift in Sources */,
 				473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */,
 				473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */,
+				4787C5392B00DCBE0062DD3A /* TransferByOtherBankViewController.swift in Sources */,
 				82EAA0E12ADD7A150076C059 /* TransferViewController.swift in Sources */,
 				76D1333E2AFDD2320056CC4A /* BalanceNotificationModel.swift in Sources */,
 				471E5EE12AFB1F4600BB0278 /* AccountModel.swift in Sources */,
