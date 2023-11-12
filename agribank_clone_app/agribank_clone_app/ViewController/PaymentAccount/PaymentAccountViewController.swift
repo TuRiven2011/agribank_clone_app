@@ -1,10 +1,3 @@
-//
-//  PaymentAccountViewController.swift
-//  agribank_clone_app
-//
-//  Created by Đặng An Hưng on 11/11/2023.
-//
-
 import UIKit
 
 class PaymentAccountViewController: BaseViewController {

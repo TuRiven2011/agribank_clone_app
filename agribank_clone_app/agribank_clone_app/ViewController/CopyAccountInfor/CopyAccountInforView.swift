@@ -9,7 +9,8 @@ import UIKit
 
 class CopyAccountInforView: UIView {
 
-
+    @IBOutlet weak var backImgae: UIImageView!
+    
     @IBOutlet weak var accountNumLbl1: UILabel!
     
     @IBOutlet weak var accountNumLbl2: UILabel!
@@ -18,14 +19,20 @@ class CopyAccountInforView: UIView {
     
     @IBOutlet weak var place: UILabel!
     
+    var backCompletion: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         commonInit()
+        configControlEvent()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        
         commonInit()
+        configControlEvent()
     }
     
     
@@ -56,4 +63,14 @@ class CopyAccountInforView: UIView {
         
     }
     
+    private func configControlEvent() {
+        backImgae.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleClose)))
+    }
+    
+}
+
+extension CopyAccountInforView {
+    @objc func handleClose() {
+        backCompletion?()
+    }
 }

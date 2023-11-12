@@ -46,6 +46,9 @@ class AccountInforViewController: BaseViewController {
 
     @objc func showCopyAlert(_ g: UITapGestureRecognizer) {
         let vc = CopyAccountInforView()
+        vc.backCompletion = {
+            vc.removeFromSuperview()
+        }
         vc.frame = UIScreen.main.bounds
         self.view.addSubview(vc)
     }
