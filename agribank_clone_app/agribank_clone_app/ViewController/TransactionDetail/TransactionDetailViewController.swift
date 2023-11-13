@@ -1,9 +1,4 @@
-//
-//  TransactionDetailViewController.swift
-//  agribank_clone_app
-//
-//  Created by Đặng An Hưng on 12/11/2023.
-//
+
 
 import UIKit
 

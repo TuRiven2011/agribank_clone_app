@@ -89,6 +89,10 @@
 		821C89272AD6EC80006DE8F2 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89262AD6EC80006DE8F2 /* HomeEntity.swift */; };
 		821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */; };
 		821C892C2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */; };
+		82B054C62B025431004E5142 /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B054C42B025431004E5142 /* TransactionHistoryViewController.swift */; };
+		82B054C72B025431004E5142 /* TransactionHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B054C52B025431004E5142 /* TransactionHistoryViewController.xib */; };
+		82B054CB2B02802A004E5142 /* TransactionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B054C92B02802A004E5142 /* TransactionListTableViewCell.swift */; };
+		82B054CC2B02802A004E5142 /* TransactionListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B054CA2B02802A004E5142 /* TransactionListTableViewCell.xib */; };
 		82C4BB1B2AFA7838003D4F3B /* AccountInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4BB192AFA7838003D4F3B /* AccountInforViewController.swift */; };
 		82C4BB1C2AFA7838003D4F3B /* AccountInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C4BB1A2AFA7838003D4F3B /* AccountInforViewController.xib */; };
 		82C4BB1F2AFDD50C003D4F3B /* CopyAccountInforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4BB1E2AFDD50C003D4F3B /* CopyAccountInforView.swift */; };
@@ -239,6 +243,10 @@
 		821C89262AD6EC80006DE8F2 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		821C89292AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		821C892A2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		82B054C42B025431004E5142 /* TransactionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewController.swift; sourceTree = "<group>"; };
+		82B054C52B025431004E5142 /* TransactionHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionHistoryViewController.xib; sourceTree = "<group>"; };
+		82B054C92B02802A004E5142 /* TransactionListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListTableViewCell.swift; sourceTree = "<group>"; };
+		82B054CA2B02802A004E5142 /* TransactionListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionListTableViewCell.xib; sourceTree = "<group>"; };
 		82C4BB192AFA7838003D4F3B /* AccountInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInforViewController.swift; sourceTree = "<group>"; };
 		82C4BB1A2AFA7838003D4F3B /* AccountInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountInforViewController.xib; sourceTree = "<group>"; };
 		82C4BB1E2AFDD50C003D4F3B /* CopyAccountInforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAccountInforView.swift; sourceTree = "<group>"; };
@@ -322,6 +330,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82B054C32B0253E3004E5142 /* TransactionHistory */,
 				82E6D0C52B00FAD600499CAF /* TransactionDetail */,
 				4787C5362B00DCA40062DD3A /* TransferByOtherBank */,
 				82C4BB222AFFBBE9003D4F3B /* PaymentAccount */,
@@ -703,6 +712,25 @@
 			path = CustomCollectionView;
 			sourceTree = "<group>";
 		};
+		82B054C32B0253E3004E5142 /* TransactionHistory */ = {
+			isa = PBXGroup;
+			children = (
+				82B054C82B028006004E5142 /* Cell */,
+				82B054C42B025431004E5142 /* TransactionHistoryViewController.swift */,
+				82B054C52B025431004E5142 /* TransactionHistoryViewController.xib */,
+			);
+			path = TransactionHistory;
+			sourceTree = "<group>";
+		};
+		82B054C82B028006004E5142 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82B054C92B02802A004E5142 /* TransactionListTableViewCell.swift */,
+				82B054CA2B02802A004E5142 /* TransactionListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		82C4BB172AFA780F003D4F3B /* AccountInfor */ = {
 			isa = PBXGroup;
 			children = (
@@ -867,6 +895,7 @@
 			files = (
 				47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */,
 				4787C53A2B00DCBE0062DD3A /* TransferByOtherBankViewController.xib in Resources */,
+				82B054CC2B02802A004E5142 /* TransactionListTableViewCell.xib in Resources */,
 				47BD89C12AD509850004D093 /* delivery_animation.json in Resources */,
 				471E5ED92AFB1CA600BB0278 /* CreateAccountViewController.xib in Resources */,
 				82162E152AF28D6B00C3EACC /* SettingsView.xib in Resources */,
@@ -877,6 +906,7 @@
 				821C892C2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.xib in Resources */,
 				82EAA0E72ADD7D040076C059 /* TransferCollectionViewCell.xib in Resources */,
 				47BD89CE2AD50AAD0004D093 /* train_animation.json in Resources */,
+				82B054C72B025431004E5142 /* TransactionHistoryViewController.xib in Resources */,
 				47BD89D22AD50AAD0004D093 /* hotel_animation.json in Resources */,
 				76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */,
 				47BD89D02AD50AAD0004D093 /* icon_vnshop.json in Resources */,
@@ -969,6 +999,7 @@
 				473A5E012AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				473A5E072AD50FB800A34CE5 /* UIColorExtension.swift in Sources */,
 				47854F8A2AFC9DF800472D88 /* SuggestFooter.swift in Sources */,
+				82B054CB2B02802A004E5142 /* TransactionListTableViewCell.swift in Sources */,
 				473A5E022AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				821C89232AD6D37C006DE8F2 /* AccountInforTableViewCell.swift in Sources */,
 				82C4BB252AFFBC04003D4F3B /* PaymentAccountViewController.swift in Sources */,
@@ -981,6 +1012,7 @@
 				471E5EE12AFB1F4600BB0278 /* AccountModel.swift in Sources */,
 				821C891E2AD6C60A006DE8F2 /* PageVCTableViewCell.swift in Sources */,
 				473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				82B054C62B025431004E5142 /* TransactionHistoryViewController.swift in Sources */,
 				471E5ED82AFB1CA600BB0278 /* CreateAccountViewController.swift in Sources */,
 				821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */,
 				82162E192AF93A7300C3EACC /* PageControlCollectionViewCell.swift in Sources */,

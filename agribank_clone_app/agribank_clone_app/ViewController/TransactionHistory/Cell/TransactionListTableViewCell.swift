@@ -2,7 +2,7 @@
 
 import UIKit
 
-class PageVCTableViewCell: UITableViewCell {
+class TransactionListTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
