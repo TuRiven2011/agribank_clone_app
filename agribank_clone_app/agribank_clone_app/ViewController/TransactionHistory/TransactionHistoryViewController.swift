@@ -5,10 +5,11 @@ import UIKit
 class TransactionHistoryViewController: BaseViewController {
     
     @IBOutlet weak var containerSegmentView: UIView!
-    
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet var buttonCollection: [UIButton]!
+    
+    let listHistory = AppData.listTransaction
+    
     let enumM: TransactionEnum? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,11 +44,13 @@ class TransactionHistoryViewController: BaseViewController {
 
 extension TransactionHistoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        listHistory?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionListTableViewCell") as? TransactionListTableViewCell else {return UITableViewCell()}
+        
+        
         return cell
     }
     

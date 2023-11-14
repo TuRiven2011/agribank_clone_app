@@ -38,6 +38,10 @@ class TransferByOtherBankViewController: BaseViewController {
                                       bankTransfer: "VietinBank",
                                       date: .init())
         
+        AppData.listTransaction?.append(billModel)
+        
+        print(AppData.listTransaction)
+        
         let vc = TransactionDetailViewController(data: billModel)
         vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
