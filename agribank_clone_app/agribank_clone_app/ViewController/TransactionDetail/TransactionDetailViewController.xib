@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionDetailViewController" customModule="agribank_clone_app" customModuleProvider="target">
             <connections>
+                <outlet property="goHomeImage" destination="yVK-i8-sIK" id="Fop-w5-Stf"/>
+                <outlet property="moneyLabel" destination="gAy-0U-N1e" id="5ui-Dt-lY6"/>
+                <outlet property="myNumberAccountLabel" destination="aYj-zR-vjB" id="QVD-hw-hov"/>
                 <outlet property="scrollView" destination="YZa-hE-CJA" id="qAo-cg-ESM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -51,7 +54,7 @@
                                         <constraint firstAttribute="width" constant="20" id="mCr-4D-HJp"/>
                                     </constraints>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hometransferresult_white_Normal" translatesAutoresizingMaskIntoConstraints="NO" id="yVK-i8-sIK">
+                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hometransferresult_white_Normal" translatesAutoresizingMaskIntoConstraints="NO" id="yVK-i8-sIK">
                                     <rect key="frame" x="360" y="213" width="24" height="24"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="24" id="0jQ-SC-7gK"/>

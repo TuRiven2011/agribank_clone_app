@@ -10,20 +10,22 @@ class NotificationViewController: BaseViewController {
     let dealVC = ContentNotificationViewController()
     let otherVC = ContentNotificationViewController()
     let segment = SegmentedControl(cornerRadius: 17)
+    var backCompletion: (() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBar(title: "Thông tin agribank".uppercased())
         setupPageVC()
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        setupNavigationBar(title: "Thông tin agribank".uppercased())
-    }
     
+
+    }
+
     override func setupNavigationBar(title: String) {
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
@@ -51,11 +53,10 @@ class NotificationViewController: BaseViewController {
         let back = UIImageView(image: .init(named: "ic_24px_back_Normal"))
         back.isUserInteractionEnabled = true
         back.translatesAutoresizingMaskIntoConstraints = false
-        back.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleBack)))
+        back.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleBackToMain)))
         navigationController?.navigationBar.addSubview(back)
         let backButtonItem = UIBarButtonItem(customView: back)
         navigationController?.navigationItem.leftBarButtonItem = backButtonItem
-        
         segment.insertSegment(withTitle: NotificationTypeEnum.balance.title, at: 0, animated: true)
         segment.insertSegment(withTitle: NotificationTypeEnum.deal.title, at: 1, animated: true)
         segment.insertSegment(withTitle: NotificationTypeEnum.other.title, at: 2, animated: true)
@@ -132,7 +133,14 @@ class NotificationViewController: BaseViewController {
 }
 
 extension NotificationViewController {
+    
+    @objc func handleBackToMain() {
+        print("Handle")
+//        APP_DELEGATE?.appNavigator?.switchToMain()
+    }
+    
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+        backCompletion?()
         if sender.selectedSegmentIndex == 0 {
             pageViewController?.setViewControllers([balanceVC],
                                                    direction: .reverse,

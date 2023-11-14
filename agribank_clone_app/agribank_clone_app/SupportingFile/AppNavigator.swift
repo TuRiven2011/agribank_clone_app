@@ -12,6 +12,8 @@ protocol AppNavigatorType: AnyObject {
 }
 
 final class AppNavigator: AppNavigatorType {
+    
+    let tabbar = TabbarViewController()
     var window: UIWindow?
     init(window: UIWindow?) {
         self.window = window
@@ -36,10 +38,14 @@ final class AppNavigator: AppNavigatorType {
     func switchToTransferHistory() {
         
     }
+    func switchToNotification() {
+        let vc = NotificationViewController()
+        let navi = UINavigationController(rootViewController: vc)
+        switchTo(viewController: navi)
+    }
     
     func switchToMain() {
-        let vc = TabbarViewController()
-        switchTo(viewController: vc)
+        switchTo(viewController: tabbar)
     }
     
     func switchTo(viewController: UIViewController) {

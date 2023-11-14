@@ -2,7 +2,9 @@ import UIKit
 
 class TabbarViewController: UITabBarController {
     
-
+    let homeVC = HomeViewController()
+    let notiVC = NotificationViewController()
+    
     let tab1 = UITabBarItem(title: "Trang chủ",
                             image: UIImage(named: "ic24PxHomeWhite_Normal"),
                             tag: 1)
@@ -26,6 +28,10 @@ class TabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        notiVC.hidesBottomBarWhenPushed = true
+        notiVC.backCompletion = {
+            self.tabBarController?.selectedIndex = 0
+        }
         initItem()
         configUI()
         initSideMenu()
@@ -42,14 +48,14 @@ class TabbarViewController: UITabBarController {
         self.tabBar.layer.borderWidth = 1
         self.tabBar.layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
         self.tabBarController?.tabBar.backgroundColor = .white
-        
+        self.delegate = self
         self.selectedIndex = 0
     }
     
     
     private func initItem() {
-        let tab1NavigationController = UINavigationController(rootViewController: HomeViewController())
-        let tab2NavigationController = UINavigationController(rootViewController: NotificationViewController())
+        let tab1NavigationController = UINavigationController(rootViewController: homeVC)
+        let tab2NavigationController = UINavigationController(rootViewController: notiVC)
         let tab3NavigationController = UINavigationController(rootViewController: ViewController())
         let tab4NavigationController = UINavigationController(rootViewController: ViewController())
         let tab5NavigationController = UINavigationController(rootViewController: ViewController())
@@ -76,8 +82,12 @@ class TabbarViewController: UITabBarController {
     
 }
 
-extension TabbarViewController {
-    
+extension TabbarViewController: UITabBarControllerDelegate {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item.title == "Thông báo" {
+            self.tabBarController?.tabBar.isHidden = true
+        }
+    }
 }
 
 extension Notification.Name {

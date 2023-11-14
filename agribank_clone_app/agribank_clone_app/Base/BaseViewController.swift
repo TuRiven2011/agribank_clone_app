@@ -40,20 +40,27 @@ class BaseViewController: UIViewController {
         back.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleBack)))
         navigationController?.navigationBar.addSubview(back)
         
+        let titleLabel = UILabel()
+        titleLabel.text = title
+        titleLabel.textColor = .white
+        titleLabel.font = .systemFont(ofSize: 18)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        navigationController?.navigationBar.addSubview(titleLabel)
+        
         if let navigationBar = navigationController?.navigationBar {
             [
                 back.widthAnchor.constraint(equalToConstant: 30),
                 back.heightAnchor.constraint(equalToConstant: 30),
-                back.leadingAnchor.constraint(equalTo: navigationBar.leadingAnchor, constant: 20),
-                back.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -10),
+                back.leadingAnchor.constraint(equalTo: navigationBar.leadingAnchor, constant: 16),
+                back.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -8),
+                titleLabel.centerYAnchor.constraint(equalTo: back.centerYAnchor),
+                titleLabel.centerXAnchor.constraint(equalTo: navigationBar.centerXAnchor)
             ].forEach({$0.isActive = true})
         }
         
         let backButtonItem = UIBarButtonItem(customView: back)
         
         navigationController?.navigationItem.leftBarButtonItem = backButtonItem
-        navigationItem.title = title
-        
         
     }
     
@@ -61,6 +68,7 @@ class BaseViewController: UIViewController {
 
 extension BaseViewController {
     @objc func handleBack() {
+        print("BACK")
         navigationController?.popViewController(animated: true)
     }
 }

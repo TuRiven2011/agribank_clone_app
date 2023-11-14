@@ -32,6 +32,11 @@ class SettingsView: UIView {
     @IBOutlet weak var idLbl: UILabel!
     
     
+    @IBAction func signOutAction(_ sender: Any) {
+        signOutCompletion?()
+    }
+    
+    var signOutCompletion: (() -> Void)?
     
     let data: [SettingsEntity] = [.init(title: "Cài đặt Soft OTP", image: "ic24PxSoftotp_Normal"), .init(title: "Nhận tin biến động số dư", image: "ic24PxCaidatbdsd_Normal"), .init(title: "Cài đặt Face ID", image: "ic24PxSoftotp_Normal"), .init(title: "Cài đặt hạn mức", image: "ic24PxHanmuc_Normal"), .init(title: "Cài đặt ngôn ngữ", image: "ic24PxLanguage_Normal"), .init(title: "Cài đặt mật khẩu", image: "ic24PxPassword_Normal"), .init(title: "Cấp/Đổi mã PIN", image: "ic24PxKey_Normal"), .init(title: "Quản lý danh bạ", image: "ic24PxContact_Normal"), .init(title: "Thông tin ứng dụng", image: "ic24PxInfo_Normal"), .init(title: "Đóng tài khoản", image: "ic24PxDongtaikhoan_Normal"), .init(title: "Hỏi và đáp", image: "ic24PxSoftotp_Normal"), .init(title: "Điều khoản riêng tư", image: "ic24PxsDkrt_Normal")]
     

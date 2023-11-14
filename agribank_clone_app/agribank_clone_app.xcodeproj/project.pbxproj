@@ -57,6 +57,11 @@
 		47DA8E292AFB6FCE00498E91 /* DetailAccountInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */; };
 		769E7E542AFE3DDA00E44818 /* ContentNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */; };
 		769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */; };
+		769E7E592B020B7100E44818 /* BankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E572B020B7100E44818 /* BankCollectionViewCell.swift */; };
+		769E7E5A2B020B7100E44818 /* BankCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */; };
+		769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E5B2B020D4800E44818 /* TransferModel.swift */; };
+		769E7E602B021ADA00E44818 /* HistoryTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E5E2B021ADA00E44818 /* HistoryTransactionViewController.swift */; };
+		769E7E612B021ADA00E44818 /* HistoryTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E5F2B021ADA00E44818 /* HistoryTransactionViewController.xib */; };
 		76D1333A2AFDD0920056CC4A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D133382AFDD0920056CC4A /* NotificationViewController.swift */; };
 		76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D133392AFDD0920056CC4A /* NotificationViewController.xib */; };
 		76D1333E2AFDD2320056CC4A /* BalanceNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */; };
@@ -207,6 +212,11 @@
 		47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAccountInforViewController.xib; sourceTree = "<group>"; };
 		769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNotificationViewController.swift; sourceTree = "<group>"; };
 		769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentNotificationViewController.xib; sourceTree = "<group>"; };
+		769E7E572B020B7100E44818 /* BankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCollectionViewCell.swift; sourceTree = "<group>"; };
+		769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCollectionViewCell.xib; sourceTree = "<group>"; };
+		769E7E5B2B020D4800E44818 /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
+		769E7E5E2B021ADA00E44818 /* HistoryTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionViewController.swift; sourceTree = "<group>"; };
+		769E7E5F2B021ADA00E44818 /* HistoryTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTransactionViewController.xib; sourceTree = "<group>"; };
 		76D133382AFDD0920056CC4A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		76D133392AFDD0920056CC4A /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNotificationModel.swift; sourceTree = "<group>"; };
@@ -322,6 +332,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				769E7E5D2B021AC600E44818 /* HistoryTransaction */,
 				82E6D0C52B00FAD600499CAF /* TransactionDetail */,
 				4787C5362B00DCA40062DD3A /* TransferByOtherBank */,
 				82C4BB222AFFBBE9003D4F3B /* PaymentAccount */,
@@ -429,6 +440,7 @@
 		4787C5362B00DCA40062DD3A /* TransferByOtherBank */ = {
 			isa = PBXGroup;
 			children = (
+				769E7E562B020B5B00E44818 /* Cell */,
 				4787C5372B00DCBE0062DD3A /* TransferByOtherBankViewController.swift */,
 				4787C5382B00DCBE0062DD3A /* TransferByOtherBankViewController.xib */,
 			);
@@ -546,6 +558,24 @@
 				769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */,
 			);
 			path = ContentNotification;
+			sourceTree = "<group>";
+		};
+		769E7E562B020B5B00E44818 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				769E7E572B020B7100E44818 /* BankCollectionViewCell.swift */,
+				769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		769E7E5D2B021AC600E44818 /* HistoryTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				769E7E5E2B021ADA00E44818 /* HistoryTransactionViewController.swift */,
+				769E7E5F2B021ADA00E44818 /* HistoryTransactionViewController.xib */,
+			);
+			path = HistoryTransaction;
 			sourceTree = "<group>";
 		};
 		76D133372AFDD0800056CC4A /* Notification */ = {
@@ -690,6 +720,7 @@
 				820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */,
 				471E5EE02AFB1F4600BB0278 /* AccountModel.swift */,
 				76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */,
+				769E7E5B2B020D4800E44818 /* TransferModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -879,6 +910,7 @@
 				47BD89CE2AD50AAD0004D093 /* train_animation.json in Resources */,
 				47BD89D22AD50AAD0004D093 /* hotel_animation.json in Resources */,
 				76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */,
+				769E7E5A2B020B7100E44818 /* BankCollectionViewCell.xib in Resources */,
 				47BD89D02AD50AAD0004D093 /* icon_vnshop.json in Resources */,
 				82E6D0C92B00FAF900499CAF /* TransactionDetailViewController.xib in Resources */,
 				47BD89CF2AD50AAD0004D093 /* FlightAnimation.json in Resources */,
@@ -899,6 +931,7 @@
 				47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */,
 				47854F812AFC952900472D88 /* SearchFeatureCollectionViewCell.xib in Resources */,
 				769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */,
+				769E7E612B021ADA00E44818 /* HistoryTransactionViewController.xib in Resources */,
 				47BD89BF2AD5097E0004D093 /* dataNewYear6.json in Resources */,
 				821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */,
 				821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */,
@@ -947,6 +980,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769E7E602B021ADA00E44818 /* HistoryTransactionViewController.swift in Sources */,
 				82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */,
 				76D133422AFDD2970056CC4A /* BalanceNotificationTableViewCell.swift in Sources */,
 				47854F802AFC952900472D88 /* SearchFeatureCollectionViewCell.swift in Sources */,
@@ -961,8 +995,10 @@
 				475F06D82AF231350055D405 /* BaseViewController.swift in Sources */,
 				76D1334B2AFDDB920056CC4A /* UIImageExtension.swift in Sources */,
 				82E6D0C82B00FAF900499CAF /* TransactionDetailViewController.swift in Sources */,
+				769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */,
 				4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */,
 				82C4BB1F2AFDD50C003D4F3B /* CopyAccountInforView.swift in Sources */,
+				769E7E592B020B7100E44818 /* BankCollectionViewCell.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
 				479DDABE2AF634D300BF3416 /* CommonEnum.swift in Sources */,
 				82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */,
@@ -1148,7 +1184,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WKZDX6SMV;
+				DEVELOPMENT_TEAM = G2KXX7Y4LG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = agribank_clone_app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Agribank;
@@ -1163,7 +1199,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhung";
+				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhungggggg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "agribank_clone_app/Library/agribank_clone_app-Bridging-Header.h";
@@ -1182,7 +1218,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WKZDX6SMV;
+				DEVELOPMENT_TEAM = G2KXX7Y4LG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = agribank_clone_app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Agribank;
@@ -1197,7 +1233,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhung";
+				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhungggggg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "agribank_clone_app/Library/agribank_clone_app-Bridging-Header.h";

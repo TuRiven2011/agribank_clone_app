@@ -12,9 +12,14 @@ class PaymentAccountViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupNavigationBar(title: "Tài khoản thanh toán")
+        
         config()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupNavigationBar(title: "Tài khoản thanh toán")
     }
 
     func config() {
