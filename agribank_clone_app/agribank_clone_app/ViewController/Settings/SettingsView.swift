@@ -1,9 +1,4 @@
-//
-//  SettingsView.swift
-//  agribank_clone_app
-//
-//  Created by Đặng An Hưng on 01/11/2023.
-//
+
 
 import UIKit
 

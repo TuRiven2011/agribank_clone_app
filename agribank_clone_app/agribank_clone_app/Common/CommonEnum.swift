@@ -66,3 +66,20 @@ enum AppBankEnum: CaseIterable {
         }
     }
 }
+
+enum TransactionEnum: Int, CaseIterable {
+    case total, moneyIn, moneyOut
+    
+    var title: String {
+        switch self {
+        case .total:
+            return "Tất cả"
+        case .moneyIn:
+            return "Tiền vào"
+        case .moneyOut:
+            return "Tiền ra"
+        }
+    
+    }
+        
+}

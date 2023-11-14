@@ -1,9 +1,4 @@
-//
-//  PageControlCollectionViewCell.swift
-//  agribank_clone_app
-//
-//  Created by Đặng An Hưng on 06/11/2023.
-//
+
 
 import UIKit
 

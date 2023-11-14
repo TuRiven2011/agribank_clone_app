@@ -1,9 +1,4 @@
-//
-//  CardServiceViewController.swift
-//  agribank_clone_app
-//
-//  Created by Đặng An Hưng on 19/10/2023.
-//
+
 
 import UIKit
 
