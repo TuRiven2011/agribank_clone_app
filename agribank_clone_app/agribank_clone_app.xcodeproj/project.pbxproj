@@ -62,6 +62,7 @@
 		769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E5B2B020D4800E44818 /* TransferModel.swift */; };
 		769E7E602B021ADA00E44818 /* HistoryTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E5E2B021ADA00E44818 /* HistoryTransactionViewController.swift */; };
 		769E7E612B021ADA00E44818 /* HistoryTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E5F2B021ADA00E44818 /* HistoryTransactionViewController.xib */; };
+		76B8D9AB2B037771003BF69E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8D9AA2B037771003BF69E /* DateExtension.swift */; };
 		76D1333A2AFDD0920056CC4A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D133382AFDD0920056CC4A /* NotificationViewController.swift */; };
 		76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D133392AFDD0920056CC4A /* NotificationViewController.xib */; };
 		76D1333E2AFDD2320056CC4A /* BalanceNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */; };
@@ -221,6 +222,7 @@
 		769E7E5B2B020D4800E44818 /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
 		769E7E5E2B021ADA00E44818 /* HistoryTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionViewController.swift; sourceTree = "<group>"; };
 		769E7E5F2B021ADA00E44818 /* HistoryTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTransactionViewController.xib; sourceTree = "<group>"; };
+		76B8D9AA2B037771003BF69E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		76D133382AFDD0920056CC4A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		76D133392AFDD0920056CC4A /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNotificationModel.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */,
 				473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */,
 				47DA8E232AFB6B4200498E91 /* IntExtension.swift */,
+				76B8D9AA2B037771003BF69E /* DateExtension.swift */,
 				76D1334A2AFDDB920056CC4A /* UIImageExtension.swift */,
 			);
 			path = Extension;
@@ -1023,6 +1026,7 @@
 				769E7E542AFE3DDA00E44818 /* ContentNotificationViewController.swift in Sources */,
 				82EAA0E62ADD7D040076C059 /* TransferCollectionViewCell.swift in Sources */,
 				475F06D82AF231350055D405 /* BaseViewController.swift in Sources */,
+				76B8D9AB2B037771003BF69E /* DateExtension.swift in Sources */,
 				76D1334B2AFDDB920056CC4A /* UIImageExtension.swift in Sources */,
 				82E6D0C82B00FAF900499CAF /* TransactionDetailViewController.swift in Sources */,
 				769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */,

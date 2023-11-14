@@ -7,7 +7,6 @@ class BaseViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        
     }
     
     func setupNavigationBar(title: String) {
@@ -30,7 +29,6 @@ class BaseViewController: UIViewController {
             self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         }
-        
         navigationController?.navigationBar.subviews.forEach({$0.removeFromSuperview()})
         self.navigationItem.setHidesBackButton(true, animated: true)
                 
@@ -61,7 +59,6 @@ class BaseViewController: UIViewController {
         let backButtonItem = UIBarButtonItem(customView: back)
         
         navigationController?.navigationItem.leftBarButtonItem = backButtonItem
-        
     }
     
 }

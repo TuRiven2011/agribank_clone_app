@@ -4,6 +4,7 @@ import UIKit
 
 class TransferByOtherBankViewController: BaseViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentTransferTextField: UITextField!
     @IBOutlet weak var bankCollectionView: UICollectionView!
     @IBOutlet weak var cancelButton: UIButton!
@@ -36,7 +37,9 @@ class TransferByOtherBankViewController: BaseViewController {
                                       money: Int(moneyTransferTextField.text ?? "0"),
                                       numberTransferAccount: transferAccountNumberTextField.text,
                                       bankTransfer: "VietinBank",
-                                      date: .init())
+                                      date: .init(),
+                                      isReceive: false
+        )
         
         AppData.listTransaction?.append(billModel)
         
@@ -86,6 +89,7 @@ class TransferByOtherBankViewController: BaseViewController {
     }
     
     private func setup() {
+        scrollView.keyboardDismissMode = .interactive
         cancelButton.layer.cornerRadius = cancelButton.frame.height/2
         cancelButton.layer.masksToBounds = true
         cancelButton.layer.borderColor = UIColor(rgb: 0xffC46826).cgColor

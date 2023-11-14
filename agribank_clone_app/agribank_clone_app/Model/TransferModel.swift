@@ -17,4 +17,5 @@ struct TransferModel: Codable {
     var numberTransferAccount: String?
     var bankTransfer: String?
     var date: Date?
+    var isReceive: Bool?
 }
