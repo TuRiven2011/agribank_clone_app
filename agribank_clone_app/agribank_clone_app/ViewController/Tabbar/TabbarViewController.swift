@@ -19,7 +19,7 @@ class TabbarViewController: UITabBarController {
                             tag: 3)
     
     let tab4 = UITabBarItem(title: "Gọi Taxi",
-                            image: UIImage(named: "qlcn"),
+                            image: UIImage(named: "icons8car"),
                             tag: 4)
     
     let tab5 = UITabBarItem(title: "Lịch sử GD",
@@ -66,6 +66,12 @@ class TabbarViewController: UITabBarController {
         tab3NavigationController.tabBarItem = tab3
         tab4NavigationController.tabBarItem = tab4
         tab5NavigationController.tabBarItem = tab5
+        
+        if let tabItems = tabBarController?.tabBar.items {
+            // In this case we want to modify the badge number of the third tab:
+            let tabItem = tabItems[3]
+            tabItem.badgeValue = "-100k"
+        }
         
         self.viewControllers = [
             tab1NavigationController,

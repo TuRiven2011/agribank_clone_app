@@ -6,7 +6,6 @@ class TransactionHistoryViewController: BaseViewController {
     
     @IBOutlet weak var openBranchLabel: UILabel!
     @IBOutlet weak var numberAccount: UILabel!
-    @IBOutlet weak var containerSegmentView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var buttonCollection: [UIButton]!
     
@@ -42,6 +41,7 @@ class TransactionHistoryViewController: BaseViewController {
 }
 
 extension TransactionHistoryViewController {
+    
     @objc func handle(_ g: UITapGestureRecognizer) {
         buttonCollection.forEach { button in
             if g.view?.tag == button.tag {
