@@ -10,7 +10,7 @@ class AccountInforTableViewCell: UITableViewCell {
     var tapCardServiceCompletion: (() -> Void)?
     var accountInforCompletion: (() -> Void)?
     
-    let data: [String] = ["group6243_Normal", "group17878_Normal", "HienDai2_Normal", "HienDai3_Normal", "HienDai4_Normal"]
+    let data: [String] = ["HienDai2_Normal", "group17878_Normal", "group6243_Normal" , "HienDai3_Normal", "HienDai4_Normal"]
     
     override func awakeFromNib() {
         super.awakeFromNib()

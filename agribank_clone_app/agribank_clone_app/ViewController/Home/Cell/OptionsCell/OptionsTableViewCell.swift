@@ -10,7 +10,7 @@ class OptionsTableViewCell: UITableViewCell {
     
     let utilitiesData : [FinanceEntity] = [.init(title: "Cài đặt Soft OTP", image: "ic48PxSoftotp_Normal"), .init(title: "Cài đặt Face ID", image: "ic24PxFaceid_Normal"), .init(title: "Cài đặt hạn mức", image: "ic48PxCaidathanmuc_Normal"), .init(title: "Nhận tin biến động số dư", image: "ic48PxBdsd_Normal"), .init(title: "Cài đặt tài khoản", image: "ic48PxCaidattaikhoan_Normal"), .init(title: "Cài đặt mật khẩu", image: "ic48PxDoimatkhau_Normal"), .init(title: "Quản lý danh bạ", image: "ic48PxQuanlydanhba_Normal"), .init(title: "Thông tin ứng dụng", image: "ic48PxThongtinungdung_Normal"), .init(title: "Tra cứu thông tin", image: "ic48PxThongtinungdung_Normal"), .init(title: "Tìm kiếm địa điểm", image: "ic48PxSes_Normal")]
     
-    let imageData: [String] = ["group6243_Normal", "group17878_Normal", "HienDai2_Normal", "HienDai3_Normal", "HienDai4_Normal"]
+    let imageData: [String] = ["group17878_Normal", "group6243_Normal", "HienDai2_Normal", "HienDai3_Normal", "HienDai4_Normal"]
     
     var tapTransferCompletion: (() -> Void)?
     var settingAccountCompletion: (() -> Void)?

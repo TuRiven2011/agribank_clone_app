@@ -109,7 +109,7 @@
                                 <rect key="frame" x="15" y="115" width="401" height="160"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OO2-RK-Cl1">
-                                        <rect key="frame" x="0.0" y="0.0" width="401" height="160"/>
+                                        <rect key="frame" x="-20" y="0.0" width="441" height="160"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mwy-HQ-l7b">
                                             <size key="itemSize" width="128" height="128"/>
@@ -123,8 +123,8 @@
                                 <constraints>
                                     <constraint firstItem="OO2-RK-Cl1" firstAttribute="top" secondItem="icQ-71-4EC" secondAttribute="top" id="GXi-5A-mvw"/>
                                     <constraint firstAttribute="height" constant="160" id="Lw3-Yq-bKK"/>
-                                    <constraint firstItem="OO2-RK-Cl1" firstAttribute="leading" secondItem="icQ-71-4EC" secondAttribute="leading" id="YUM-a4-clM"/>
-                                    <constraint firstAttribute="trailing" secondItem="OO2-RK-Cl1" secondAttribute="trailing" id="YaQ-Qg-WPw"/>
+                                    <constraint firstItem="OO2-RK-Cl1" firstAttribute="leading" secondItem="icQ-71-4EC" secondAttribute="leading" constant="-20" id="YUM-a4-clM"/>
+                                    <constraint firstAttribute="trailing" secondItem="OO2-RK-Cl1" secondAttribute="trailing" constant="-20" id="YaQ-Qg-WPw"/>
                                     <constraint firstAttribute="bottom" secondItem="OO2-RK-Cl1" secondAttribute="bottom" id="q3m-96-7yh"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>

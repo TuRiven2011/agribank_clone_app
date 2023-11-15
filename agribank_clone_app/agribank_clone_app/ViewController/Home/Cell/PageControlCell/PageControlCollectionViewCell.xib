@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xhB-ln-HDX">
-                        <rect key="frame" x="0.0" y="0.0" width="296" height="161"/>
+                        <rect key="frame" x="20" y="0.0" width="256" height="161"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="22"/>
@@ -31,8 +31,8 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="xhB-ln-HDX" secondAttribute="bottom" id="Op0-hk-MRr"/>
-                <constraint firstAttribute="trailing" secondItem="xhB-ln-HDX" secondAttribute="trailing" id="Thh-YB-YfE"/>
-                <constraint firstItem="xhB-ln-HDX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xx4-x4-U09"/>
+                <constraint firstAttribute="trailing" secondItem="xhB-ln-HDX" secondAttribute="trailing" constant="20" id="Thh-YB-YfE"/>
+                <constraint firstItem="xhB-ln-HDX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Xx4-x4-U09"/>
                 <constraint firstItem="xhB-ln-HDX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jgA-29-RT8"/>
             </constraints>
             <size key="customSize" width="296" height="161"/>

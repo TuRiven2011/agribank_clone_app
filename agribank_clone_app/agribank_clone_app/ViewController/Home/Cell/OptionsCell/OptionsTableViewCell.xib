@@ -119,7 +119,7 @@
                                         <rect key="frame" x="0.0" y="975" width="300" height="110"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6z0-nz-ndE">
-                                                <rect key="frame" x="10" y="5" width="280" height="90"/>
+                                                <rect key="frame" x="-10" y="5" width="320" height="90"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="jpZ-V0-87k"/>
@@ -142,8 +142,8 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="6z0-nz-ndE" firstAttribute="leading" secondItem="otA-VN-mD5" secondAttribute="leading" constant="10" id="Fma-31-rMX"/>
-                                            <constraint firstAttribute="trailing" secondItem="6z0-nz-ndE" secondAttribute="trailing" constant="10" id="HZA-ee-lg7"/>
+                                            <constraint firstItem="6z0-nz-ndE" firstAttribute="leading" secondItem="otA-VN-mD5" secondAttribute="leading" constant="-10" id="Fma-31-rMX"/>
+                                            <constraint firstAttribute="trailing" secondItem="6z0-nz-ndE" secondAttribute="trailing" constant="-10" id="HZA-ee-lg7"/>
                                             <constraint firstAttribute="height" constant="110" id="J1r-te-ZTE"/>
                                             <constraint firstItem="6z0-nz-ndE" firstAttribute="top" secondItem="otA-VN-mD5" secondAttribute="top" constant="5" id="Tvx-s0-Zgg"/>
                                             <constraint firstItem="EhU-f2-cxT" firstAttribute="centerX" secondItem="otA-VN-mD5" secondAttribute="centerX" id="dtP-S7-nIF"/>
