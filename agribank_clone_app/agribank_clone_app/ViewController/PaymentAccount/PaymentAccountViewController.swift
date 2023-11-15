@@ -30,8 +30,8 @@ class PaymentAccountViewController: BaseViewController {
             accountBalanceLbl.text = "Số dư: \(account.balance?.addComma() ?? "0") VND"
         }
         tableView.register(.init(nibName: "TransactionListTableViewCell", bundle: nil), forCellReuseIdentifier: "TransactionListTableViewCell")
-        tableView.delegate = self
-        tableView.dataSource = self
+//        tableView.delegate = self
+//        tableView.dataSource = self
     }
     
     
@@ -54,24 +54,24 @@ extension PaymentAccountViewController {
     
     @objc func showPickerDate() {
 //        navigationController?.pushViewController(datePicker, animated: true)
-        self.view.addSubview(datePicker)
+//        self.view.addSubview(datePicker)
     }
 }
 
-extension PaymentAccountViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        listHistory?.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionListTableViewCell") as? TransactionListTableViewCell else {return UITableViewCell()}
-        
-        if let listHistory = listHistory {
-            cell.binding(data: listHistory[indexPath.row])
-        }
-        cell.selectionStyle = .none
-        return cell
-    }
-    
-    
-}
+//extension PaymentAccountViewController: UITableViewDelegate, UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        listHistory?.count ?? 0
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionListTableViewCell") as? TransactionListTableViewCell else {return UITableViewCell()}
+//
+//        if let listHistory = listHistory {
+//            cell.binding(data: listHistory[indexPath.row])
+//        }
+//        cell.selectionStyle = .none
+//        return cell
+//    }
+//
+//
+//}
