@@ -15,11 +15,11 @@ class TabbarViewController: UITabBarController {
                             tag: 2)
     
     let tab3 = UITabBarItem(title: "VnShop",
-                            image: UIImage(named: "qlcn"),
+                            image: UIImage(named: "ic24PxHomeWhite_Normal"),
                             tag: 3)
     
     let tab4 = UITabBarItem(title: "Gọi Taxi",
-                            image: UIImage(named: "qlcn"),
+                            image: UIImage(named: "ic24PxHomeWhite_Normal"),
                             tag: 4)
     
     let tab5 = UITabBarItem(title: "Lịch sử GD",
