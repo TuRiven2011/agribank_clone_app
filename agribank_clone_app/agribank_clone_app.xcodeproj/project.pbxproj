@@ -27,6 +27,9 @@
 		4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4741B76B2AD4FA4B006B6264 /* Assets.xcassets */; };
 		4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4741B76D2AD4FA4B006B6264 /* LaunchScreen.storyboard */; };
 		475F06D82AF231350055D405 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475F06D72AF231350055D405 /* BaseViewController.swift */; };
+		47698B9C2B03BBBA004E315E /* PickTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698B9A2B03BBBA004E315E /* PickTimeView.swift */; };
+		47698B9D2B03BBBA004E315E /* PickTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47698B9B2B03BBBA004E315E /* PickTimeView.xib */; };
+		47698B9F2B03BC60004E315E /* UIView+extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698B9E2B03BC60004E315E /* UIView+extentions.swift */; };
 		47854F7B2AFC93C600472D88 /* SearchFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47854F792AFC93C600472D88 /* SearchFeatureViewController.swift */; };
 		47854F7C2AFC93C600472D88 /* SearchFeatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47854F7A2AFC93C600472D88 /* SearchFeatureViewController.xib */; };
 		47854F802AFC952900472D88 /* SearchFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47854F7E2AFC952900472D88 /* SearchFeatureCollectionViewCell.swift */; };
@@ -149,6 +152,9 @@
 		4741B76E2AD4FA4B006B6264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4741B7702AD4FA4B006B6264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475F06D72AF231350055D405 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		47698B9A2B03BBBA004E315E /* PickTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickTimeView.swift; sourceTree = "<group>"; };
+		47698B9B2B03BBBA004E315E /* PickTimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickTimeView.xib; sourceTree = "<group>"; };
+		47698B9E2B03BC60004E315E /* UIView+extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extentions.swift"; sourceTree = "<group>"; };
 		47854F792AFC93C600472D88 /* SearchFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureViewController.swift; sourceTree = "<group>"; };
 		47854F7A2AFC93C600472D88 /* SearchFeatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFeatureViewController.xib; sourceTree = "<group>"; };
 		47854F7E2AFC952900472D88 /* SearchFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -325,6 +331,7 @@
 			children = (
 				473A5E042AD50FB800A34CE5 /* UIColorExtension.swift */,
 				473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */,
+				47698B9E2B03BC60004E315E /* UIView+extentions.swift */,
 				473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */,
 				47DA8E232AFB6B4200498E91 /* IntExtension.swift */,
 				76B8D9AA2B037771003BF69E /* DateExtension.swift */,
@@ -336,6 +343,7 @@
 		473A5E0A2AD50FE100A34CE5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47698B992B03BBBA004E315E /* PickTime */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,6 +416,15 @@
 				475F06D72AF231350055D405 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		47698B992B03BBBA004E315E /* PickTime */ = {
+			isa = PBXGroup;
+			children = (
+				47698B9A2B03BBBA004E315E /* PickTimeView.swift */,
+				47698B9B2B03BBBA004E315E /* PickTimeView.xib */,
+			);
+			path = PickTime;
 			sourceTree = "<group>";
 		};
 		47854F782AFC93B900472D88 /* SearchFeature */ = {
@@ -929,6 +946,7 @@
 			files = (
 				47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */,
 				4787C53A2B00DCBE0062DD3A /* TransferByOtherBankViewController.xib in Resources */,
+				47698B9D2B03BBBA004E315E /* PickTimeView.xib in Resources */,
 				82B054CC2B02802A004E5142 /* TransactionListTableViewCell.xib in Resources */,
 				47BD89C12AD509850004D093 /* delivery_animation.json in Resources */,
 				471E5ED92AFB1CA600BB0278 /* CreateAccountViewController.xib in Resources */,
@@ -1027,6 +1045,7 @@
 				82EAA0E62ADD7D040076C059 /* TransferCollectionViewCell.swift in Sources */,
 				475F06D82AF231350055D405 /* BaseViewController.swift in Sources */,
 				76B8D9AB2B037771003BF69E /* DateExtension.swift in Sources */,
+				47698B9C2B03BBBA004E315E /* PickTimeView.swift in Sources */,
 				76D1334B2AFDDB920056CC4A /* UIImageExtension.swift in Sources */,
 				82E6D0C82B00FAF900499CAF /* TransactionDetailViewController.swift in Sources */,
 				769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */,
@@ -1043,6 +1062,7 @@
 				473A5E022AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				821C89232AD6D37C006DE8F2 /* AccountInforTableViewCell.swift in Sources */,
 				82C4BB252AFFBC04003D4F3B /* PaymentAccountViewController.swift in Sources */,
+				47698B9F2B03BC60004E315E /* UIView+extentions.swift in Sources */,
 				473A5E0C2AD50FF100A34CE5 /* AppNavigator.swift in Sources */,
 				473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */,
 				473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */,

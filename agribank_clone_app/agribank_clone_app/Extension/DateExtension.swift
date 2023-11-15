@@ -16,3 +16,11 @@ extension Date {
         return result
     }
 }
+extension Date {
+    func format(partern: String) -> String {
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = partern
+        dateFormatterGet.locale = Locale(identifier: "en_US_POSIX")
+        return dateFormatterGet.string(from: self)
+    }
+}
