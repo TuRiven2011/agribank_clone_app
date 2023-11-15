@@ -120,7 +120,6 @@
 		82EAA0EB2ADD8AA30076C059 /* TransferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0E92ADD8AA30076C059 /* TransferTableViewCell.xib */; };
 		82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0F22AE172260076C059 /* CardServiceViewController.swift */; };
 		82EAA0F52AE172260076C059 /* CardServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0F32AE172260076C059 /* CardServiceViewController.xib */; };
-		E2D43FF08D67C6F4829077AC /* Pods_agribank_clone_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -283,9 +282,6 @@
 		82EAA0E92ADD8AA30076C059 /* TransferTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferTableViewCell.xib; sourceTree = "<group>"; };
 		82EAA0F22AE172260076C059 /* CardServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardServiceViewController.swift; sourceTree = "<group>"; };
 		82EAA0F32AE172260076C059 /* CardServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardServiceViewController.xib; sourceTree = "<group>"; };
-		B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.debug.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.debug.xcconfig"; sourceTree = "<group>"; };
-		EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.release.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.release.xcconfig"; sourceTree = "<group>"; };
-		EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_agribank_clone_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,7 +289,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D43FF08D67C6F4829077AC /* Pods_agribank_clone_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,8 +372,6 @@
 			children = (
 				4741B7612AD4FA49006B6264 /* agribank_clone_app */,
 				4741B7602AD4FA49006B6264 /* Products */,
-				B1F4FF24E74B636FB71976CA /* Pods */,
-				85B47B5DEC69CEB4C762CF34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -867,23 +860,6 @@
 			path = CardService;
 			sourceTree = "<group>";
 		};
-		85B47B5DEC69CEB4C762CF34 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B1F4FF24E74B636FB71976CA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */,
-				EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -891,7 +867,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4741B7732AD4FA4B006B6264 /* Build configuration list for PBXNativeTarget "agribank_clone_app" */;
 			buildPhases = (
-				E17030401A416D72DB83E7AA /* [CP] Check Pods Manifest.lock */,
 				4741B75B2AD4FA49006B6264 /* Sources */,
 				4741B75C2AD4FA49006B6264 /* Frameworks */,
 				4741B75D2AD4FA49006B6264 /* Resources */,
@@ -1000,31 +975,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E17030401A416D72DB83E7AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-agribank_clone_app-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4741B75B2AD4FA49006B6264 /* Sources */ = {
@@ -1233,7 +1183,6 @@
 		};
 		4741B7742AD4FA4B006B6264 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1267,7 +1216,6 @@
 		};
 		4741B7752AD4FA4B006B6264 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
