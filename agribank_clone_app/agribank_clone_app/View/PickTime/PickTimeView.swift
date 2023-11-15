@@ -1,10 +1,3 @@
-//
-//  PickTimeView.swift
-//  iworker_ios
-//
-//  Created by Phạm Bá Tú on 22/09/2022.
-//
-
 import UIKit
 import Combine
 
