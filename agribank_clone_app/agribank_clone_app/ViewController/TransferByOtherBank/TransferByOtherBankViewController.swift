@@ -42,7 +42,6 @@ class TransferByOtherBankViewController: BaseViewController {
         
         AppData.listTransaction?.append(billModel)
         
-        print(AppData.listTransaction)
         
         let vc = TransactionDetailViewController(data: billModel)
         vc.hidesBottomBarWhenPushed = true

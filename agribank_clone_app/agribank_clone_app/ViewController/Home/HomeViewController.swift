@@ -180,6 +180,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
+        cell3.moneyInCompletion = {[weak self] in
+            guard let self = self else {return}
+            let vc = MoneyInViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
         if indexPath.row == 0 {
             return cell
         }

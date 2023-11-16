@@ -9,9 +9,27 @@ class MoneyInViewController: BaseViewController {
 //                                   openBranch: openBranch)
 //        AppData.account = account
         
-        if let account = AppData.account {
-            AppData.account?.balance = (account.balance ?? 0) + (money ?? 0)
+        guard let account = AppData.account else {return}
+        var newData = account
+        if let money = Int(moneyLabel.text ?? "0") {
+            newData.balance = (account.balance ?? 0) + money
         }
+        
+        AppData.account = newData
+        
+        let billModel = TransferModel(userName: AppData.account?.userName,
+                                      numberAccount: AppData.account?.numberAccount,
+                                      balance: AppData.account?.balance,
+                                      openBranch: AppData.account?.openBranch,
+                                      content: contentLabel.text,
+                                      money: Int(moneyLabel.text ?? "0"),
+                                      numberTransferAccount: accountLabel.text,
+                                      bankTransfer: "VietinBank",
+                                      date: .init(),
+                                      isReceive: true
+        )
+        
+        AppData.listTransaction?.append(billModel)
         
         navigationController?.popViewController(animated: true)
     }
