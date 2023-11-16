@@ -23,8 +23,8 @@ class MoneyInViewController: BaseViewController {
                                       openBranch: AppData.account?.openBranch,
                                       content: contentLabel.text,
                                       money: Int(moneyLabel.text ?? "0"),
-                                      numberTransferAccount: accountLabel.text,
-                                      bankTransfer: "VietinBank",
+                                      numberAccount2: accountLabel.text,
+                                      bank2: bankLabel.text,
                                       date: .init(),
                                       isReceive: true
         )

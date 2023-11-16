@@ -4,6 +4,7 @@ import UIKit
 
 class TransferByOtherBankViewController: BaseViewController {
 
+    @IBOutlet weak var bank2TF: UITextField!
     @IBOutlet weak var contentTransferTextField: UITextField!
     @IBOutlet weak var bankCollectionView: UICollectionView!
     @IBOutlet weak var cancelButton: UIButton!
@@ -34,8 +35,8 @@ class TransferByOtherBankViewController: BaseViewController {
                                       openBranch: AppData.account?.openBranch,
                                       content: contentTransferTextField.text,
                                       money: Int(moneyTransferTextField.text ?? "0"),
-                                      numberTransferAccount: transferAccountNumberTextField.text,
-                                      bankTransfer: "VietinBank",
+                                      numberAccount2: transferAccountNumberTextField.text,
+                                      bank2: bank2TF.text,
                                       date: .init(),
                                       isReceive: false
         )

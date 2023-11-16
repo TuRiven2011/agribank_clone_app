@@ -7,8 +7,14 @@ class TransactionDetailViewController: BaseViewController {
     var data: TransferModel
     
     @IBOutlet weak var goHomeImage: UIImageView!
-    @IBOutlet weak var myNumberAccountLabel: UILabel!
+    @IBOutlet weak var numberAccount2LAbel: UILabel!
     @IBOutlet weak var moneyLabel: UILabel!
+    @IBOutlet weak var bank2Label: UILabel!
+    @IBOutlet weak var codeLabel: UILabel!
+    @IBOutlet weak var name2Label: UILabel!
+    
+    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     required init(data: TransferModel) {
         self.data = data
         
@@ -21,6 +27,9 @@ class TransactionDetailViewController: BaseViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBAction func handleBack(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +49,11 @@ class TransactionDetailViewController: BaseViewController {
     }
     
     private func setup() {
-        myNumberAccountLabel.text = data.numberAccount ?? ""
-        moneyLabel.text = data.money?.addComma()
+        numberAccount2LAbel.text = data.numberAccount2 ?? ""
+        moneyLabel.text = data.money?.addComma() ?? ""
+        bank2Label.text = data.bank2 ?? ""
+        contentLabel.text = data.content ?? ""
+        name2Label.text = data.name2 ?? ""
     }
     
     private func setupControlEvent() {

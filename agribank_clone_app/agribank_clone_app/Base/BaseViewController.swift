@@ -9,6 +9,10 @@ class BaseViewController: UIViewController {
         
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
     func setupNavigationBar(title: String) {
         
         if #available(iOS 13.0, *) {
@@ -59,6 +63,7 @@ class BaseViewController: UIViewController {
         let backButtonItem = UIBarButtonItem(customView: back)
         
         navigationController?.navigationItem.leftBarButtonItem = backButtonItem
+        
     }
     
     func setupNavigationBarSwitch(title: String) {

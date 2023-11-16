@@ -67,6 +67,9 @@ class TabbarViewController: UITabBarController {
         let tab4NavigationController = UINavigationController(rootViewController: ViewController())
         let tab5NavigationController = UINavigationController(rootViewController: history)
         
+        tab2.badgeColor = .red
+        tab2.badgeValue = "2"
+        
         tab4.badgeValue = "-100k"
         tab4.badgeColor = .red
         

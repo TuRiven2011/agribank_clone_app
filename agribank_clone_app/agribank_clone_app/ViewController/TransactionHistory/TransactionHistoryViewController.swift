@@ -15,7 +15,7 @@ class TransactionHistoryViewController: BaseViewController {
     @IBOutlet weak var endDateView: UIView!
     @IBOutlet weak var startDateView: UIView!
     
-    var listHistory = AppData.listTransaction
+    var listHistory = AppData.listTransaction?.sorted(by: {($0.date ?? .init()) > ($1.date ?? .init())})
     var listDataToShow: [TransferModel] = []
     var type = TransactionEnum.total
     let datePicker = UIDatePicker()
@@ -128,7 +128,7 @@ extension TransactionHistoryViewController {
     
     @objc func searchTransaction() {
         isSearch = true
-        listHistory = AppData.listTransaction
+        listHistory = AppData.listTransaction?.sorted(by: {($0.date ?? .init()) > ($1.date ?? .init())})
         listDataToShow.removeAll()
         if let listHistory = listHistory {
             listHistory.forEach {[weak self] element in

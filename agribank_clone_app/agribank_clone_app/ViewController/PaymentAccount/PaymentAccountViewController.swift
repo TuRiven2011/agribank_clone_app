@@ -20,7 +20,7 @@ class PaymentAccountViewController: BaseViewController {
     
     @IBOutlet weak var selectView: UIView!
     
-    var listHistory = AppData.listTransaction
+    var listHistory = AppData.listTransaction?.sorted(by: {($0.date ?? .init()) < ($1.date ?? .init())})
     var listDataToShow: [TransferModel] = []
     var type = TransactionEnum.total
     let datePicker = UIDatePicker()
@@ -32,7 +32,6 @@ class PaymentAccountViewController: BaseViewController {
         super.viewDidLoad()
         
         config()
-        
         endDateLabel.text = Date().format(partern: "dd/MM/yyyy")
         
         
@@ -72,8 +71,8 @@ class PaymentAccountViewController: BaseViewController {
             accountBalanceLbl.text = "Số dư: \(account.balance?.addComma() ?? "0") VND"
         }
         tableView.register(.init(nibName: "TransactionListTableViewCell", bundle: nil), forCellReuseIdentifier: "TransactionListTableViewCell")
-//        tableView.delegate = self
-//        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     
@@ -148,7 +147,7 @@ extension PaymentAccountViewController {
         selectView.isHidden = false
         tableView.isHidden = false
         isSearch = true
-        listHistory = AppData.listTransaction
+        listHistory = AppData.listTransaction?.sorted(by: {($0.date ?? .init()) > ($1.date ?? .init())})
         listDataToShow.removeAll()
         if let listHistory = listHistory {
             listHistory.forEach {[weak self] element in

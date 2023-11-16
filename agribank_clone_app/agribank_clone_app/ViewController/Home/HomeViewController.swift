@@ -99,7 +99,7 @@ class HomeViewController: UIViewController {
                 logo.centerYAnchor.constraint(equalTo: navigationBar.centerYAnchor, constant: -3),
             ].forEach({$0.isActive = true})
         }
-        navigationController?.additionalSafeAreaInsets.top = 6
+        navigationController?.additionalSafeAreaInsets.top = 8
     }
     
     func configTbl() {
@@ -185,6 +185,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let vc = MoneyInViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        cell3.moneyInPastCompletion = {[weak self] in
+            guard let self = self else {return}
+            let vc = PastInTransactionViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        cell3.moneyOutPastCompletion = {[weak self] in
+            guard let self = self else {return}
+            let vc = PastOutTransactionViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        
         
         if indexPath.row == 0 {
             return cell

@@ -41,7 +41,7 @@ class DetailTransactionViewController: BaseViewController {
         moneyLabel.text = data.money?.addComma() ?? ""
         branchLabel.text = data.openBranch ?? ""
         typeMoneyLabel.text = "VND"
-        accountPayLabel.text = data.numberTransferAccount ?? ""
+        accountPayLabel.text = data.numberAccount2 ?? ""
         contentLabel.text = data.content ?? ""
         balanceLabel.text = data.balance?.addComma() ?? ""
     }

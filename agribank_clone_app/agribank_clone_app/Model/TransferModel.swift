@@ -7,8 +7,9 @@ struct TransferModel: Codable {
     var openBranch: String?
     var content: String?
     var money: Int?
-    var numberTransferAccount: String?
-    var bankTransfer: String?
+    var name2: String?
+    var numberAccount2: String?
+    var bank2: String?
     var date: Date?
     var isReceive: Bool?
 }

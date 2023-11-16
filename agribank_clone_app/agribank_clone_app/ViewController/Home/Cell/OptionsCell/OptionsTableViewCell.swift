@@ -15,6 +15,8 @@ class OptionsTableViewCell: UITableViewCell {
     var tapTransferCompletion: (() -> Void)?
     var settingAccountCompletion: (() -> Void)?
     var moneyInCompletion: (() -> Void)?
+    var moneyInPastCompletion: (() -> Void)?
+    var moneyOutPastCompletion: (() -> Void)?
 
     @IBOutlet weak var financeCollectionView: UICollectionView!
     
@@ -120,9 +122,13 @@ extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
             if indexPath.row == 4 {
                 settingAccountCompletion?()
             }
-        } else if collectionView == utilitiesCollectionView {
-            if indexPath.row == 5 {
+            
+            else if indexPath.row == 5 {
                 moneyInCompletion?()
+            } else if indexPath.row == 6 {
+                moneyInPastCompletion?()
+            } else if indexPath.row == 5 {
+                moneyOutPastCompletion?()
             }
         }
     }
