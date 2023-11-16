@@ -5,6 +5,6 @@ extension Int {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         let formattedNumber = numberFormatter.string(from: NSNumber(value: self))
-        return formattedNumber ?? ""
+        return formattedNumber?.replacingOccurrences(of: ".", with: ",", options: .literal, range: nil) ?? ""
     }
 }

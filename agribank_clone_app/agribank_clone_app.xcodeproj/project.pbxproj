@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4717BE0F2B05B4B800A78653 /* MoneyInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717BE0D2B05B4B800A78653 /* MoneyInViewController.swift */; };
+		4717BE102B05B4B800A78653 /* MoneyInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4717BE0E2B05B4B800A78653 /* MoneyInViewController.xib */; };
 		471E5ED82AFB1CA600BB0278 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5ED62AFB1CA600BB0278 /* CreateAccountViewController.swift */; };
 		471E5ED92AFB1CA600BB0278 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471E5ED72AFB1CA600BB0278 /* CreateAccountViewController.xib */; };
 		471E5EDD2AFB1ECE00BB0278 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5EDA2AFB1ECE00BB0278 /* CommonUtils.swift */; };
@@ -27,6 +29,11 @@
 		4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4741B76B2AD4FA4B006B6264 /* Assets.xcassets */; };
 		4741B76F2AD4FA4B006B6264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4741B76D2AD4FA4B006B6264 /* LaunchScreen.storyboard */; };
 		475F06D82AF231350055D405 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475F06D72AF231350055D405 /* BaseViewController.swift */; };
+		47698B9C2B03BBBA004E315E /* PickTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698B9A2B03BBBA004E315E /* PickTimeView.swift */; };
+		47698B9D2B03BBBA004E315E /* PickTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47698B9B2B03BBBA004E315E /* PickTimeView.xib */; };
+		47698B9F2B03BC60004E315E /* UIView+extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698B9E2B03BC60004E315E /* UIView+extentions.swift */; };
+		47698BA42B05AB7E004E315E /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698BA22B05AB7E004E315E /* DetailTransactionViewController.swift */; };
+		47698BA52B05AB7E004E315E /* DetailTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47698BA32B05AB7E004E315E /* DetailTransactionViewController.xib */; };
 		47854F7B2AFC93C600472D88 /* SearchFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47854F792AFC93C600472D88 /* SearchFeatureViewController.swift */; };
 		47854F7C2AFC93C600472D88 /* SearchFeatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47854F7A2AFC93C600472D88 /* SearchFeatureViewController.xib */; };
 		47854F802AFC952900472D88 /* SearchFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47854F7E2AFC952900472D88 /* SearchFeatureCollectionViewCell.swift */; };
@@ -57,6 +64,10 @@
 		47DA8E292AFB6FCE00498E91 /* DetailAccountInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */; };
 		769E7E542AFE3DDA00E44818 /* ContentNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */; };
 		769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */; };
+		769E7E592B020B7100E44818 /* BankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E572B020B7100E44818 /* BankCollectionViewCell.swift */; };
+		769E7E5A2B020B7100E44818 /* BankCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */; };
+		769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E5B2B020D4800E44818 /* TransferModel.swift */; };
+		76B8D9AB2B037771003BF69E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8D9AA2B037771003BF69E /* DateExtension.swift */; };
 		76D1333A2AFDD0920056CC4A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D133382AFDD0920056CC4A /* NotificationViewController.swift */; };
 		76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D133392AFDD0920056CC4A /* NotificationViewController.xib */; };
 		76D1333E2AFDD2320056CC4A /* BalanceNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */; };
@@ -111,10 +122,11 @@
 		82EAA0EB2ADD8AA30076C059 /* TransferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0E92ADD8AA30076C059 /* TransferTableViewCell.xib */; };
 		82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAA0F22AE172260076C059 /* CardServiceViewController.swift */; };
 		82EAA0F52AE172260076C059 /* CardServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAA0F32AE172260076C059 /* CardServiceViewController.xib */; };
-		E2D43FF08D67C6F4829077AC /* Pods_agribank_clone_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4717BE0D2B05B4B800A78653 /* MoneyInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyInViewController.swift; sourceTree = "<group>"; };
+		4717BE0E2B05B4B800A78653 /* MoneyInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyInViewController.xib; sourceTree = "<group>"; };
 		471E5ED62AFB1CA600BB0278 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		471E5ED72AFB1CA600BB0278 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 		471E5EDA2AFB1ECE00BB0278 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
@@ -143,6 +155,11 @@
 		4741B76E2AD4FA4B006B6264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4741B7702AD4FA4B006B6264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475F06D72AF231350055D405 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		47698B9A2B03BBBA004E315E /* PickTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickTimeView.swift; sourceTree = "<group>"; };
+		47698B9B2B03BBBA004E315E /* PickTimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickTimeView.xib; sourceTree = "<group>"; };
+		47698B9E2B03BC60004E315E /* UIView+extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extentions.swift"; sourceTree = "<group>"; };
+		47698BA22B05AB7E004E315E /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
+		47698BA32B05AB7E004E315E /* DetailTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransactionViewController.xib; sourceTree = "<group>"; };
 		47854F792AFC93C600472D88 /* SearchFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureViewController.swift; sourceTree = "<group>"; };
 		47854F7A2AFC93C600472D88 /* SearchFeatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFeatureViewController.xib; sourceTree = "<group>"; };
 		47854F7E2AFC952900472D88 /* SearchFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -211,6 +228,10 @@
 		47DA8E272AFB6FCE00498E91 /* DetailAccountInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAccountInforViewController.xib; sourceTree = "<group>"; };
 		769E7E522AFE3DDA00E44818 /* ContentNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNotificationViewController.swift; sourceTree = "<group>"; };
 		769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentNotificationViewController.xib; sourceTree = "<group>"; };
+		769E7E572B020B7100E44818 /* BankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCollectionViewCell.swift; sourceTree = "<group>"; };
+		769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCollectionViewCell.xib; sourceTree = "<group>"; };
+		769E7E5B2B020D4800E44818 /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
+		76B8D9AA2B037771003BF69E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		76D133382AFDD0920056CC4A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		76D133392AFDD0920056CC4A /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNotificationModel.swift; sourceTree = "<group>"; };
@@ -265,9 +286,6 @@
 		82EAA0E92ADD8AA30076C059 /* TransferTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferTableViewCell.xib; sourceTree = "<group>"; };
 		82EAA0F22AE172260076C059 /* CardServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardServiceViewController.swift; sourceTree = "<group>"; };
 		82EAA0F32AE172260076C059 /* CardServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardServiceViewController.xib; sourceTree = "<group>"; };
-		B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.debug.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.debug.xcconfig"; sourceTree = "<group>"; };
-		EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agribank_clone_app.release.xcconfig"; path = "Target Support Files/Pods-agribank_clone_app/Pods-agribank_clone_app.release.xcconfig"; sourceTree = "<group>"; };
-		EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_agribank_clone_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,13 +293,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D43FF08D67C6F4829077AC /* Pods_agribank_clone_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4717BE0C2B05B4AC00A78653 /* MoneyIn */ = {
+			isa = PBXGroup;
+			children = (
+				4717BE0D2B05B4B800A78653 /* MoneyInViewController.swift */,
+				4717BE0E2B05B4B800A78653 /* MoneyInViewController.xib */,
+			);
+			path = MoneyIn;
+			sourceTree = "<group>";
+		};
 		471E5ED52AFB1C8D00BB0278 /* CreateAccount */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,8 +339,10 @@
 			children = (
 				473A5E042AD50FB800A34CE5 /* UIColorExtension.swift */,
 				473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */,
+				47698B9E2B03BC60004E315E /* UIView+extentions.swift */,
 				473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */,
 				47DA8E232AFB6B4200498E91 /* IntExtension.swift */,
+				76B8D9AA2B037771003BF69E /* DateExtension.swift */,
 				76D1334A2AFDDB920056CC4A /* UIImageExtension.swift */,
 			);
 			path = Extension;
@@ -323,6 +351,7 @@
 		473A5E0A2AD50FE100A34CE5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47698B992B03BBBA004E315E /* PickTime */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,6 +359,8 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4717BE0C2B05B4AC00A78653 /* MoneyIn */,
+				47698BA02B05AB61004E315E /* DetailTransaction */,
 				82B054C32B0253E3004E5142 /* TransactionHistory */,
 				82E6D0C52B00FAD600499CAF /* TransactionDetail */,
 				4787C5362B00DCA40062DD3A /* TransferByOtherBank */,
@@ -355,8 +386,6 @@
 			children = (
 				4741B7612AD4FA49006B6264 /* agribank_clone_app */,
 				4741B7602AD4FA49006B6264 /* Products */,
-				B1F4FF24E74B636FB71976CA /* Pods */,
-				85B47B5DEC69CEB4C762CF34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -394,6 +423,24 @@
 				475F06D72AF231350055D405 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		47698B992B03BBBA004E315E /* PickTime */ = {
+			isa = PBXGroup;
+			children = (
+				47698B9A2B03BBBA004E315E /* PickTimeView.swift */,
+				47698B9B2B03BBBA004E315E /* PickTimeView.xib */,
+			);
+			path = PickTime;
+			sourceTree = "<group>";
+		};
+		47698BA02B05AB61004E315E /* DetailTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				47698BA22B05AB7E004E315E /* DetailTransactionViewController.swift */,
+				47698BA32B05AB7E004E315E /* DetailTransactionViewController.xib */,
+			);
+			path = DetailTransaction;
 			sourceTree = "<group>";
 		};
 		47854F782AFC93B900472D88 /* SearchFeature */ = {
@@ -438,6 +485,7 @@
 		4787C5362B00DCA40062DD3A /* TransferByOtherBank */ = {
 			isa = PBXGroup;
 			children = (
+				769E7E562B020B5B00E44818 /* Cell */,
 				4787C5372B00DCBE0062DD3A /* TransferByOtherBankViewController.swift */,
 				4787C5382B00DCBE0062DD3A /* TransferByOtherBankViewController.xib */,
 			);
@@ -555,6 +603,15 @@
 				769E7E532AFE3DDA00E44818 /* ContentNotificationViewController.xib */,
 			);
 			path = ContentNotification;
+			sourceTree = "<group>";
+		};
+		769E7E562B020B5B00E44818 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				769E7E572B020B7100E44818 /* BankCollectionViewCell.swift */,
+				769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		76D133372AFDD0800056CC4A /* Notification */ = {
@@ -699,6 +756,7 @@
 				820DB43C2AE21B1700CB1138 /* AppInforEntity.swift */,
 				471E5EE02AFB1F4600BB0278 /* AccountModel.swift */,
 				76D1333D2AFDD2320056CC4A /* BalanceNotificationModel.swift */,
+				769E7E5B2B020D4800E44818 /* TransferModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -816,23 +874,6 @@
 			path = CardService;
 			sourceTree = "<group>";
 		};
-		85B47B5DEC69CEB4C762CF34 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EEAE2A58FD9C081ABEBFF13B /* Pods_agribank_clone_app.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B1F4FF24E74B636FB71976CA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */,
-				EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -840,7 +881,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4741B7732AD4FA4B006B6264 /* Build configuration list for PBXNativeTarget "agribank_clone_app" */;
 			buildPhases = (
-				E17030401A416D72DB83E7AA /* [CP] Check Pods Manifest.lock */,
 				4741B75B2AD4FA49006B6264 /* Sources */,
 				4741B75C2AD4FA49006B6264 /* Frameworks */,
 				4741B75D2AD4FA49006B6264 /* Resources */,
@@ -895,6 +935,7 @@
 			files = (
 				47BD89D62AD50AAD0004D093 /* TaxiAnimation.json in Resources */,
 				4787C53A2B00DCBE0062DD3A /* TransferByOtherBankViewController.xib in Resources */,
+				47698B9D2B03BBBA004E315E /* PickTimeView.xib in Resources */,
 				82B054CC2B02802A004E5142 /* TransactionListTableViewCell.xib in Resources */,
 				47BD89C12AD509850004D093 /* delivery_animation.json in Resources */,
 				471E5ED92AFB1CA600BB0278 /* CreateAccountViewController.xib in Resources */,
@@ -909,6 +950,7 @@
 				82B054C72B025431004E5142 /* TransactionHistoryViewController.xib in Resources */,
 				47BD89D22AD50AAD0004D093 /* hotel_animation.json in Resources */,
 				76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */,
+				769E7E5A2B020B7100E44818 /* BankCollectionViewCell.xib in Resources */,
 				47BD89D02AD50AAD0004D093 /* icon_vnshop.json in Resources */,
 				82E6D0C92B00FAF900499CAF /* TransactionDetailViewController.xib in Resources */,
 				47BD89CF2AD50AAD0004D093 /* FlightAnimation.json in Resources */,
@@ -923,6 +965,7 @@
 				820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */,
 				47854F872AFC9DDE00472D88 /* SuggestHeader.xib in Resources */,
 				82C4BB262AFFBC04003D4F3B /* PaymentAccountViewController.xib in Resources */,
+				47698BA52B05AB7E004E315E /* DetailTransactionViewController.xib in Resources */,
 				82EAA0F52AE172260076C059 /* CardServiceViewController.xib in Resources */,
 				4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */,
 				821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */,
@@ -939,6 +982,7 @@
 				820DB4362AE212FE00CB1138 /* AppInforViewController.xib in Resources */,
 				47BD89BD2AD509730004D093 /* bus_animation.json in Resources */,
 				47BD89C42AD509F50004D093 /* notify.mp3 in Resources */,
+				4717BE102B05B4B800A78653 /* MoneyInViewController.xib in Resources */,
 				47854F8B2AFC9DF800472D88 /* SuggestFooter.xib in Resources */,
 				82EAA0E22ADD7A150076C059 /* TransferViewController.xib in Resources */,
 				82EAA0DD2AD8E9E60076C059 /* SettingsCollectionViewCell.xib in Resources */,
@@ -946,31 +990,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E17030401A416D72DB83E7AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-agribank_clone_app-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4741B75B2AD4FA49006B6264 /* Sources */ = {
@@ -989,10 +1008,15 @@
 				769E7E542AFE3DDA00E44818 /* ContentNotificationViewController.swift in Sources */,
 				82EAA0E62ADD7D040076C059 /* TransferCollectionViewCell.swift in Sources */,
 				475F06D82AF231350055D405 /* BaseViewController.swift in Sources */,
+				76B8D9AB2B037771003BF69E /* DateExtension.swift in Sources */,
+				47698B9C2B03BBBA004E315E /* PickTimeView.swift in Sources */,
 				76D1334B2AFDDB920056CC4A /* UIImageExtension.swift in Sources */,
 				82E6D0C82B00FAF900499CAF /* TransactionDetailViewController.swift in Sources */,
+				769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */,
 				4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */,
 				82C4BB1F2AFDD50C003D4F3B /* CopyAccountInforView.swift in Sources */,
+				47698BA42B05AB7E004E315E /* DetailTransactionViewController.swift in Sources */,
+				769E7E592B020B7100E44818 /* BankCollectionViewCell.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
 				479DDABE2AF634D300BF3416 /* CommonEnum.swift in Sources */,
 				82EAA0F42AE172260076C059 /* CardServiceViewController.swift in Sources */,
@@ -1003,6 +1027,7 @@
 				473A5E022AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				821C89232AD6D37C006DE8F2 /* AccountInforTableViewCell.swift in Sources */,
 				82C4BB252AFFBC04003D4F3B /* PaymentAccountViewController.swift in Sources */,
+				47698B9F2B03BC60004E315E /* UIView+extentions.swift in Sources */,
 				473A5E0C2AD50FF100A34CE5 /* AppNavigator.swift in Sources */,
 				473A5DFF2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m in Sources */,
 				473A5E082AD50FB800A34CE5 /* UIViewControllerExtension.swift in Sources */,
@@ -1013,6 +1038,7 @@
 				821C891E2AD6C60A006DE8F2 /* PageVCTableViewCell.swift in Sources */,
 				473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				82B054C62B025431004E5142 /* TransactionHistoryViewController.swift in Sources */,
+				4717BE0F2B05B4B800A78653 /* MoneyInViewController.swift in Sources */,
 				471E5ED82AFB1CA600BB0278 /* CreateAccountViewController.swift in Sources */,
 				821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */,
 				82162E192AF93A7300C3EACC /* PageControlCollectionViewCell.swift in Sources */,
@@ -1173,14 +1199,13 @@
 		};
 		4741B7742AD4FA4B006B6264 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B539BDF6EE5528913002F3D8 /* Pods-agribank_clone_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WKZDX6SMV;
+				DEVELOPMENT_TEAM = G2KXX7Y4LG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = agribank_clone_app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Agribank;
@@ -1195,7 +1220,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhung";
+				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhungggggg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "agribank_clone_app/Library/agribank_clone_app-Bridging-Header.h";
@@ -1207,14 +1232,13 @@
 		};
 		4741B7752AD4FA4B006B6264 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDF645DFFA077046CE5836A6 /* Pods-agribank_clone_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WKZDX6SMV;
+				DEVELOPMENT_TEAM = G2KXX7Y4LG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = agribank_clone_app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Agribank;
@@ -1229,7 +1253,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhung";
+				PRODUCT_BUNDLE_IDENTIFIER = "agribank-danganhungggggg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "agribank_clone_app/Library/agribank_clone_app-Bridging-Header.h";

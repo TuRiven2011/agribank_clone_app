@@ -10,6 +10,9 @@ struct AppData {
     @StorageObject(key: "account", defaultValue: nil)
     static var account: AccountModel?
     
+    @StorageObject(key: "listTransaction", defaultValue: [])
+    static var listTransaction: [TransferModel]?
+    
     
 }
 extension AppData {

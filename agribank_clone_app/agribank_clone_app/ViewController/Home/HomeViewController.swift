@@ -87,14 +87,14 @@ class HomeViewController: UIViewController {
         
         menu.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openSettings(_:))))
         
-        let logo = UIImageView(image: .init(named: "QR_Agri_Normal"))
+        let logo = UIImageView(image: .init(named: "group_Normal"))
         logo.translatesAutoresizingMaskIntoConstraints = false
         navigationController?.navigationBar.addSubview(logo)
         
         if let navigationBar = navigationController?.navigationBar {
             [
-                logo.widthAnchor.constraint(equalToConstant: 170),
-                logo.heightAnchor.constraint(equalToConstant: 50),
+                logo.widthAnchor.constraint(equalToConstant: 160),
+                logo.heightAnchor.constraint(equalToConstant: 24),
                 logo.centerXAnchor.constraint(equalTo: navigationBar.centerXAnchor),
                 logo.centerYAnchor.constraint(equalTo: navigationBar.centerYAnchor, constant: -3),
             ].forEach({$0.isActive = true})
@@ -116,6 +116,10 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     @objc func openSettings(_ g: UITapGestureRecognizer) {
         let vc = SettingsView()
+        vc.signOutCompletion = {
+            AppData.isLogin = false
+            vc.close()
+        }
         vc.delegate = self
         vc.frame = UIScreen.main.bounds
         UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.addSubview(vc)

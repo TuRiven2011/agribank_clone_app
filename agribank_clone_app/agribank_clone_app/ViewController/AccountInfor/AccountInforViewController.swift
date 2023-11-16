@@ -16,7 +16,6 @@ class AccountInforViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         showCopyAlertView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showCopyAlert(_:))))
         showPaymentAccountView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showPaymentAccountView(_:))))
         configUI()

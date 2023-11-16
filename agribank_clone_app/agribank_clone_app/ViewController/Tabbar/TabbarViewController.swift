@@ -2,7 +2,10 @@ import UIKit
 
 class TabbarViewController: UITabBarController {
     
-
+    let homeVC = HomeViewController()
+    let notiVC = NotificationViewController()
+    let history = TransactionHistoryViewController()
+    
     let tab1 = UITabBarItem(title: "Trang chủ",
                             image: UIImage(named: "ic24PxHomeWhite_Normal"),
                             tag: 1)
@@ -12,11 +15,11 @@ class TabbarViewController: UITabBarController {
                             tag: 2)
     
     let tab3 = UITabBarItem(title: "VnShop",
-                            image: UIImage(named: "qlcn"),
+                            image: UIImage(named: "icons6cart"),
                             tag: 3)
     
     let tab4 = UITabBarItem(title: "Gọi Taxi",
-                            image: UIImage(named: "qlcn"),
+                            image: UIImage(named: "icons8car"),
                             tag: 4)
     
     let tab5 = UITabBarItem(title: "Lịch sử GD",
@@ -26,6 +29,10 @@ class TabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        notiVC.hidesBottomBarWhenPushed = true
+//        notiVC.backCompletion = {
+//            self.tabBarController?.selectedIndex = 0
+//        }
         initItem()
         configUI()
         initSideMenu()
@@ -42,17 +49,23 @@ class TabbarViewController: UITabBarController {
         self.tabBar.layer.borderWidth = 1
         self.tabBar.layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
         self.tabBarController?.tabBar.backgroundColor = .white
-        
+        self.delegate = self
         self.selectedIndex = 0
     }
     
     
     private func initItem() {
-        let tab1NavigationController = UINavigationController(rootViewController: HomeViewController())
-        let tab2NavigationController = UINavigationController(rootViewController: NotificationViewController())
+        let tab1NavigationController = UINavigationController(rootViewController: homeVC)
+        let tab2NavigationController = UINavigationController(rootViewController: notiVC)
         let tab3NavigationController = UINavigationController(rootViewController: ViewController())
         let tab4NavigationController = UINavigationController(rootViewController: ViewController())
-        let tab5NavigationController = UINavigationController(rootViewController: ViewController())
+        let tab5NavigationController = UINavigationController(rootViewController: history)
+        
+        tab4.badgeValue = "-100k"
+        tab4.badgeColor = .red
+        
+        tab3.badgeValue = "Tặng 50k"
+        tab3.badgeColor = .red
         
         tab1NavigationController.tabBarItem = tab1
         tab2NavigationController.tabBarItem = tab2
@@ -67,7 +80,6 @@ class TabbarViewController: UITabBarController {
             tab4NavigationController,
             tab5NavigationController
         ]
-        
     }
     
     deinit {
@@ -76,8 +88,14 @@ class TabbarViewController: UITabBarController {
     
 }
 
-extension TabbarViewController {
-    
+extension TabbarViewController: UITabBarControllerDelegate {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item.title == "Lịch sử GD" {
+            
+            tabBarController?.selectedIndex = 0
+            APP_DELEGATE?.appNavigator?.switchToHistory()
+        }
+    }
 }
 
 extension Notification.Name {
