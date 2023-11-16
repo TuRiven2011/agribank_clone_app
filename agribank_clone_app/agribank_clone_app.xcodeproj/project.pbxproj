@@ -142,7 +142,6 @@
 		473A5DFB2AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		473A5DFC2AD50F9400A34CE5 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		473A5DFD2AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
-		473A5DFE2AD50F9400A34CE5 /* vssid_app_clone-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vssid_app_clone-Bridging-Header.h"; sourceTree = "<group>"; };
 		473A5E042AD50FB800A34CE5 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		473A5E052AD50FB800A34CE5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		473A5E062AD50FB800A34CE5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -328,7 +327,6 @@
 				473A5DF72AD50F9400A34CE5 /* TPKeyboardAvoidingTableView.m */,
 				473A5DF82AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
 				473A5DFD2AD50F9400A34CE5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
-				473A5DFE2AD50F9400A34CE5 /* vssid_app_clone-Bridging-Header.h */,
 				473A5DF52AD50F9300A34CE5 /* agribank_clone_app-Bridging-Header.h */,
 			);
 			path = Library;
