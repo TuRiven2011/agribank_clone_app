@@ -30,6 +30,8 @@
 		47698B9C2B03BBBA004E315E /* PickTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698B9A2B03BBBA004E315E /* PickTimeView.swift */; };
 		47698B9D2B03BBBA004E315E /* PickTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47698B9B2B03BBBA004E315E /* PickTimeView.xib */; };
 		47698B9F2B03BC60004E315E /* UIView+extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698B9E2B03BC60004E315E /* UIView+extentions.swift */; };
+		47698BA42B05AB7E004E315E /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698BA22B05AB7E004E315E /* DetailTransactionViewController.swift */; };
+		47698BA52B05AB7E004E315E /* DetailTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47698BA32B05AB7E004E315E /* DetailTransactionViewController.xib */; };
 		47854F7B2AFC93C600472D88 /* SearchFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47854F792AFC93C600472D88 /* SearchFeatureViewController.swift */; };
 		47854F7C2AFC93C600472D88 /* SearchFeatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47854F7A2AFC93C600472D88 /* SearchFeatureViewController.xib */; };
 		47854F802AFC952900472D88 /* SearchFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47854F7E2AFC952900472D88 /* SearchFeatureCollectionViewCell.swift */; };
@@ -63,8 +65,6 @@
 		769E7E592B020B7100E44818 /* BankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E572B020B7100E44818 /* BankCollectionViewCell.swift */; };
 		769E7E5A2B020B7100E44818 /* BankCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */; };
 		769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E5B2B020D4800E44818 /* TransferModel.swift */; };
-		769E7E602B021ADA00E44818 /* HistoryTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E7E5E2B021ADA00E44818 /* HistoryTransactionViewController.swift */; };
-		769E7E612B021ADA00E44818 /* HistoryTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769E7E5F2B021ADA00E44818 /* HistoryTransactionViewController.xib */; };
 		76B8D9AB2B037771003BF69E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8D9AA2B037771003BF69E /* DateExtension.swift */; };
 		76D1333A2AFDD0920056CC4A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D133382AFDD0920056CC4A /* NotificationViewController.swift */; };
 		76D1333B2AFDD0920056CC4A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D133392AFDD0920056CC4A /* NotificationViewController.xib */; };
@@ -154,6 +154,8 @@
 		47698B9A2B03BBBA004E315E /* PickTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickTimeView.swift; sourceTree = "<group>"; };
 		47698B9B2B03BBBA004E315E /* PickTimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickTimeView.xib; sourceTree = "<group>"; };
 		47698B9E2B03BC60004E315E /* UIView+extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extentions.swift"; sourceTree = "<group>"; };
+		47698BA22B05AB7E004E315E /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
+		47698BA32B05AB7E004E315E /* DetailTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransactionViewController.xib; sourceTree = "<group>"; };
 		47854F792AFC93C600472D88 /* SearchFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureViewController.swift; sourceTree = "<group>"; };
 		47854F7A2AFC93C600472D88 /* SearchFeatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFeatureViewController.xib; sourceTree = "<group>"; };
 		47854F7E2AFC952900472D88 /* SearchFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -225,8 +227,6 @@
 		769E7E572B020B7100E44818 /* BankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCollectionViewCell.swift; sourceTree = "<group>"; };
 		769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCollectionViewCell.xib; sourceTree = "<group>"; };
 		769E7E5B2B020D4800E44818 /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
-		769E7E5E2B021ADA00E44818 /* HistoryTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionViewController.swift; sourceTree = "<group>"; };
-		769E7E5F2B021ADA00E44818 /* HistoryTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTransactionViewController.xib; sourceTree = "<group>"; };
 		76B8D9AA2B037771003BF69E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		76D133382AFDD0920056CC4A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		76D133392AFDD0920056CC4A /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
@@ -346,7 +346,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				769E7E5D2B021AC600E44818 /* HistoryTransaction */,
+				47698BA02B05AB61004E315E /* DetailTransaction */,
 				82B054C32B0253E3004E5142 /* TransactionHistory */,
 				82E6D0C52B00FAD600499CAF /* TransactionDetail */,
 				4787C5362B00DCA40062DD3A /* TransferByOtherBank */,
@@ -418,6 +418,15 @@
 				47698B9B2B03BBBA004E315E /* PickTimeView.xib */,
 			);
 			path = PickTime;
+			sourceTree = "<group>";
+		};
+		47698BA02B05AB61004E315E /* DetailTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				47698BA22B05AB7E004E315E /* DetailTransactionViewController.swift */,
+				47698BA32B05AB7E004E315E /* DetailTransactionViewController.xib */,
+			);
+			path = DetailTransaction;
 			sourceTree = "<group>";
 		};
 		47854F782AFC93B900472D88 /* SearchFeature */ = {
@@ -589,15 +598,6 @@
 				769E7E582B020B7100E44818 /* BankCollectionViewCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		769E7E5D2B021AC600E44818 /* HistoryTransaction */ = {
-			isa = PBXGroup;
-			children = (
-				769E7E5E2B021ADA00E44818 /* HistoryTransactionViewController.swift */,
-				769E7E5F2B021ADA00E44818 /* HistoryTransactionViewController.xib */,
-			);
-			path = HistoryTransaction;
 			sourceTree = "<group>";
 		};
 		76D133372AFDD0800056CC4A /* Notification */ = {
@@ -951,13 +951,13 @@
 				820DB43B2AE2191700CB1138 /* AppInforTableViewCell.xib in Resources */,
 				47854F872AFC9DDE00472D88 /* SuggestHeader.xib in Resources */,
 				82C4BB262AFFBC04003D4F3B /* PaymentAccountViewController.xib in Resources */,
+				47698BA52B05AB7E004E315E /* DetailTransactionViewController.xib in Resources */,
 				82EAA0F52AE172260076C059 /* CardServiceViewController.xib in Resources */,
 				4741B76C2AD4FA4B006B6264 /* Assets.xcassets in Resources */,
 				821C891F2AD6C60A006DE8F2 /* PageVCTableViewCell.xib in Resources */,
 				47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */,
 				47854F812AFC952900472D88 /* SearchFeatureCollectionViewCell.xib in Resources */,
 				769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */,
-				769E7E612B021ADA00E44818 /* HistoryTransactionViewController.xib in Resources */,
 				47BD89BF2AD5097E0004D093 /* dataNewYear6.json in Resources */,
 				821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */,
 				821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */,
@@ -981,7 +981,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				769E7E602B021ADA00E44818 /* HistoryTransactionViewController.swift in Sources */,
 				82EAA0DC2AD8E9E60076C059 /* SettingsCollectionViewCell.swift in Sources */,
 				76D133422AFDD2970056CC4A /* BalanceNotificationTableViewCell.swift in Sources */,
 				47854F802AFC952900472D88 /* SearchFeatureCollectionViewCell.swift in Sources */,
@@ -1001,6 +1000,7 @@
 				769E7E5C2B020D4800E44818 /* TransferModel.swift in Sources */,
 				4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */,
 				82C4BB1F2AFDD50C003D4F3B /* CopyAccountInforView.swift in Sources */,
+				47698BA42B05AB7E004E315E /* DetailTransactionViewController.swift in Sources */,
 				769E7E592B020B7100E44818 /* BankCollectionViewCell.swift in Sources */,
 				821C892B2AD6EE25006DE8F2 /* HomeCustomCollectionViewCell.swift in Sources */,
 				479DDABE2AF634D300BF3416 /* CommonEnum.swift in Sources */,

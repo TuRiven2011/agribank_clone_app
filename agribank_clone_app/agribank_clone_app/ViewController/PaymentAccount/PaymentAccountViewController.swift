@@ -191,4 +191,9 @@ extension PaymentAccountViewController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 66
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DetailTransactionViewController(data: listDataToShow[indexPath.row])
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

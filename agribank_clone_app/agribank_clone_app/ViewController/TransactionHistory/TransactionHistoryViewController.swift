@@ -167,5 +167,10 @@ extension TransactionHistoryViewController: UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DetailTransactionViewController(data: listDataToShow[indexPath.row])
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
 }
