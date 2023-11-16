@@ -4,6 +4,7 @@ import UIKit
 
 class TransferByOtherBankViewController: BaseViewController {
 
+    @IBOutlet weak var name2Label: UITextField!
     @IBOutlet weak var bank2TF: UITextField!
     @IBOutlet weak var contentTransferTextField: UITextField!
     @IBOutlet weak var bankCollectionView: UICollectionView!

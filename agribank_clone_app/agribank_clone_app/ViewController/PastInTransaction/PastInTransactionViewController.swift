@@ -12,7 +12,7 @@ class PastInTransactionViewController: BaseViewController {
                                       numberAccount2: numberAccount2TF.text,
                                       bank2: bank2TF.text,
                                       date: dateTF.text?.toDate(),
-                                      isReceive: false
+                                      isReceive: true
         )
         
         AppData.listTransaction?.append(billModel)

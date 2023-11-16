@@ -26,7 +26,8 @@ class MoneyInViewController: BaseViewController {
                                       numberAccount2: accountLabel.text,
                                       bank2: bankLabel.text,
                                       date: .init(),
-                                      isReceive: true
+                                      isReceive: true,
+                                      name2: name2Label.text
         )
         
         AppData.listTransaction?.append(billModel)

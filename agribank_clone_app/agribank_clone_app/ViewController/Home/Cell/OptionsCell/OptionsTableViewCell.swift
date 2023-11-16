@@ -127,7 +127,7 @@ extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
                 moneyInCompletion?()
             } else if indexPath.row == 6 {
                 moneyInPastCompletion?()
-            } else if indexPath.row == 5 {
+            } else if indexPath.row == 7 {
                 moneyOutPastCompletion?()
             }
         }

@@ -86,7 +86,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXO-vZ-1Ec">
-                                    <rect key="frame" x="15" y="350" width="384" height="1260.6666666666667"/>
+                                    <rect key="frame" x="15" y="350" width="384" height="1260.666666666667"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4Pm-Kd-jGh">
                                             <rect key="frame" x="15" y="0.0" width="354" height="1260.6666666666667"/>

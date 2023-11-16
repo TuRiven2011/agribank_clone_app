@@ -54,6 +54,7 @@ class TransactionDetailViewController: BaseViewController {
         bank2Label.text = data.bank2 ?? ""
         contentLabel.text = data.content ?? ""
         name2Label.text = data.name2 ?? ""
+        dateLabel.text = Date.init().formatToString()
     }
     
     private func setupControlEvent() {

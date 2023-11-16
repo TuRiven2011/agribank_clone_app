@@ -58,7 +58,7 @@ class PickTimeView: UIView {
     }
     
     func show(time: Date, completion: ((Date) -> Void)? = nil) {
-        time.format(partern: "hh:mm dd/MM/yyyy")
+        time.format(partern: "HH:mm dd/MM/yyyy")
         pickerTime.date = time
         self.completion = completion
         self.showWithAnimationFromBottom(animatedView: self.contentView, in: nil)
