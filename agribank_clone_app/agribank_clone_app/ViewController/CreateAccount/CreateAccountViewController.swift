@@ -9,7 +9,7 @@ class CreateAccountViewController: BaseViewController {
     @IBOutlet weak var openBranchTextField: UITextField!
     
     @IBAction func doneTap(_ sender: Any) {
-        let account = AccountModel(userName: usernameString,
+        let account = AccountModel(userName: usernameString?.uppercased(),
                                    numberAccount: numberAccountString,
                                    balance: balance,
                                    openBranch: openBranch)
