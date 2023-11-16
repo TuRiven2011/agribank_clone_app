@@ -171,6 +171,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell3.tapTransferCompletion = {[weak self] in
             guard let self = self else {return}
             let vc = TransferViewController()
+            vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         }
         

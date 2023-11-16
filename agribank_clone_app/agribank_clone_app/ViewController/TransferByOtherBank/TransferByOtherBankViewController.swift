@@ -4,6 +4,7 @@ import UIKit
 
 class TransferByOtherBankViewController: BaseViewController {
 
+    @IBOutlet weak var codeTF: UITextField!
     @IBOutlet weak var name2Label: UITextField!
     @IBOutlet weak var bank2TF: UITextField!
     @IBOutlet weak var contentTransferTextField: UITextField!
@@ -40,7 +41,8 @@ class TransferByOtherBankViewController: BaseViewController {
                                       numberAccount2: transferAccountNumberTextField.text,
                                       bank2: bank2TF.text,
                                       date: .init(),
-                                      isReceive: false
+                                      isReceive: false,
+                                      code: codeTF.text
         )
         
         AppData.listTransaction?.append(billModel)

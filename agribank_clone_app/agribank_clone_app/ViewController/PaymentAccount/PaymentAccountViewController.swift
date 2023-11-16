@@ -149,6 +149,7 @@ extension PaymentAccountViewController {
         isSearch = true
         listHistory = AppData.listTransaction?.sorted(by: {($0.date ?? .init()) > ($1.date ?? .init())})
         listDataToShow.removeAll()
+        print("\(start.formatToString()) \(end.formatToString()) BA TU")
         if let listHistory = listHistory {
             listHistory.forEach {[weak self] element in
                 guard let self = self else {return}

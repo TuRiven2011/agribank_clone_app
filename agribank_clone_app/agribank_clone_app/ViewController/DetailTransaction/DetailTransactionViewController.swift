@@ -37,7 +37,7 @@ class DetailTransactionViewController: BaseViewController {
     
     private func setup() {
         dateLabel.text = data.date?.format(partern: "dd/MM/yyyy")
-        timeLabel.text = data.date?.format(partern: "hh:mm")
+        timeLabel.text = data.date?.format(partern: "HH:mm")
         moneyLabel.text = data.money?.addComma() ?? ""
         branchLabel.text = data.openBranch ?? ""
         typeMoneyLabel.text = "VND"

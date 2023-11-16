@@ -4,7 +4,8 @@ extension Date {
     func formatToString() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm dd/MM/yyyy" //If you dont want static "UTC" you can go for ZZZZ instead of 'UTC'Z.
-        formatter.timeZone = TimeZone(abbreviation: "IST")
+        formatter.timeZone = TimeZone.current
+        formatter.locale = Locale.current
         let result = formatter.string(from: self)
         return result
     }
@@ -12,8 +13,9 @@ extension Date {
 extension Date {
     func format(partern: String) -> String {
         let dateFormatterGet = DateFormatter()
+        dateFormatterGet.locale = Locale.current
+        dateFormatterGet.timeZone = TimeZone.current
         dateFormatterGet.dateFormat = partern
-        dateFormatterGet.locale = Locale(identifier: "en_US_POSIX")
         return dateFormatterGet.string(from: self)
     }
 }

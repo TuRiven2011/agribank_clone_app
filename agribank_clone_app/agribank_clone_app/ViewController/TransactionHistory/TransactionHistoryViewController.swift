@@ -6,7 +6,6 @@ class TransactionHistoryViewController: BaseViewController {
     
     @IBOutlet weak var endDateLabel: UILabel!
     @IBOutlet weak var startDateLabel: UILabel!
-    @IBOutlet weak var openBranchLabel: UILabel!
     @IBOutlet weak var numberAccount: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var buttonCollection: [UIButton]!
@@ -15,7 +14,7 @@ class TransactionHistoryViewController: BaseViewController {
     @IBOutlet weak var endDateView: UIView!
     @IBOutlet weak var startDateView: UIView!
     
-    var listHistory = AppData.listTransaction?.sorted(by: {($0.date ?? .init()) > ($1.date ?? .init())})
+    var listHistory = AppData.listTransaction?.sorted(by: {($0.date?.timeIntervalSince1970 ?? 0) > ($1.date?.timeIntervalSince1970 ?? 0)})
     var listDataToShow: [TransferModel] = []
     var type = TransactionEnum.total
     let datePicker = UIDatePicker()
@@ -47,7 +46,6 @@ class TransactionHistoryViewController: BaseViewController {
         
         datePicker.datePickerMode = .date
         numberAccount.text = AppData.account?.numberAccount ?? ""
-        openBranchLabel.text = AppData.account?.openBranch ?? ""
         buttonCollection.forEach { button in
             button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handle(_:))))
         }
@@ -104,6 +102,7 @@ extension TransactionHistoryViewController {
                         }
                     }
                 }
+                self.listDataToShow = self.listDataToShow.sorted(by: {($0.date?.timeIntervalSince1970 ?? 0) > ($1.date?.timeIntervalSince1970 ?? 0)})
                 tableView.reloadData()
             }
         }
@@ -128,7 +127,7 @@ extension TransactionHistoryViewController {
     
     @objc func searchTransaction() {
         isSearch = true
-        listHistory = AppData.listTransaction?.sorted(by: {($0.date ?? .init()) > ($1.date ?? .init())})
+        listHistory = AppData.listTransaction?.sorted(by: {($0.date?.timeIntervalSince1970 ?? 0) > ($1.date?.timeIntervalSince1970 ?? 0)})
         listDataToShow.removeAll()
         if let listHistory = listHistory {
             listHistory.forEach {[weak self] element in
@@ -150,6 +149,7 @@ extension TransactionHistoryViewController {
             }
         }
         
+        listDataToShow = listDataToShow.sorted(by: {($0.date?.timeIntervalSince1970 ?? 0) > ($1.date?.timeIntervalSince1970 ?? 0)})
         tableView.reloadData()
     }
 }

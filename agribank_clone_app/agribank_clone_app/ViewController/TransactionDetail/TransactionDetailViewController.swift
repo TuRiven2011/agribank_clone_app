@@ -42,19 +42,26 @@ class TransactionDetailViewController: BaseViewController {
 
 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         // Hide the Navigation Bar
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     private func setup() {
         numberAccount2LAbel.text = data.numberAccount2 ?? ""
-        moneyLabel.text = data.money?.addComma() ?? ""
+        moneyLabel.text = "\(data.money?.addComma() ?? "") VND"
         bank2Label.text = data.bank2 ?? ""
         contentLabel.text = data.content ?? ""
         name2Label.text = data.name2 ?? ""
         dateLabel.text = Date.init().formatToString()
+        codeLabel.text = data.code
     }
     
     private func setupControlEvent() {
