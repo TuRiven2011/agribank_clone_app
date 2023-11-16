@@ -1,17 +1,70 @@
-//
-//  MoneyInViewController.swift
-//  agribank_clone_app
-//
-//  Created by Phạm Bá Tú on 16/11/2023.
-//
-
 import UIKit
 
-class MoneyInViewController: UIViewController {
+class MoneyInViewController: BaseViewController {
 
+    @IBAction func doneTap(_ sender: Any) {
+//        let account = AccountModel(userName: usernameString,
+//                                   numberAccount: numberAccountString,
+//                                   balance: balance,
+//                                   openBranch: openBranch)
+//        AppData.account = account
+        
+        if let account = AppData.account {
+            AppData.account?.balance = (account.balance ?? 0) + (money ?? 0)
+        }
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBOutlet weak var bankLabel: UITextField!
+    @IBOutlet weak var contentLabel: UITextField!
+    @IBOutlet weak var branch: UITextField!
+    @IBOutlet weak var moneyLabel: UITextField!
+    @IBOutlet weak var accountLabel: UITextField!
+    
+    var accountString: String?
+    var contentString: String?
+    var money: Int?
+    var branchString: String?
+    var bankString: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configTextFields()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupNavigationBar(title: "chuyển tiền vào".uppercased())
+    }
+    
+    private func configTextFields() {
+        bankLabel.delegate = self
+        contentLabel.delegate = self
+        branch.delegate = self
+        moneyLabel.delegate = self
+        accountLabel.delegate = self
     }
 
+}
+
+extension MoneyInViewController: UITextFieldDelegate {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        switch textField {
+        case bankLabel:
+             bankString = self.bankLabel.text
+        case contentLabel:
+            contentString = self.contentLabel.text
+        case branch:
+            branchString = branch.text
+        case moneyLabel:
+            money = Int(self.moneyLabel.text ?? "0")
+        case accountLabel:
+            accountString = self.accountLabel.text
+        default:
+            break
+        }
+    }
 }
