@@ -1,10 +1,3 @@
-//
-//  OtherNotificationTableViewCell.swift
-//  agribank_clone_app
-//
-//  Created by Tú Phạm Bá on 10/11/2023.
-//
-
 import UIKit
 
 class OtherNotificationTableViewCell: UITableViewCell {

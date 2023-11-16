@@ -1,9 +1,3 @@
-//
-//  BankCollectionViewCell.swift
-//  agribank_clone_app
-//
-//  Created by Tú Phạm Bá on 13/11/2023.
-//
 
 import UIKit
 

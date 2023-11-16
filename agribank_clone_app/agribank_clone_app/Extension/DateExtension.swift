@@ -1,10 +1,3 @@
-//
-//  DateExtension.swift
-//  agribank_clone_app
-//
-//  Created by Tú Phạm Bá on 14/11/2023.
-//
-
 import Foundation
 
 extension Date {

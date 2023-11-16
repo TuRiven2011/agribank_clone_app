@@ -72,8 +72,8 @@ class PaymentAccountViewController: BaseViewController {
             accountBalanceLbl.text = "Số dư: \(account.balance?.addComma() ?? "0") VND"
         }
         tableView.register(.init(nibName: "TransactionListTableViewCell", bundle: nil), forCellReuseIdentifier: "TransactionListTableViewCell")
-        tableView.delegate = self
-        tableView.dataSource = self
+//        tableView.delegate = self
+//        tableView.dataSource = self
     }
     
     
