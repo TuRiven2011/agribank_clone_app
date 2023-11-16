@@ -44,6 +44,12 @@ final class AppNavigator: AppNavigatorType {
         switchTo(viewController: navi)
     }
     
+    func switchToHistory() {
+        let vc = TransactionHistoryViewController()
+        let navi = UINavigationController(rootViewController: vc)
+        switchTo(viewController: navi)
+    }
+    
     func switchToMain() {
         switchTo(viewController: tabbar)
     }

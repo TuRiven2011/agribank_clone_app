@@ -15,7 +15,7 @@ class TabbarViewController: UITabBarController {
                             tag: 2)
     
     let tab3 = UITabBarItem(title: "VnShop",
-                            image: UIImage(named: "ic24PxHomeWhite_Normal"),
+                            image: UIImage(named: "icons6cart"),
                             tag: 3)
     
     let tab4 = UITabBarItem(title: "Gọi Taxi",
@@ -61,17 +61,17 @@ class TabbarViewController: UITabBarController {
         let tab4NavigationController = UINavigationController(rootViewController: ViewController())
         let tab5NavigationController = UINavigationController(rootViewController: history)
         
+        tab4.badgeValue = "-100k"
+        tab4.badgeColor = .red
+        
+        tab3.badgeValue = "Tặng 50k"
+        tab3.badgeColor = .red
+        
         tab1NavigationController.tabBarItem = tab1
         tab2NavigationController.tabBarItem = tab2
         tab3NavigationController.tabBarItem = tab3
         tab4NavigationController.tabBarItem = tab4
         tab5NavigationController.tabBarItem = tab5
-        
-        if let tabItems = tabBarController?.tabBar.items {
-            // In this case we want to modify the badge number of the third tab:
-            let tabItem = tabItems[3]
-            tabItem.badgeValue = "-100k"
-        }
         
         self.viewControllers = [
             tab1NavigationController,
@@ -90,9 +90,11 @@ class TabbarViewController: UITabBarController {
 
 extension TabbarViewController: UITabBarControllerDelegate {
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-//        if item.title == "Thông báo" {
-//            self.tabBarController?.tabBar.isHidden = true
-//        }
+        if item.title == "Lịch sử GD" {
+            
+            tabBarController?.selectedIndex = 0
+            APP_DELEGATE?.appNavigator?.switchToHistory()
+        }
     }
 }
 

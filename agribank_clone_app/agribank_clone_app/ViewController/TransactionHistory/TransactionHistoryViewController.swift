@@ -27,7 +27,7 @@ class TransactionHistoryViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavigationBar(title: "LỊCH SỬ GIAO DỊCH")
+        setupNavigationBarSwitch(title: "LỊCH SỬ GIAO DỊCH")
         configTableView()
         endDateLabel.text = Date().format(partern: "dd/MM/yyyy")
         

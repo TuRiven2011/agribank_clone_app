@@ -55,8 +55,8 @@ class NotificationViewController: BaseViewController {
         back.translatesAutoresizingMaskIntoConstraints = false
         back.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleBackToMain)))
         navigationController?.navigationBar.addSubview(back)
-        let backButtonItem = UIBarButtonItem(customView: back)
-        navigationController?.navigationItem.leftBarButtonItem = backButtonItem
+//        let backButtonItem = UIBarButtonItem(customView: back)
+//        navigationController?.navigationItem.leftBarButtonItem = backButtonItem
         segment.insertSegment(withTitle: NotificationTypeEnum.balance.title, at: 0, animated: true)
         segment.insertSegment(withTitle: NotificationTypeEnum.deal.title, at: 1, animated: true)
         segment.insertSegment(withTitle: NotificationTypeEnum.other.title, at: 2, animated: true)
@@ -95,6 +95,8 @@ class NotificationViewController: BaseViewController {
                 back.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
             ].forEach({$0.isActive = true})
         }
+        
+        back.bringSubviewToFront(self.view)
     }
     
     private func setupLayout() {
