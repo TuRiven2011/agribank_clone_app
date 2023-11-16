@@ -4,7 +4,6 @@ import UIKit
 
 class TransferByOtherBankViewController: BaseViewController {
 
-    @IBOutlet weak var scrollView: TPKeyboardAvoidingScrollView!
     @IBOutlet weak var contentTransferTextField: UITextField!
     @IBOutlet weak var bankCollectionView: UICollectionView!
     @IBOutlet weak var cancelButton: UIButton!
