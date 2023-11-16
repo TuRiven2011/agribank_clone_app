@@ -10,7 +10,7 @@ class TransferViewController: BaseViewController {
     
     let data: [TransferEntity] = [.init(title: "Chuyển khoản nội bộ qua TK/ĐT", image: "ic48PxCKnoiboquaStk_Normal"), .init(title: "CK LNH qua số tài khoản", image: "ic48PxCKlienNHquaStk_Normal"), .init(title: "CK LNH qua số thẻ", image: "ic48PxCKlienNHquasothe_Normal"), .init(title: "Chuyển khoản 24/7 mã QR", image: "ic48PxQrpay_Normal"), .init(title: "Chuyển khoản LNH thường", image: "ic48PxChuyenkhoan_Normal")]
     
-    let tableData: [beneficiaryListEntity] = [.init(name: "Van Hao", accountnumber: "Vietinbank-1029302940423", bankImage: "Logo_Viettinbank_Normal"), .init(name: "Van Hao", accountnumber: "Vietinbank-1029302940423", bankImage: "Logo_Viettinbank_Normal"), .init(name: "Van Hao", accountnumber: "Vietinbank-1029302940423", bankImage: "Logo_Viettinbank_Normal"), .init(name: "Van Hao", accountnumber: "Vietinbank-1029302940423", bankImage: "Logo_Viettinbank_Normal"), .init(name: "Van Hao", accountnumber: "Vietinbank-1029302940423", bankImage: "Logo_Viettinbank_Normal"), .init(name: "Van Hao", accountnumber: "Vietinbank-1029302940423", bankImage: "Logo_Viettinbank_Normal"), .init(name: "Van Hao", accountnumber: "Vietinbank-1029302940423", bankImage: "Logo_Viettinbank_Normal"), .init(name: "Van Hao", accountnumber: "Vietinbank-1029302940423", bankImage: "Logo_Viettinbank_Normal")]
+    let tableData: [beneficiaryListEntity] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
