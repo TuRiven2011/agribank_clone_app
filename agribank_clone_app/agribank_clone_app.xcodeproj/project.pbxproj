@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4717BE0F2B05B4B800A78653 /* MoneyInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717BE0D2B05B4B800A78653 /* MoneyInViewController.swift */; };
+		4717BE102B05B4B800A78653 /* MoneyInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4717BE0E2B05B4B800A78653 /* MoneyInViewController.xib */; };
 		471E5ED82AFB1CA600BB0278 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5ED62AFB1CA600BB0278 /* CreateAccountViewController.swift */; };
 		471E5ED92AFB1CA600BB0278 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471E5ED72AFB1CA600BB0278 /* CreateAccountViewController.xib */; };
 		471E5EDD2AFB1ECE00BB0278 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E5EDA2AFB1ECE00BB0278 /* CommonUtils.swift */; };
@@ -123,6 +125,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4717BE0D2B05B4B800A78653 /* MoneyInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyInViewController.swift; sourceTree = "<group>"; };
+		4717BE0E2B05B4B800A78653 /* MoneyInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyInViewController.xib; sourceTree = "<group>"; };
 		471E5ED62AFB1CA600BB0278 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		471E5ED72AFB1CA600BB0278 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 		471E5EDA2AFB1ECE00BB0278 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
@@ -295,6 +299,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4717BE0C2B05B4AC00A78653 /* MoneyIn */ = {
+			isa = PBXGroup;
+			children = (
+				4717BE0D2B05B4B800A78653 /* MoneyInViewController.swift */,
+				4717BE0E2B05B4B800A78653 /* MoneyInViewController.xib */,
+			);
+			path = MoneyIn;
+			sourceTree = "<group>";
+		};
 		471E5ED52AFB1C8D00BB0278 /* CreateAccount */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +359,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4717BE0C2B05B4AC00A78653 /* MoneyIn */,
 				47698BA02B05AB61004E315E /* DetailTransaction */,
 				82B054C32B0253E3004E5142 /* TransactionHistory */,
 				82E6D0C52B00FAD600499CAF /* TransactionDetail */,
@@ -968,6 +982,7 @@
 				820DB4362AE212FE00CB1138 /* AppInforViewController.xib in Resources */,
 				47BD89BD2AD509730004D093 /* bus_animation.json in Resources */,
 				47BD89C42AD509F50004D093 /* notify.mp3 in Resources */,
+				4717BE102B05B4B800A78653 /* MoneyInViewController.xib in Resources */,
 				47854F8B2AFC9DF800472D88 /* SuggestFooter.xib in Resources */,
 				82EAA0E22ADD7A150076C059 /* TransferViewController.xib in Resources */,
 				82EAA0DD2AD8E9E60076C059 /* SettingsCollectionViewCell.xib in Resources */,
@@ -1023,6 +1038,7 @@
 				821C891E2AD6C60A006DE8F2 /* PageVCTableViewCell.swift in Sources */,
 				473A5E002AD50F9400A34CE5 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				82B054C62B025431004E5142 /* TransactionHistoryViewController.swift in Sources */,
+				4717BE0F2B05B4B800A78653 /* MoneyInViewController.swift in Sources */,
 				471E5ED82AFB1CA600BB0278 /* CreateAccountViewController.swift in Sources */,
 				821C890E2AD6C144006DE8F2 /* HomeViewController.swift in Sources */,
 				82162E192AF93A7300C3EACC /* PageControlCollectionViewCell.swift in Sources */,
