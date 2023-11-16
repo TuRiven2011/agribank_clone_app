@@ -36,6 +36,7 @@ class TransferByOtherBankViewController: BaseViewController {
                                       openBranch: AppData.account?.openBranch,
                                       content: contentTransferTextField.text,
                                       money: Int(moneyTransferTextField.text ?? "0"),
+                                      name2: name2Label.text
                                       numberAccount2: transferAccountNumberTextField.text,
                                       bank2: bank2TF.text,
                                       date: .init(),

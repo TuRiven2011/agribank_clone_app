@@ -23,11 +23,12 @@ class MoneyInViewController: BaseViewController {
                                       openBranch: AppData.account?.openBranch,
                                       content: contentLabel.text,
                                       money: Int(moneyLabel.text ?? "0"),
+                                      name2: name2Label.text,
                                       numberAccount2: accountLabel.text,
                                       bank2: bankLabel.text,
                                       date: .init(),
-                                      isReceive: true,
-                                      name2: name2Label.text
+                                      isReceive: true
+                                      
         )
         
         AppData.listTransaction?.append(billModel)
@@ -35,6 +36,7 @@ class MoneyInViewController: BaseViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBOutlet weak var name2Label: UITextField!
     @IBOutlet weak var bankLabel: UITextField!
     @IBOutlet weak var contentLabel: UITextField!
     @IBOutlet weak var branch: UITextField!
