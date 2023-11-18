@@ -153,6 +153,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             
             guard let self = self else {return}
             let vc = CardServiceViewController()
+            vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
             
         }

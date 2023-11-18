@@ -41,7 +41,7 @@ extension CardServiceViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.frame.width - 16)/3
+        let size = (SCREEN_WIDTH - 40 - 16)/3
         return CGSize(width: size, height: size)
     }
     

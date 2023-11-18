@@ -5,7 +5,7 @@ class PastOutTransactionViewController: BaseViewController {
     @IBAction func doneACtion(_ sender: Any) {
         let billModel = TransferModel(userName: AppData.account?.userName,
                                       numberAccount: AppData.account?.numberAccount,
-                                      balance: AppData.account?.balance,
+                                      balance: Int(balanceTF.text ?? "0"),
                                       openBranch: AppData.account?.openBranch,
                                       content: contentTF.text,
                                       money: Int(moneyTF.text ?? "0"),
