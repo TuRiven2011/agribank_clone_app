@@ -29,6 +29,10 @@ class TabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.navigationBar.isHidden = true
+        
 //        notiVC.hidesBottomBarWhenPushed = true
 //        notiVC.backCompletion = {
 //            self.tabBarController?.selectedIndex = 0
@@ -65,7 +69,7 @@ class TabbarViewController: UITabBarController {
         let tab2NavigationController = UINavigationController(rootViewController: ViewController())
         let tab3NavigationController = UINavigationController(rootViewController: ViewController())
         let tab4NavigationController = UINavigationController(rootViewController: ViewController())
-        let tab5NavigationController = UINavigationController(rootViewController: history)
+        let tab5NavigationController = UINavigationController(rootViewController: ViewController())
         
         tab2.badgeColor = .red
         tab2.badgeValue = "2"
@@ -100,8 +104,6 @@ class TabbarViewController: UITabBarController {
 extension TabbarViewController: UITabBarControllerDelegate {
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.title == "Lịch sử GD" {
-            
-            tabBarController?.selectedIndex = 0
             APP_DELEGATE?.appNavigator?.switchToHistory()
         }
     }

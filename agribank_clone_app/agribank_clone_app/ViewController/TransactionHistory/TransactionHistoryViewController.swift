@@ -23,10 +23,19 @@ class TransactionHistoryViewController: BaseViewController {
     var isSearch = false
     
     let enumM: TransactionEnum? = nil
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        APP_DELEGATE?.appNavigator?.navigation.isNavigationBarHidden = false
+        APP_DELEGATE?.appNavigator?.navigation.navigationBar.isHidden = false
+        APP_DELEGATE?.appNavigator?.navigation.setNavigationBarHidden(false, animated: true)
+        setupNavigationBarSwitch(title: "LỊCH SỬ GIAO DỊCH")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavigationBarSwitch(title: "LỊCH SỬ GIAO DỊCH")
         configTableView()
         endDateLabel.text = Date().format(partern: "dd/MM/yyyy")
         
@@ -54,6 +63,16 @@ class TransactionHistoryViewController: BaseViewController {
         searchView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(searchTransaction)))
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        APP_DELEGATE?.appNavigator?.navigation.isNavigationBarHidden = true
+        APP_DELEGATE?.appNavigator?.navigation.navigationBar.isHidden = true
+        APP_DELEGATE?.appNavigator?.navigation.setNavigationBarHidden(true, animated: true)
+        APP_DELEGATE?.appNavigator?.tabbar.selectedIndex = 0
+//        setupNavigationBarSwitch(title: "LỊCH SỬ GIAO DỊCH")
+    }
+    
     func configTableView() {
         tableView.register(.init(nibName: "TransactionListTableViewCell", bundle: nil), forCellReuseIdentifier: "TransactionListTableViewCell")
         tableView.delegate = self
@@ -61,6 +80,7 @@ class TransactionHistoryViewController: BaseViewController {
     }
     
 }
+
 
 extension TransactionHistoryViewController {
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,9 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountViewController" customModule="agribank_clone_app" customModuleProvider="target">
             <connections>
+                <outlet property="addQRButton" destination="cFo-FG-fEe" id="KgE-HU-oOY"/>
                 <outlet property="balanceLabel" destination="QKm-IT-YGQ" id="6KC-vG-hDi"/>
                 <outlet property="numberAccount" destination="vFb-mu-xMr" id="Vpf-Kd-IkX"/>
                 <outlet property="openBranchTextField" destination="Upe-8y-849" id="aCU-r8-7Md"/>
+                <outlet property="qrImage" destination="X8c-YK-QgT" id="AUD-WK-RyG"/>
                 <outlet property="userNameLabel" destination="VWx-ys-5Jf" id="Htc-SG-1Jx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,7 +29,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17O-bY-383">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="398.33333333333331"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="558.33333333333337"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tạo tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CP-xO-aDP">
                                     <rect key="frame" x="146" y="60.000000000000007" width="101" height="20.333333333333336"/>
@@ -73,7 +75,7 @@
                                     </subviews>
                                 </stackView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J17-gw-eCB">
-                                    <rect key="frame" x="20" y="324.33333333333331" width="353" height="44"/>
+                                    <rect key="frame" x="20" y="484.33333333333331" width="353" height="43.999999999999943"/>
                                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="fdu-Jc-Kl5"/>
@@ -87,19 +89,39 @@
                                         <action selector="doneTap:" destination="-1" eventType="touchUpInside" id="ZtY-Vw-Klj"/>
                                     </connections>
                                 </button>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thêm ảnh QR tài khoản cá nhân" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFo-FG-fEe">
+                                    <rect key="frame" x="75.666666666666671" y="324.33333333333331" width="241.66666666666663" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="PBs-qI-cbh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X8c-YK-QgT">
+                                    <rect key="frame" x="171.66666666666666" y="404.33333333333331" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="WhX-zm-Icv"/>
+                                        <constraint firstAttribute="width" constant="50" id="hHn-Fh-84I"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
+                                <constraint firstItem="X8c-YK-QgT" firstAttribute="top" secondItem="cFo-FG-fEe" secondAttribute="bottom" constant="40" id="0wI-Nk-8F6"/>
                                 <constraint firstItem="qBM-rg-p3g" firstAttribute="top" secondItem="3CP-xO-aDP" secondAttribute="bottom" constant="20" id="3TE-2U-GSv"/>
                                 <constraint firstItem="3CP-xO-aDP" firstAttribute="top" secondItem="17O-bY-383" secondAttribute="top" constant="60" id="COB-hZ-DB9"/>
                                 <constraint firstItem="3CP-xO-aDP" firstAttribute="centerX" secondItem="17O-bY-383" secondAttribute="centerX" id="Mcn-jZ-P6f"/>
+                                <constraint firstItem="cFo-FG-fEe" firstAttribute="top" secondItem="qBM-rg-p3g" secondAttribute="bottom" constant="30" id="O3h-Ls-sMe"/>
                                 <constraint firstItem="qBM-rg-p3g" firstAttribute="leading" secondItem="17O-bY-383" secondAttribute="leading" constant="10" id="Pu6-KA-Jnf"/>
                                 <constraint firstAttribute="bottom" secondItem="J17-gw-eCB" secondAttribute="bottom" constant="30" id="Tov-sj-2v2"/>
                                 <constraint firstAttribute="trailing" secondItem="qBM-rg-p3g" secondAttribute="trailing" constant="10" id="cQy-4V-aaH"/>
                                 <constraint firstItem="J17-gw-eCB" firstAttribute="leading" secondItem="17O-bY-383" secondAttribute="leading" constant="20" id="ce8-e5-iSj"/>
                                 <constraint firstItem="3CP-xO-aDP" firstAttribute="centerX" secondItem="17O-bY-383" secondAttribute="centerX" id="ekO-sZ-ADy"/>
-                                <constraint firstItem="J17-gw-eCB" firstAttribute="top" secondItem="qBM-rg-p3g" secondAttribute="bottom" constant="30" id="f9V-N0-kAQ"/>
                                 <constraint firstAttribute="trailing" secondItem="J17-gw-eCB" secondAttribute="trailing" constant="20" id="fb8-Rl-XYU"/>
+                                <constraint firstItem="cFo-FG-fEe" firstAttribute="centerX" secondItem="17O-bY-383" secondAttribute="centerX" id="fse-ZL-Vsj"/>
+                                <constraint firstItem="J17-gw-eCB" firstAttribute="top" secondItem="X8c-YK-QgT" secondAttribute="bottom" constant="30" id="uBS-Fr-opy"/>
+                                <constraint firstItem="X8c-YK-QgT" firstAttribute="centerX" secondItem="17O-bY-383" secondAttribute="centerX" id="yKe-am-4bp"/>
                             </constraints>
                         </view>
                     </subviews>

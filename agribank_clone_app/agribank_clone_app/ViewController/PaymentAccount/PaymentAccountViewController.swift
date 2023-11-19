@@ -2,6 +2,7 @@ import UIKit
 
 class PaymentAccountViewController: BaseViewController {
     
+    @IBOutlet weak var qrCode: UIImageView!
     @IBOutlet weak var helpLabel: UILabel!
     @IBOutlet weak var accountNumLbl: UILabel!
     @IBOutlet weak var accountNameLbl: UILabel!
@@ -55,6 +56,11 @@ class PaymentAccountViewController: BaseViewController {
         startDateView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showPickerStartDate)))
         endDateView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showPickerEndDate)))
         searchView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(searchTransaction)))
+        
+        if let image = ImageToManager.shared.getSavedImage(named: "fileName") {
+            qrCode.image = image
+            // do something with image
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

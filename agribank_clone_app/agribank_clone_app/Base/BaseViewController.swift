@@ -125,6 +125,6 @@ extension BaseViewController {
     }
     
     @objc func handleSwitch() {
-        APP_DELEGATE?.appNavigator?.switchToMain()
+        APP_DELEGATE?.appNavigator?.backToTabbar()
     }
 }
