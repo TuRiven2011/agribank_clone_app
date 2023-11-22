@@ -194,17 +194,20 @@ extension TransactionHistoryViewController: UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let delete = UIContextualAction(style: .destructive, title: "Delete") {[weak self] (action, sourceView, completionHandler) in
+        let delete = UIContextualAction(style: .destructive, title: "Xoá") {[weak self] (action, sourceView, completionHandler) in
             guard let self = self else {
                 completionHandler(false)
                 return
             }
+            let transfer = self.listDataToShow[indexPath.row]
+            self.listHistory?.removeAll(where: {$0.id == transfer.id})
             self.listDataToShow.remove(at: indexPath.row)
+            AppData.listTransaction = self.listHistory
             tableView.reloadData()
             completionHandler(true)
         }
         
-        let rename = UIContextualAction(style: .normal, title: "Edit") { (action, sourceView, completionHandler) in
+        let rename = UIContextualAction(style: .normal, title: "Sửa") { (action, sourceView, completionHandler) in
             print("index path of edit: \(indexPath)")
             completionHandler(true)
         }
