@@ -46,6 +46,9 @@ class TabbarViewController: UITabBarController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        APP_DELEGATE?.appNavigator?.navigation.isNavigationBarHidden = true
+        APP_DELEGATE?.appNavigator?.navigation.navigationBar.isHidden = true
+        APP_DELEGATE?.appNavigator?.navigation.setNavigationBarHidden(true, animated: true)
         tabBarController?.selectedIndex = 0
     }
     

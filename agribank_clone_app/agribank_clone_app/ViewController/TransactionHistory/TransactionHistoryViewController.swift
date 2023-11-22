@@ -65,12 +65,9 @@ class TransactionHistoryViewController: BaseViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        APP_DELEGATE?.appNavigator?.navigation.isNavigationBarHidden = true
-        APP_DELEGATE?.appNavigator?.navigation.navigationBar.isHidden = true
-        APP_DELEGATE?.appNavigator?.navigation.setNavigationBarHidden(true, animated: true)
+
         APP_DELEGATE?.appNavigator?.tabbar.selectedIndex = 0
-//        setupNavigationBarSwitch(title: "LỊCH SỬ GIAO DỊCH")
+        //        setupNavigationBarSwitch(title: "LỊCH SỬ GIAO DỊCH")
     }
     
     func configTableView() {
@@ -182,7 +179,7 @@ extension TransactionHistoryViewController: UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionListTableViewCell") as? TransactionListTableViewCell else {return UITableViewCell()}
         
-            cell.binding(data: listDataToShow[indexPath.row])
+        cell.binding(data: listDataToShow[indexPath.row])
         cell.selectionStyle = .none
         return cell
     }
@@ -192,5 +189,28 @@ extension TransactionHistoryViewController: UITableViewDelegate, UITableViewData
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "Delete") {[weak self] (action, sourceView, completionHandler) in
+            guard let self = self else {
+                completionHandler(false)
+                return
+            }
+            self.listDataToShow.remove(at: indexPath.row)
+            tableView.reloadData()
+            completionHandler(true)
+        }
+        
+        let rename = UIContextualAction(style: .normal, title: "Edit") { (action, sourceView, completionHandler) in
+            print("index path of edit: \(indexPath)")
+            completionHandler(true)
+        }
+        let swipeActionConfig = UISwipeActionsConfiguration(actions: [rename, delete])
+        swipeActionConfig.performsFirstActionWithFullSwipe = false
+        return swipeActionConfig
+    }
     
 }

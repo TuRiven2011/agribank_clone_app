@@ -1,6 +1,7 @@
 import Foundation
 
 struct TransferModel: Codable {
+    var id: String = UUID().description
     var userName: String?
     var numberAccount: String?
     var balance: Int?
