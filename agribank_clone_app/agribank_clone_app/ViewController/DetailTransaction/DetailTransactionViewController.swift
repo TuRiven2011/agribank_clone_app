@@ -48,8 +48,10 @@ class DetailTransactionViewController: BaseViewController {
         balanceLabel.text = data.balance?.addComma() ?? ""
         if let name2 = data.numberAccount2, name2 != "" {
             oppositeView.isHidden = false
+            lineView.isHidden = false
         } else {
             oppositeView.isHidden = true
+            lineView.isHidden = true
         }
     }
 
