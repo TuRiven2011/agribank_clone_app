@@ -13,6 +13,8 @@ class DetailTransactionViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @IBOutlet weak var lineView: UIView!
+    @IBOutlet weak var oppositeView: UIStackView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var accountPayLabel: UILabel!
@@ -44,6 +46,11 @@ class DetailTransactionViewController: BaseViewController {
         accountPayLabel.text = data.numberAccount2 ?? ""
         contentLabel.text = data.content ?? ""
         balanceLabel.text = data.balance?.addComma() ?? ""
+        if let name2 = data.numberAccount2, name2 != "" {
+            oppositeView.isHidden = false
+        } else {
+            oppositeView.isHidden = true
+        }
     }
 
 }
