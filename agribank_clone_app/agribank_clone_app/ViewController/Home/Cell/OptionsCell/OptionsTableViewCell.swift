@@ -17,6 +17,7 @@ class OptionsTableViewCell: UITableViewCell {
     var moneyInCompletion: (() -> Void)?
     var moneyInPastCompletion: (() -> Void)?
     var moneyOutPastCompletion: (() -> Void)?
+    var removeAccount: (() -> Void)?
 
     @IBOutlet weak var financeCollectionView: UICollectionView!
     
@@ -129,6 +130,8 @@ extension OptionsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
                 moneyInPastCompletion?()
             } else if indexPath.row == 7 {
                 moneyOutPastCompletion?()
+            } else if indexPath.row == 9 {
+                removeAccount?()
             }
         }
     }

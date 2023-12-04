@@ -119,6 +119,7 @@ extension HomeViewController {
         vc.signOutCompletion = {
             AppData.isLogin = false
             vc.close()
+            self.tableview.reloadData()
         }
         vc.delegate = self
         vc.frame = UIScreen.main.bounds
@@ -143,9 +144,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.binding()
         
         cell.loginCompletion = {[weak self] in
-            guard self != nil else {return}
+            guard let self = self else {return}
             
-            tableView.reloadData()
+//            tableView.reloadData()
+            
+            let vc = LoginViewController()
+            vc.modalPresentationStyle = .fullScreen
+            vc.hidesBottomBarWhenPushed = true
+            vc.loginCompletion = {
+                AppData.isLogin = true
+                self.tableview.reloadData()
+            }
+            self.present(vc, animated: true)
         }
         
         guard let cell2 = tableView.dequeueReusableCell(withIdentifier: "AccountInforTableViewCell") as? AccountInforTableViewCell else {return UITableViewCell()}
@@ -198,6 +208,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             guard let self = self else {return}
             let vc = PastOutTransactionViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        cell3.removeAccount = {
+            AppData.isLogin = false
+            AppData.account = nil
+            AppData.listTransaction = nil
+            self.tableview.reloadData()
         }
         
         

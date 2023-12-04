@@ -33,7 +33,6 @@ class LoginTableViewCell: UITableViewCell {
     }
     
     @IBAction func loginBtn(_ sender: Any) {
-        AppData.isLogin = true
         loginCompletion?()
     }
     

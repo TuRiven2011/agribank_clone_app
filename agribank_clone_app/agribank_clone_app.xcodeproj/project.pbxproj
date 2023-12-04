@@ -48,6 +48,8 @@
 		47854F8B2AFC9DF800472D88 /* SuggestFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47854F892AFC9DF800472D88 /* SuggestFooter.xib */; };
 		4787C5392B00DCBE0062DD3A /* TransferByOtherBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787C5372B00DCBE0062DD3A /* TransferByOtherBankViewController.swift */; };
 		4787C53A2B00DCBE0062DD3A /* TransferByOtherBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4787C5382B00DCBE0062DD3A /* TransferByOtherBankViewController.xib */; };
+		4789768B2B1E19330030ED66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478976892B1E19330030ED66 /* LoginViewController.swift */; };
+		4789768C2B1E19330030ED66 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4789768A2B1E19330030ED66 /* LoginViewController.xib */; };
 		4795E9A92AF010D000EFE78A /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E9A82AF010D000EFE78A /* TabbarViewController.swift */; };
 		479DDABE2AF634D300BF3416 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479DDABD2AF634D300BF3416 /* CommonEnum.swift */; };
 		47BD89BD2AD509730004D093 /* bus_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 47BD89BC2AD509730004D093 /* bus_animation.json */; };
@@ -177,6 +179,8 @@
 		47854F892AFC9DF800472D88 /* SuggestFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestFooter.xib; sourceTree = "<group>"; };
 		4787C5372B00DCBE0062DD3A /* TransferByOtherBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferByOtherBankViewController.swift; sourceTree = "<group>"; };
 		4787C5382B00DCBE0062DD3A /* TransferByOtherBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferByOtherBankViewController.xib; sourceTree = "<group>"; };
+		478976892B1E19330030ED66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4789768A2B1E19330030ED66 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4795E9A82AF010D000EFE78A /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		479DDABD2AF634D300BF3416 /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		47BD89952AD4FFFC0004D093 /* SFProDisplay-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -365,6 +369,7 @@
 		473A5E0D2AD5103600A34CE5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				478976882B1E19230030ED66 /* Login */,
 				477AF3312B06101D006920DB /* PastOutTransaction */,
 				477AF3302B06100D006920DB /* PastInTransaction */,
 				4717BE0C2B05B4AC00A78653 /* MoneyIn */,
@@ -516,6 +521,15 @@
 				4787C5382B00DCBE0062DD3A /* TransferByOtherBankViewController.xib */,
 			);
 			path = TransferByOtherBank;
+			sourceTree = "<group>";
+		};
+		478976882B1E19230030ED66 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				478976892B1E19330030ED66 /* LoginViewController.swift */,
+				4789768A2B1E19330030ED66 /* LoginViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		4795E9A72AF010B400EFE78A /* Tabbar */ = {
@@ -999,6 +1013,7 @@
 				47BD89D52AD50AAD0004D093 /* taxi_animation.json in Resources */,
 				47854F812AFC952900472D88 /* SearchFeatureCollectionViewCell.xib in Resources */,
 				769E7E552AFE3DDA00E44818 /* ContentNotificationViewController.xib in Resources */,
+				4789768C2B1E19330030ED66 /* LoginViewController.xib in Resources */,
 				47BD89BF2AD5097E0004D093 /* dataNewYear6.json in Resources */,
 				821C89242AD6D37C006DE8F2 /* AccountInforTableViewCell.xib in Resources */,
 				821C890F2AD6C144006DE8F2 /* HomeViewController.xib in Resources */,
@@ -1087,6 +1102,7 @@
 				820DB43D2AE21B1700CB1138 /* AppInforEntity.swift in Sources */,
 				82C4BB1B2AFA7838003D4F3B /* AccountInforViewController.swift in Sources */,
 				76D133472AFDD2A80056CC4A /* DealNotificationTableViewCell.swift in Sources */,
+				4789768B2B1E19330030ED66 /* LoginViewController.swift in Sources */,
 				821C89162AD6C5E6006DE8F2 /* LoginTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

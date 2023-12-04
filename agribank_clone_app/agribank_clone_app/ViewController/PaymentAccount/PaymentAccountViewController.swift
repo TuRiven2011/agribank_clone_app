@@ -202,4 +202,94 @@ extension PaymentAccountViewController: UITableViewDelegate, UITableViewDataSour
         let vc = DetailTransactionViewController(data: listDataToShow[indexPath.row])
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "Xoá") {[weak self] (action, sourceView, completionHandler) in
+            guard let self = self else {
+                completionHandler(false)
+                return
+            }
+            let transfer = self.listDataToShow[indexPath.row]
+            self.listHistory?.removeAll(where: {$0.id == transfer.id})
+            self.listDataToShow.remove(at: indexPath.row)
+            AppData.listTransaction = self.listHistory
+            tableView.reloadData()
+            completionHandler(true)
+        }
+        
+        let rename = UIContextualAction(style: .normal, title: "Sửa") { (action, sourceView, completionHandler) in
+            print("index path of edit: \(indexPath)")
+            let transfer = self.listDataToShow[indexPath.row]
+//            self.listHistory?.removeAll(where: {$0.id == transfer.id})
+//            self.listDataToShow.remove(at: indexPath.row)
+//            AppData.listTransaction = self.listHistory
+            if transfer.isReceive == true {
+                let vc = PastInTransactionViewController()
+                vc.transfer = transfer
+                vc.editComplete = {
+                    self.listHistory = AppData.listTransaction?.sorted(by: {($0.date?.timeIntervalSince1970 ?? 0) > ($1.date?.timeIntervalSince1970 ?? 0)})
+                    self.listDataToShow.removeAll()
+                    if let listHistory = self.listHistory {
+                        listHistory.forEach {[weak self] element in
+                            guard let self = self else {return}
+                            if (element.date ?? .init()) >= self.start && (element.date ?? .init()) <= self.end {
+                                switch self.type {
+                                case .moneyOut:
+                                    if element.isReceive == false {
+                                        self.listDataToShow.append(element)
+                                    }
+                                case .moneyIn:
+                                    if element.isReceive == true {
+                                        self.listDataToShow.append(element)
+                                    }
+                                case .total:
+                                    self.listDataToShow.append(element)
+                                }
+                            }
+                        }
+                    }
+                    
+                    self.listDataToShow = self.listDataToShow.sorted(by: {($0.date?.timeIntervalSince1970 ?? 0) > ($1.date?.timeIntervalSince1970 ?? 0)})
+                    tableView.reloadData()
+                }
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                let vc = PastOutTransactionViewController()
+                vc.transfer = transfer
+                vc.editComplete = {
+                    self.listHistory = AppData.listTransaction?.sorted(by: {($0.date?.timeIntervalSince1970 ?? 0) > ($1.date?.timeIntervalSince1970 ?? 0)})
+                    self.listDataToShow.removeAll()
+                    if let listHistory = self.listHistory {
+                        listHistory.forEach {[weak self] element in
+                            guard let self = self else {return}
+                            if (element.date ?? .init()) >= self.start && (element.date ?? .init()) <= self.end {
+                                switch self.type {
+                                case .moneyOut:
+                                    if element.isReceive == false {
+                                        self.listDataToShow.append(element)
+                                    }
+                                case .moneyIn:
+                                    if element.isReceive == true {
+                                        self.listDataToShow.append(element)
+                                    }
+                                case .total:
+                                    self.listDataToShow.append(element)
+                                }
+                            }
+                        }
+                    }
+                    
+                    self.listDataToShow = self.listDataToShow.sorted(by: {($0.date?.timeIntervalSince1970 ?? 0) > ($1.date?.timeIntervalSince1970 ?? 0)})
+                    tableView.reloadData()
+                    tableView.reloadData()
+                }
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+            completionHandler(true)
+        }
+        let swipeActionConfig = UISwipeActionsConfiguration(actions: [rename, delete])
+        swipeActionConfig.performsFirstActionWithFullSwipe = false
+        return swipeActionConfig
+    }
 }

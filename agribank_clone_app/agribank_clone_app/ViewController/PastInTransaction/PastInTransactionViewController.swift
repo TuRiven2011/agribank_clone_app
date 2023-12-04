@@ -3,19 +3,43 @@ import UIKit
 class PastInTransactionViewController: BaseViewController {
     
     @IBAction func doneACtion(_ sender: Any) {
-        let billModel = TransferModel(userName: AppData.account?.userName,
-                                      numberAccount: AppData.account?.numberAccount,
-                                      balance: Int(balanceTF.text ?? "0"),
-                                      openBranch: AppData.account?.openBranch,
-                                      content: contentTF.text,
-                                      money: Int(moneyTF.text ?? "0"),
-                                      numberAccount2: numberAccount2TF.text,
-                                      bank2: bank2TF.text,
-                                      date: dateTF.text?.toDate(),
-                                      isReceive: true
-        )
         
-        AppData.listTransaction?.append(billModel)
+        if let transfer = transfer {
+            if let index = AppData.listTransaction?.firstIndex(where: {$0.id == transfer.id}) {
+                AppData.listTransaction?.removeAll(where: {$0.id == transfer.id})
+                let billModel = TransferModel(id: transfer.id,
+                                              userName: AppData.account?.userName,
+                                              numberAccount: AppData.account?.numberAccount,
+                                              balance: Int(balanceTF.text ?? "0"),
+                                              openBranch: AppData.account?.openBranch,
+                                              content: contentTF.text,
+                                              money: Int(moneyTF.text ?? "0"),
+                                              name2: name2TF.text,
+                                              numberAccount2: numberAccount2TF.text,
+                                              bank2: bank2TF.text,
+                                              date: dateTF.text?.toDate(),
+                                              isReceive: true
+                )
+                
+                AppData.listTransaction?.insert(billModel, at: index)
+            }
+            editComplete?()
+        } else {
+            let billModel = TransferModel(userName: AppData.account?.userName,
+                                          numberAccount: AppData.account?.numberAccount,
+                                          balance: Int(balanceTF.text ?? "0"),
+                                          openBranch: AppData.account?.openBranch,
+                                          content: contentTF.text,
+                                          money: Int(moneyTF.text ?? "0"),
+                                          name2: name2TF.text,
+                                          numberAccount2: numberAccount2TF.text,
+                                          bank2: bank2TF.text,
+                                          date: dateTF.text?.toDate(),
+                                          isReceive: true
+            )
+            
+            AppData.listTransaction?.append(billModel)
+        }
         navigationController?.popViewController(animated: true)
     }
     @IBOutlet weak var dateTF: UITextField!
@@ -25,10 +49,23 @@ class PastInTransactionViewController: BaseViewController {
     @IBOutlet weak var bank2TF: UITextField!
     @IBOutlet weak var numberAccount2TF: UITextField!
     @IBOutlet weak var name2TF: UITextField!
-
+    
+    var transfer: TransferModel? = nil
+    var editComplete: (() -> Void)? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let transfer = transfer {
+            dateTF.text = transfer.date?.formatToString()
+            contentTF.text = transfer.content ?? ""
+            balanceTF.text = "\(transfer.balance ?? 0)"
+            moneyTF.text = "\(transfer.money ?? 0)"
+            bank2TF.text = transfer.bank2 ?? ""
+            numberAccount2TF.text = transfer.numberAccount2 ?? ""
+            name2TF.text = transfer.name2 ?? ""
+        }
+        
         // Do any additional setup after loading the view.
     }
     
@@ -37,7 +74,7 @@ class PastInTransactionViewController: BaseViewController {
         
         setupNavigationBar(title: "Nhận tiền quá khứ".uppercased())
     }
-
-
-
+    
+    
+    
 }
