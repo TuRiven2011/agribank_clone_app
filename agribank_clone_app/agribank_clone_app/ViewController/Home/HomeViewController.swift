@@ -213,7 +213,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell3.removeAccount = {
             AppData.isLogin = false
             AppData.account = nil
-            AppData.listTransaction = nil
+            AppData.listTransaction?.removeAll()
             self.tableview.reloadData()
         }
         
