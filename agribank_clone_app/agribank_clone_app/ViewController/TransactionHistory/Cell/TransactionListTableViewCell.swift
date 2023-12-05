@@ -21,10 +21,10 @@ class TransactionListTableViewCell: UITableViewCell {
     
     func binding(data: TransferModel) {
         if data.isReceive == false {
-            moneyLabel.textColor = .red
+            moneyLabel.textColor = UIColor(rgb: 0xFFE3734F)
             moneyLabel.text = "- \(data.money?.addComma() ?? "") VND"
         } else {
-            moneyLabel.textColor = .green
+            moneyLabel.textColor = UIColor(rgb: 0xFF64B084)
             moneyLabel.text = "+ \(data.money?.addComma() ?? "") VND"
         }
         dateLabel.text = data.date?.formatToString()
